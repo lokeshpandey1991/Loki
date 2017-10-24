@@ -50,7 +50,7 @@ public class VideoModelTest {
                 "https://progressive-eu.assetsadobe.com/rochestaging/_renditions_/37a/37af2177-30e8-433e-bf34-bcfc4f42e55a/avs/demo-0x720-2600k.mp4",
                 modelObject.getAssetPath());
         Assert.assertEquals("sample headline", modelObject.getHeadline());
-        Assert.assertEquals("/content/dam/roche/diagnostic/hero-banner.png", modelObject.getPosterLink());
+        Assert.assertEquals("/content/dam/roche/customerportal/hero-banner.png", modelObject.getPosterLink());
         Assert.assertEquals("false", modelObject.getTransparentOverlay());
     }
     
@@ -61,7 +61,7 @@ public class VideoModelTest {
                 "https://progressive-eu.assetsadobe.com/rochestaging/_renditions_/2f1/2f195f9e-f0ac-470a-8f8f-fd6c9de5ea0f/avs/small.mp4",
                 modelObject.getAssetPath());
         Assert.assertEquals("sample headline", modelObject.getHeadline());
-        Assert.assertEquals("/content/dam/roche/diagnostic/hero-banner.png", modelObject.getPosterLink());
+        Assert.assertEquals("/content/dam/roche/customerportal/hero-banner.png", modelObject.getPosterLink());
         Assert.assertEquals("false", modelObject.getTransparentOverlay());
     }
     
@@ -76,7 +76,7 @@ public class VideoModelTest {
             MockRocheContent.loadfile(context, "/json/roche/us/us.json", "/content/roche/customerportal/us");
             MockRocheContent.loadfile(context, "/json/roche/us/pages/pdp.json", "/content/roche/customerportal/us/en/pdp");
             MockRocheContent.loadfile(context, "/json/roche/us/dam/image.json",
-                    "/content/dam/roche/diagnostic/demo.mp4");
+                    "/content/dam/roche/customerportal/demo.mp4");
         }
     };
     

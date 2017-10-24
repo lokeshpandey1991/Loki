@@ -17,7 +17,7 @@
          "jcr:content":{  
             "jcr:primaryType":"nt:unstructured",
             "dam:folderThumbnailPaths":[  
-               "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg"
+               "/content/dam/roche/customerportal/products/13/82/63/138263.jpg"
             ],
             "height":140,
             "jcr:mimeType":"application/octet-stream",
@@ -54,8 +54,8 @@
          "cq:lastReplicated":"Mon Mar 06 2017 22:24:39 GMT-0500",
          "cq:name":"138263.jpg",
          "jcr:lastModified":"Fri Jul 14 2017 09:20:09 GMT+0530",
-         "cq:parentPath":"/content/dam/roche/diagnostic/products/13/82/63",
-         "dam:relativePath":"roche/diagnostic/products/13/82/63/138263.jpg",
+         "cq:parentPath":"/content/dam/roche/customerportal/products/13/82/63",
+         "dam:relativePath":"roche/customerportal/products/13/82/63/138263.jpg",
          "renditions":{  
             "jcr:primaryType":"nt:folder",
             "jcr:createdBy":"admin",

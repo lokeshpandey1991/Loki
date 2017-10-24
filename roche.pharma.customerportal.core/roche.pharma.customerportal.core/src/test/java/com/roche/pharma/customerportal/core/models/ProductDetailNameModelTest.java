@@ -31,7 +31,7 @@ public class ProductDetailNameModelTest {
                 .getResource(productNodePath + "/jcr:content/product").adaptTo(ProductDetailNameModel.class);
         Assert.assertEquals("Cobas® 6800 System", modelObject.getProductName());
         Assert.assertEquals("Explore the future of molecular testing", modelObject.getValueProposition());
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/product-7.png", modelObject.getFileReference());
+        Assert.assertEquals("/content/dam/roche/customerportal/products/product-7.png", modelObject.getFileReference());
         Assert.assertEquals("alt text", modelObject.getAltText());
     }
     

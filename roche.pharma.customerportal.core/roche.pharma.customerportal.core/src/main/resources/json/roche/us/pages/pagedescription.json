@@ -36,7 +36,7 @@
 		"cq:lastModifiedBy": "admin",
 		"product": {
 			"jcr:primaryType": "nt:unstructured",
-			"fileReference": "/content/dam/roche/diagnostic/products/product-7.png",
+			"fileReference": "/content/dam/roche/customerportal/products/product-7.png",
 			"productName": "Cobas� 6800 System",
 			"jcr:lastModifiedBy": "admin",
 			"altText": "alt text",
@@ -50,7 +50,7 @@
 			"titleOne": "Heading",
 			"titleTwo": "Sub heading",
 			"altText": "Alt",
-			"fileReference": "/content/dam/roche/diagnostic/products/product-7.png",
+			"fileReference": "/content/dam/roche/customerportal/products/product-7.png",
 			"viewType": "event",
 			"titleThree": "heading",
 			"pageDescriptionOne": "Page description one",
@@ -89,7 +89,7 @@
 		},
 		"heromedia": {
 			"jcr:primaryType": "nt:unstructured",
-			"fileReference": "/content/dam/roche/diagnostic/hero-banner.png",
+			"fileReference": "/content/dam/roche/customerportal/hero-banner.png",
 			"jcr:lastModifiedBy": "admin",
 			"headline": "High throughput and maximum walk-away time",
 			"altText": "test",

@@ -36,7 +36,7 @@ public class ProductDetailModelTest {
                 modelObject.getProductMeta());
         Assert.assertEquals("Logo1", modelObject.getLogoName());
         Assert.assertEquals("Logo1 Description", modelObject.getLogoDescription());
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/11/04/56/110456.jpg", modelObject.getLogoPath());
+        Assert.assertEquals("/content/dam/roche/customerportal/products/11/04/56/110456.jpg", modelObject.getLogoPath());
         Assert.assertEquals(true, modelObject.getIsExists());
         Assert.assertEquals(false, modelObject.isDTLEnabled());
         Assert.assertEquals(false, modelObject.isProductMetaEnabled());

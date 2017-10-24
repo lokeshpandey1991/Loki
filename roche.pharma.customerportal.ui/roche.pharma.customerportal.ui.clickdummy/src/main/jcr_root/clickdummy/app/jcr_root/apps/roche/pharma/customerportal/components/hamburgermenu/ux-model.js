@@ -4,7 +4,7 @@ use(function() {
   "countryCode": "US",
   "countrySelectorPath": "/content/roche/pharma/customerportal/us",
   "isPersonaDisabled": "false",
-  "personaSelectorPath": "/content/dam/roche/diagnostic.html",
+  "personaSelectorPath": "/content/dam/roche/customerportal.html",
   "logoAltText": "Roche Logo Alt Text",
   "hamburgerMenuLeftLinks": [{
       "pageName": "Sign in",

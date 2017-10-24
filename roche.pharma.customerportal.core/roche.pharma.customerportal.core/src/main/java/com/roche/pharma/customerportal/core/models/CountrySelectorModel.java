@@ -31,7 +31,7 @@ import com.roche.pharma.customerportal.core.utils.CommonUtils;
  */
 
 @Model(adaptables = {
-        Resource.class
+		SlingHttpServletRequest.class
 }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL, resourceType = CountrySelectorModel.RESOURCE_TYPE)
 @Exporter(name = "jackson", extensions = "json")
 public class CountrySelectorModel {

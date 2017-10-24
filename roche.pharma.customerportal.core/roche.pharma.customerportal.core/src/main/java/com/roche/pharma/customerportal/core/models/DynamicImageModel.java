@@ -22,7 +22,7 @@ import com.roche.pharma.customerportal.core.services.ConfigurationService;
  */
 
 @Model(adaptables = {
-        Resource.class
+		SlingHttpServletRequest.class
 }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL, resourceType = DynamicImageModel.RESOURCE_TYPE)
 @Exporter(name = "jackson", extensions = "json")
 public class DynamicImageModel {

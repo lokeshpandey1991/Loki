@@ -88,11 +88,11 @@ public class MarketingTileModelTest {
     public void testFileReference() throws LoginException {
         MarketingTileModel modelObject = context.resourceResolver().getResource(marketingTilePath)
                 .adaptTo(MarketingTileModel.class);
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/11/04/58/110458.png",
                 modelObject.getFileReference());
         MarketingTileModel modelObjectBlank = context.resourceResolver().getResource(marketingTilePathBlank)
                 .adaptTo(MarketingTileModel.class);
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
                 modelObjectBlank.getFileReference());
         
     }
@@ -137,7 +137,7 @@ public class MarketingTileModelTest {
                 throws PersistenceException, IOException, javax.jcr.LoginException, RepositoryException {
             context.addModelsForPackage("com.roche.pharma.customerportal.core.models");
             MockRocheContent.load(context);
-            context.load().json("/json/image.json", "/content/dam/roche/diagnostic/products/13/82/63");
+            context.load().json("/json/image.json", "/content/dam/roche/customerportal/products/13/82/63");
         }
     };
     

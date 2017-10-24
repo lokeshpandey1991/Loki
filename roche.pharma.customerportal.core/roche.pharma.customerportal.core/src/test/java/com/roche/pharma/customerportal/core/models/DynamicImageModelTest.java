@@ -72,7 +72,7 @@ public class DynamicImageModelTest {
         context.request().setResource(res);
         DynamicImageModel modelObject = context.request().adaptTo(DynamicImageModel.class);
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
                 modelObject.getFileReference());
     }
     
@@ -82,23 +82,23 @@ public class DynamicImageModelTest {
         context.request().setResource(res);
         DynamicImageModel modelObject = context.request().adaptTo(DynamicImageModel.class);
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg?"
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg?"
                         + "wid=1200&hei=800&cropn=0.2,0.6,0.8,0.9",
                 modelObject.getDesktopUrl());
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg?"
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg?"
                         + "wid=600&hei=400&cropn=0.2,0.6,0.8,0.9",
                 modelObject.getTabletLandscapeUrl());
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg?"
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg?"
                         + "wid=500&hei=450&cropn=0.2,0.6,0.8,0.9",
                 modelObject.getTabletPortraitUrl());
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg?"
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg?"
                         + "wid=300&hei=100&cropn=0.2,0.6,0.8,0.9",
                 modelObject.getMobileLandscapeUrl());
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg?"
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg?"
                         + "wid=200&hei=150&cropn=0.2,0.6,0.8,0.9",
                 modelObject.getMobilePortraitUrl());
     }
@@ -109,7 +109,7 @@ public class DynamicImageModelTest {
         context.request().setResource(res);
         DynamicImageModel modelObject = context.request().adaptTo(DynamicImageModel.class);
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg?wid=1200&hei=800",
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg?wid=1200&hei=800",
                 modelObject.getDesktopUrl());
     }
     
@@ -119,7 +119,7 @@ public class DynamicImageModelTest {
         context.request().setResource(res);
         DynamicImageModel modelObject = context.request().adaptTo(DynamicImageModel.class);
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg?wid=1200",
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg?wid=1200",
                 modelObject.getDesktopUrl());
     }
     
@@ -129,7 +129,7 @@ public class DynamicImageModelTest {
         context.request().setResource(res);
         DynamicImageModel modelObject = context.request().adaptTo(DynamicImageModel.class);
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg?wid=1200&cropn=0.2,0.6,0.8,0.9",
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg?wid=1200&cropn=0.2,0.6,0.8,0.9",
                 modelObject.getDesktopUrl());
     }
     
@@ -139,7 +139,7 @@ public class DynamicImageModelTest {
         context.request().setResource(res);
         DynamicImageModel modelObject = context.request().adaptTo(DynamicImageModel.class);
         Assert.assertEquals(
-                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/diagnostic/products/11/04/56/110456.jpg?cropn=0.2,0.6,0.8,0.9",
+                "https://roche-staging-h.assetsadobe2.com/is/image/content/dam/roche/customerportal/products/11/04/56/110456.jpg?cropn=0.2,0.6,0.8,0.9",
                 modelObject.getDesktopUrl());
     }
     

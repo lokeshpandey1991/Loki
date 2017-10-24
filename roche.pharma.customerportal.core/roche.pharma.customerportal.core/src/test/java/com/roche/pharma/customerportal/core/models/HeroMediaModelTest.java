@@ -31,7 +31,7 @@ public class HeroMediaModelTest {
     @Test
     public void testFileReference() throws LoginException {
         HeroMediaModel modelObject = context.resourceResolver().getResource(mediaPath).adaptTo(HeroMediaModel.class);
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
                 modelObject.getFileReference());
     }
     
@@ -128,7 +128,7 @@ public class HeroMediaModelTest {
                 throws PersistenceException, IOException, javax.jcr.LoginException, RepositoryException {
             context.addModelsForPackage("com.roche.pharma.customerportal.core.models");
             MockRocheContent.load(context);
-            context.load().json("/json/image.json", "/content/dam/roche/diagnostic/products/13/82/63");
+            context.load().json("/json/image.json", "/content/dam/roche/customerportal/products/13/82/63");
         }
     };
 }

@@ -32,7 +32,7 @@ public class LanguageHeaderFooterModelTest {
                 .adaptTo(LanguageHeaderFooterModel.class);
         Assert.assertEquals("copyright", modelObject.getTradeMark());
         Assert.assertEquals("disclaimer", modelObject.getDisclaimerText());
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/11/04/58/110458.png",
                 modelObject.getFileReference());
         Assert.assertEquals(1, modelObject.getFooterList().size());
         Assert.assertEquals(2, modelObject.getHamburgerMenuLeftList().size());

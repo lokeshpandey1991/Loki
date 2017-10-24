@@ -201,7 +201,7 @@
 							"cq:LiveSyncCancelled"
 						],
 						"cq:isCancelledForChildren": true,
-						"fileReference": "/content/dam/roche/diagnostic/roche-herobanner.jpg",
+						"fileReference": "/content/dam/roche/customerportal/roche-herobanner.jpg",
 						"jcr:lastModifiedBy": "rocheuser",
 						"headline": "Cobas®  4800 BRAF V600 Mutual  Test",
 						"cq:lastRolledout": "Wed Aug 30 2017 03:36:23 GMT-0400",
@@ -223,14 +223,14 @@
 								"cq:LiveRelationship"
 							],
 							"jcr:createdBy": "admin",
-							"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+							"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 							"jcr:lastModifiedBy": "rocheuser",
 							"headline": "Cobas®  4800 BRAF V600 Mutual  Test",
 							"cq:lastRolledout": "Wed Aug 30 2017 03:36:23 GMT-0400",
 							"altText": "hero banner image",
 							"headlinePosition": "topLeft",
 							"jcr:created": "Thu Jul 27 2017 06:55:51 GMT-0400",
-							"subHeadline": "A companion diagnostic for Vemurafenib",
+							"subHeadline": "A companion customerportal for Vemurafenib",
 							"variationType": "heroBanner",
 							"textPosition": "rightOutsideImage",
 							"jcr:lastModified": "Wed Aug 30 2017 03:36:23 GMT-0400",
@@ -273,7 +273,7 @@
 						],
 						"jcr:createdBy": "rocheuser",
 						"cq:isCancelledForChildren": true,
-						"fileReference": "/content/dam/roche/diagnostic/marketing-tile-1120X1200.jpg",
+						"fileReference": "/content/dam/roche/customerportal/marketing-tile-1120X1200.jpg",
 						"jcr:lastModifiedBy": "rocheuser",
 						"cq:lastRolledout": "Wed Aug 30 2017 03:36:23 GMT-0400",
 						"altText": "asd",
@@ -303,11 +303,11 @@
 						"sling:resourceType": "roche/customerportal/components/carousel",
 						"cq:lastRolledoutBy": "rocheuser",
 						"carouselData": [
-							"{\"assetType\":\"image\",\"assetHeading\":\"Laboratory Automation and IT\",\"assetPath\":\"/content/dam/roche/diagnostic/testcarousel/images_new/60sec_04_invitro_customerportal.jpg\",\"assetAltText\":\"Not Available\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>Personalized lab automation and scalable IT solutions developed by Roche that simplify operation.</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n<p>\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n<p>\\n\\n\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n<p>\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\"}",
-							"{\"assetType\":\"image\",\"assetHeading\":\"Hemostasis Systems and Tests\",\"assetPath\":\"/content/dam/roche/diagnostic/testcarousel/images_new/60sec_07.jpg\",\"assetAltText\":\"Not Available\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>Roche platelet function testing combines innovation with proven medical and diagnostic expertise to set new standards.<br>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n<p>&nbsp;</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\"}",
-							"{\"assetType\":\"image\",\"assetHeading\":\"Roche Partnering at BIO 2017\",\"assetPath\":\"/content/dam/roche/diagnostic/testcarousel/images_new/60sec_06_great_place_to_work.jpg\",\"assetAltText\":\"Not Available\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>Building on 50 years of experience, Roche offers a range of urinalysis products, from single-use strips to semi- and fully-automatic systems.<br>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\"}",
-							"{\"assetType\":\"video\",\"assetHeading\":\"Roche Pharma Customerportal 2017\",\"assetPath\":\"/content/dam/roche/diagnostic/testcarousel/videos/Roche in 60 seconds.mp4\",\"assetAltText\":\"Not available\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>At Roche, we have long valued external innovation as a critical component of our R&amp;D strategy.<br>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n</p>\\n\\n\\n\\n<p>\\n\\n\\n\\n\\n\\n\\n</p>\\n\\n\\n\\n\"}",
-							"{\"assetType\":\"image\",\"assetHeading\":\"Roche Pharma Customerportal 2019\",\"assetPath\":\"/content/dam/roche/diagnostic/testcarousel/images_new/60sec_04_invitro_customerportal.jpg\",\"assetAltText\":\"customerportal\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>At Roche, we have long valued external innovation as a critical component of our R&amp;D strategy.<br>\\n\\n\\n\\n</p>\\n\\n\\n<p>\\n</p>\\n\\n\\n\"}"
+							"{\"assetType\":\"image\",\"assetHeading\":\"Laboratory Automation and IT\",\"assetPath\":\"/content/dam/roche/customerportal/testcarousel/images_new/60sec_04_invitro_customerportal.jpg\",\"assetAltText\":\"Not Available\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>Personalized lab automation and scalable IT solutions developed by Roche that simplify operation.</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n<p>\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n<p>\\n\\n\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n<p>\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\"}",
+							"{\"assetType\":\"image\",\"assetHeading\":\"Hemostasis Systems and Tests\",\"assetPath\":\"/content/dam/roche/customerportal/testcarousel/images_new/60sec_07.jpg\",\"assetAltText\":\"Not Available\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>Roche platelet function testing combines innovation with proven medical and customerportal expertise to set new standards.<br>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n<p>&nbsp;</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\"}",
+							"{\"assetType\":\"image\",\"assetHeading\":\"Roche Partnering at BIO 2017\",\"assetPath\":\"/content/dam/roche/customerportal/testcarousel/images_new/60sec_06_great_place_to_work.jpg\",\"assetAltText\":\"Not Available\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>Building on 50 years of experience, Roche offers a range of urinalysis products, from single-use strips to semi- and fully-automatic systems.<br>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n</p>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\"}",
+							"{\"assetType\":\"video\",\"assetHeading\":\"Roche Pharma Customerportal 2017\",\"assetPath\":\"/content/dam/roche/customerportal/testcarousel/videos/Roche in 60 seconds.mp4\",\"assetAltText\":\"Not available\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>At Roche, we have long valued external innovation as a critical component of our R&amp;D strategy.<br>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n</p>\\n\\n\\n\\n<p>\\n\\n\\n\\n\\n\\n\\n</p>\\n\\n\\n\\n\"}",
+							"{\"assetType\":\"image\",\"assetHeading\":\"Roche Pharma Customerportal 2019\",\"assetPath\":\"/content/dam/roche/customerportal/testcarousel/images_new/60sec_04_invitro_customerportal.jpg\",\"assetAltText\":\"customerportal\",\"linkBehaviour\":\"_self\",\"linkPath\":\"/content/customerportal/us/en/home\",\"bodyText\":\"<p>At Roche, we have long valued external innovation as a critical component of our R&amp;D strategy.<br>\\n\\n\\n\\n</p>\\n\\n\\n<p>\\n</p>\\n\\n\\n\"}"
 						]
 					},
 					"mediaimage": {
@@ -331,7 +331,7 @@
 							"cq:LiveRelationship"
 						],
 						"jcr:createdBy": "rocheuser",
-						"fileReference": "/content/dam/roche/diagnostic/testcarousel/videos/Roche in 60 seconds.mp4",
+						"fileReference": "/content/dam/roche/customerportal/testcarousel/videos/Roche in 60 seconds.mp4",
 						"jcr:lastModifiedBy": "rocheuser",
 						"cq:lastRolledout": "Wed Aug 30 2017 04:35:11 GMT-0400",
 						"headlinePosition": "topLeft",

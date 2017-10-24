@@ -26,8 +26,8 @@ public class ProductThumbnailsModelTest {
     final static String pdpPath = "/content/roche/customerportal/us/en/home/pdp/jcr:content";
     
     final static String[] mediaLinksData = {
-            "{\"productTitle1\":\"test\",\"altText\":\"Product Image1\",\"productPath1\":\"/content/customerportal/global-master-blueprint/en/home/roche54353\",\"fileReference1\":\"/content/dam/roche/diagnostic/products/carouselmachine_01.png\"}",
-            "{\"productTitle2\":\"test\",\"altText\":\"Product Image2\",\"productPath2\":\"/content/customerportal/global-master-blueprint/en/home/roche54353\",\"fileReference2\":\"/content/dam/roche/diagnostic/products/carouselmachine_02.png\"}"
+            "{\"productTitle1\":\"test\",\"altText\":\"Product Image1\",\"productPath1\":\"/content/customerportal/global-master-blueprint/en/home/roche54353\",\"fileReference1\":\"/content/dam/roche/customerportal/products/carouselmachine_01.png\"}",
+            "{\"productTitle2\":\"test\",\"altText\":\"Product Image2\",\"productPath2\":\"/content/customerportal/global-master-blueprint/en/home/roche54353\",\"fileReference2\":\"/content/dam/roche/customerportal/products/carouselmachine_02.png\"}"
     };
     
     final static ProductThumbnails productThumbnails = new ProductThumbnails();
@@ -57,7 +57,7 @@ public class ProductThumbnailsModelTest {
         Assert.assertEquals("Cobas® 6800 System", modelObject.getProductThumbnailsList().get(0).getProductTitle());
         Assert.assertEquals("/content/roche/customerportal/us/en/home/pdp.html",
                 modelObject.getProductThumbnailsList().get(0).getProductPath());
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/product-7.png",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/product-7.png",
                 modelObject.getProductThumbnailsList().get(0).getFileReference());
         
     }
@@ -81,7 +81,7 @@ public class ProductThumbnailsModelTest {
                 throws PersistenceException, IOException, javax.jcr.LoginException, RepositoryException {
             context.addModelsForPackage("com.roche.pharma.customerportal.core.models");
             MockRocheContent.load(context);
-            context.load().json("/json/image.json", "/content/dam/roche/diagnostic/products/13/82/63");
+            context.load().json("/json/image.json", "/content/dam/roche/customerportal/products/13/82/63");
             MockRocheContent.loadfile(context, "/json/roche/roche.json", "/content/roche/customerportal");
             MockRocheContent.loadfile(context, "/json/roche/us/us.json", "/content/roche/customerportal/us");
             MockRocheContent.loadfile(context, "/json/roche/us/pages/pdp.json",

@@ -125,7 +125,7 @@
 						},
 						"heroMedia": {
 							"jcr:primaryType": "nt:unstructured",
-							"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+							"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 							"altText": "this is hero image",
 							"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 						},
@@ -159,8 +159,8 @@
 								"jcr:createdBy": "admin",
 								"jcr:lastModifiedBy": "admin",
 								"filters": [
-									"{\"filterTitle\":\"Health Topic\",\"filterTag\":\"pim:roche/diagnostic/product/healthTopics\"}",
-									"{\"filterTitle\":\"Product\",\"filterTag\":\"pim:roche/diagnostic/product/productSolution\"}"
+									"{\"filterTitle\":\"Health Topic\",\"filterTag\":\"pim:roche/customerportal/product/healthTopics\"}",
+									"{\"filterTitle\":\"Product\",\"filterTag\":\"pim:roche/customerportal/product/productSolution\"}"
 								],
 								"jcr:created": "Mon Jul 24 2017 16:01:12 GMT+0530",
 								"jcr:lastModified": "Mon Jul 24 2017 16:04:25 GMT+0530",
@@ -201,7 +201,7 @@
 									"jcr:createdBy": "admin",
 									"jcr:lastModifiedBy": "admin",
 									"filterTag": [
-										"pim:roche/diagnostic/product/productSolution"
+										"pim:roche/customerportal/product/productSolution"
 									],
 									"jcr:created": "Wed Jul 26 2017 14:33:12 GMT+0530",
 									"listing": [

@@ -34,7 +34,7 @@ public class ImageGalleryTest {
     @Test
     public void testFileReference1() throws LoginException {
         ImageGallery modelObject = context.resourceResolver().getResource(galleryPath).adaptTo(ImageGallery.class);
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
                 modelObject.getFileReference1());
     }
     
@@ -47,7 +47,7 @@ public class ImageGalleryTest {
     @Test
     public void testFileReference2() throws LoginException {
         ImageGallery modelObject = context.resourceResolver().getResource(galleryPath).adaptTo(ImageGallery.class);
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
                 modelObject.getFileReference2());
     }
     
@@ -60,7 +60,7 @@ public class ImageGalleryTest {
     @Test
     public void testFileReference3() throws LoginException {
         ImageGallery modelObject = context.resourceResolver().getResource(galleryPath).adaptTo(ImageGallery.class);
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
                 modelObject.getFileReference3());
     }
     
@@ -73,7 +73,7 @@ public class ImageGalleryTest {
     @Test
     public void testFileReference4() throws LoginException {
         ImageGallery modelObject = context.resourceResolver().getResource(galleryPath).adaptTo(ImageGallery.class);
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
                 modelObject.getFileReference4());
     }
     
@@ -86,7 +86,7 @@ public class ImageGalleryTest {
     @Test
     public void testFileReference5() throws LoginException {
         ImageGallery modelObject = context.resourceResolver().getResource(galleryPath).adaptTo(ImageGallery.class);
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
                 modelObject.getFileReference5());
     }
     
@@ -99,7 +99,7 @@ public class ImageGalleryTest {
     @Test
     public void testFileReference6() throws LoginException {
         ImageGallery modelObject = context.resourceResolver().getResource(galleryPath).adaptTo(ImageGallery.class);
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+        Assert.assertEquals("/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
                 modelObject.getFileReference6());
     }
     
@@ -123,7 +123,7 @@ public class ImageGalleryTest {
                 throws PersistenceException, IOException, javax.jcr.LoginException, RepositoryException {
             context.addModelsForPackage("com.roche.pharma.customerportal.core.models");
             MockRocheContent.load(context);
-            context.load().json("/json/image.json", "/content/dam/roche/diagnostic/products/13/82/63");
+            context.load().json("/json/image.json", "/content/dam/roche/customerportal/products/13/82/63");
         }
     };
 }

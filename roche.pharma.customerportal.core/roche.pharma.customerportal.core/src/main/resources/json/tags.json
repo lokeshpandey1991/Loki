@@ -49,13 +49,13 @@
 			"cq:lastReplicated": "Thu Mar 02 2017 08:15:35 GMT-0500",
 			"jcr:description": "",
 			"sling:resourceType": "cq/tagging/components/tag",
-			"diagnostic": {
+			"customerportal": {
 				"jcr:primaryType": "cq:Tag",
 				"jcr:mixinTypes": [
 					"cq:ReplicationStatus"
 				],
 				"jcr:createdBy": "admin",
-				"jcr:title": "diagnostic",
+				"jcr:title": "customerportal",
 				"cq:lastReplicationAction": "Activate",
 				"cq:lastReplicatedBy": "admin",
 				"jcr:created": "Fri Jul 14 2017 14:42:30 GMT+0530",

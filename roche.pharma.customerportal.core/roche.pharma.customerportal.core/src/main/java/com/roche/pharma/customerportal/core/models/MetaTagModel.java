@@ -28,7 +28,7 @@ import com.roche.pharma.customerportal.core.utils.CommonUtils;
  * @author mhuss3
  */
 @Model(adaptables = {
-        Resource.class
+		SlingHttpServletRequest.class
 }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL, resourceType = MetaTagModel.RESOURCE_TYPE)
 @Exporter(name = "jackson", extensions = "json")
 public class MetaTagModel {

@@ -46,7 +46,7 @@
 					"jcr:primaryType": "nt:unstructured",
 					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/roche/us\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/roche/us\"}"],
 					"altText": "alt text",
-					"fileReference": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+					"fileReference": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
 					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/roche/us\",\"mobileView\":\"true\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"/content/roche/us\",\"mobileView\":\"true\"}"],
 					"footerSocialLinks": "{\"socialMediaOption\":\"facebook\",\"socialLink\":\"/content/roche/us\"}",
 					"jcr:lastModifiedBy": "admin",
@@ -201,7 +201,7 @@
 					
 						"heroMedia": {
 							"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"quoteText": "this is quote",
 										"jcr:lastModifiedBy": "admin",
 										"headline": "headlne",
@@ -220,17 +220,17 @@
 						},
 						"imagegallery": {
 							"jcr:primaryType": "nt:unstructured",
-										"fileReference1": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference1": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"altText1": "this is test image",
-										"fileReference2": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference2": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"altText2": "this is test image",
-										"fileReference3": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference3": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"altText3": "this is test image",
-										"fileReference4": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference4": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"altText4": "this is test image",
-										"fileReference5": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference5": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"altText5": "this is test image",
-										"fileReference6": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference6": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"altText6": "this is test image",
 										"jcr:lastModifiedBy": "admin",
 										"imageHeadline": "Image headline",
@@ -255,7 +255,7 @@
 						},
 						"heroMedia1": {
 							"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"quoteText": "this is quote",
 										"jcr:lastModifiedBy": "admin",
 										"headline": "headlne",
@@ -276,7 +276,7 @@
 								"jcr:primaryType": "nt:unstructured",
 								"jcr:createdBy": "admin",
 								"ipadHeight": "400",
-								"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+								"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 								"mobileWidth": "300",
 								"altText": "Roche Image",
 								"jcr:lastModifiedBy": "admin",
@@ -311,7 +311,7 @@
 						"marketingTileBlank":{  
 									   "jcr:primaryType":"nt:unstructured",
 									   "jcr:createdBy":"admin",
-									   "fileReference":"/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+									   "fileReference":"/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 									   "jcr:lastModifiedBy":"admin",
 									   "headline":"headlne",
 									   "altText":"this is hero image", 
@@ -331,7 +331,7 @@
 							"jcr:primaryType": "nt:unstructured",
 							"jcr:createdBy": "admin",
 							"ipadHeight": "400",
-							"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+							"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 							"jcr:lastModifiedBy": "admin",
 							"jcr:created": "Fri Jul 21 2017 13:24:04 GMT+0530",
 							"desktopHeight": "800",
@@ -344,7 +344,7 @@
 							"jcr:primaryType": "nt:unstructured",
 							"jcr:createdBy": "admin",
 							"ipadWidth": "600",
-							"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+							"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 							"jcr:lastModifiedBy": "admin",
 							"jcr:created": "Fri Jul 21 2017 13:24:04 GMT+0530",
 							"desktopWidth": "1200",
@@ -356,7 +356,7 @@
 							"image_without_height_width":{
 							"jcr:primaryType": "nt:unstructured",
 							"jcr:createdBy": "admin",
-							"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+							"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 							"jcr:lastModifiedBy": "admin",
 							"jcr:created": "Fri Jul 21 2017 13:24:04 GMT+0530",
 							"jcr:lastModified": "Fri Jul 21 2017 17:17:16 GMT+0530",
@@ -442,10 +442,10 @@
 								"sling:resourceType": "roche/customerportal/components/mediainfo",
 								"ctaDescription": "Cobas Machine",
 								"mediaLinks": [
-									"{\"imageText\":\"Sample Supply 1\",\"altText\":\"Product Image\",\"imageHeading\":\"Sample Supply Heading 1\",\"imagePath\":\"/content/dam/roche/diagnostic/products/carouselmachine_01.png\"}",
-									"{\"imageText\":\"Sample Supply 2\",\"altText\":\"Product Image2\",\"imageHeading\":\"Sample Supply Heading 2\",\"imagePath\":\"/content/dam/roche/diagnostic/products/carouselmachine_02.png\"}",
-									"{\"imageText\":\"Sample Supply  3\",\"altText\":\"Product Image3\",\"imageHeading\":\"Sample Supply Heading 3\",\"imagePath\":\"/content/dam/roche/diagnostic/products/carouselmachine_03.png\"}",
-									"{\"imageText\":\"Sample Supply  4\",\"altText\":\"Product Image4\",\"imageHeading\":\"Sample Supply Heading 4\",\"imagePath\":\"/content/dam/roche/diagnostic/products/carouselmachine_04.png\"}"
+									"{\"imageText\":\"Sample Supply 1\",\"altText\":\"Product Image\",\"imageHeading\":\"Sample Supply Heading 1\",\"imagePath\":\"/content/dam/roche/customerportal/products/carouselmachine_01.png\"}",
+									"{\"imageText\":\"Sample Supply 2\",\"altText\":\"Product Image2\",\"imageHeading\":\"Sample Supply Heading 2\",\"imagePath\":\"/content/dam/roche/customerportal/products/carouselmachine_02.png\"}",
+									"{\"imageText\":\"Sample Supply  3\",\"altText\":\"Product Image3\",\"imageHeading\":\"Sample Supply Heading 3\",\"imagePath\":\"/content/dam/roche/customerportal/products/carouselmachine_03.png\"}",
+									"{\"imageText\":\"Sample Supply  4\",\"altText\":\"Product Image4\",\"imageHeading\":\"Sample Supply Heading 4\",\"imagePath\":\"/content/dam/roche/customerportal/products/carouselmachine_04.png\"}"
 								]
 							},
 							"productThumbnailsList": {
@@ -548,15 +548,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -584,15 +584,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"altText": "This is a hero image",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -620,15 +620,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"altText": "image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/cancer",
-											"pim:roche/diagnostic/cancer/ColorectalCancer"
+											"pim:roche/customerportal/cancer",
+											"pim:roche/customerportal/cancer/ColorectalCancer"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -656,15 +656,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"altText": "image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/cancer",
-											"pim:roche/diagnostic/cancer/ColorectalCancer"
+											"pim:roche/customerportal/cancer",
+											"pim:roche/customerportal/cancer/ColorectalCancer"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -692,15 +692,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -728,7 +728,7 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"quoteText": "this is quote",
 										"jcr:lastModifiedBy": "admin",
 										"headline": "headlne",
@@ -748,8 +748,8 @@
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -777,15 +777,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -883,11 +883,11 @@
 								 "jcr:uuid":"56b278c7-641b-477a-aa42-e24ad1561d9b",
 								 "sling:resourceType":"/apps/roche/pharma/customerportal/components/page/productdetailpage",
 								 "cq:lastModifiedBy":"admin",
-								 "thumbnailImage" :"/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+								 "thumbnailImage" :"/content/dam/roche/customerportal/products/11/04/58/110458.png",
 								  "altText":"alt text",
 								 "product":{  
 									"jcr:primaryType":"nt:unstructured",
-									"fileReference":"/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+									"fileReference":"/content/dam/roche/customerportal/products/11/04/58/110458.png",
 									"productName":"Coba",
 									"jcr:lastModifiedBy":"admin",
 									"altText":"alt text",
@@ -937,17 +937,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
 									"cq:tags": [
-										"pim:roche/diagnostic/cancer",
-										"pim:roche/diagnostic/cancer/ColorectalCancer"
+										"pim:roche/customerportal/cancer",
+										"pim:roche/customerportal/cancer/ColorectalCancer"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/256/645/ROCHE1256645",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -1026,17 +1026,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
 									"cq:tags": [
-										"pim:roche/diagnostic/cancer",
-										"pim:roche/diagnostic/cancer/ColorectalCancer"
+										"pim:roche/customerportal/cancer",
+										"pim:roche/customerportal/cancer/ColorectalCancer"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/256/640/ROCHE1256640",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -1101,7 +1101,7 @@
 									"cq:lastModifiedBy": "admin",
 									"product": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
 										"productName": "coba",
 										"jcr:lastModifiedBy": "admin",
 										"altText": "alt text",
@@ -1164,7 +1164,7 @@
 									"heromedia": {
 										"jcr:primaryType": "nt:unstructured",
 										"jcr:createdBy": "admin",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"jcr:lastModifiedBy": "admin",
 										"altText": "Hero Image",
 										"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
@@ -1183,7 +1183,7 @@
 										"jcr:lastModifiedBy": "admin",
 										"jcr:created": "Thu Mar 02 2017 08:18:27 GMT-0500",
 										"tags": [
-											"pim:roche/diagnostic/cancer"
+											"pim:roche/customerportal/cancer"
 										],
 										"jcr:lastModified": "Thu Mar 02 2017 08:36:00 GMT-0500",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList",
@@ -1233,17 +1233,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/14/82/64/148264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/14/82/64/148264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/285/152/ROCHE1285152",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -1322,17 +1322,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/12/82/64/128264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/12/82/64/128264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/285/153/ROCHE1285153",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -1413,17 +1413,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/15/82/64/158264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/15/82/64/158264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/352/809/ROCHE1352809",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/129/124/0/1291240_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/129/124/0/1291240_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/129/124/0/1291240_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/129/124/0/1291240_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/129/124/0/1291240_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/129/124/0/1291240_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -1561,17 +1561,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/14/82/64/148264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/14/82/64/148264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:28:52 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/240/101/ROCHE1240101",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -1696,7 +1696,7 @@
 									"heromedia": {
 										"jcr:primaryType": "nt:unstructured",
 										"jcr:createdBy": "admin",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"jcr:lastModifiedBy": "admin",
 										"altText": "Hero Image",
 										"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
@@ -1715,7 +1715,7 @@
 										"jcr:lastModifiedBy": "admin",
 										"jcr:created": "Thu Mar 02 2017 03:21:47 GMT-0500",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement"
+											"pim:roche/customerportal/bloodmanagement"
 										],
 										"jcr:lastModified": "Thu Mar 02 2017 03:25:13 GMT-0500",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList",
@@ -1774,7 +1774,7 @@
 							"jcr:created": "Thu Mar 02 2017 22:40:38 GMT+0530",
 							"cq:lastReplicated": "Thu Mar 02 2017 08:12:59 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:14:51 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/117/107/117107.jpg",
+							"image": "/content/dam/roche/customerportal/news/117/107/117107.jpg",
 							"newsTitle": "Mayor, Roche chairman lead Indianapolis site dedication",
 							"jcr:baseVersion": "37549716-2105-49f1-911f-e70b81a56550",
 							"jcr:isCheckedOut": true,
@@ -1810,7 +1810,7 @@
 							"jcr:created": "Thu Mar 02 2017 22:40:38 GMT+0530",
 							"cq:lastReplicated": "Thu Mar 02 2017 08:13:00 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 14:18:01 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/118/108/118108.jpg",
+							"image": "/content/dam/roche/customerportal/news/118/108/118108.jpg",
 							"newsTitle": "R & D technology to help Elecsys detection of anti-jamming design",
 							"jcr:baseVersion": "8e841bef-263f-4507-bc6e-a6956f2f7b67",
 							"jcr:isCheckedOut": true,
@@ -1846,7 +1846,7 @@
 							"jcr:created": "Thu Mar 02 2017 22:40:38 GMT+0530",
 							"cq:lastReplicated": "Thu Mar 02 2017 08:13:00 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:35:25 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/113/103/113103.jpg",
+							"image": "/content/dam/roche/customerportal/news/113/103/113103.jpg",
 							"newsTitle": "Professor Pan Shiyang \"clinical molecular diagnosis\" was selected to promote the global distribution",
 							"jcr:baseVersion": "f117b7c2-07c8-4547-9e3b-c27b85d14565",
 							"jcr:isCheckedOut": true,
@@ -1882,7 +1882,7 @@
 							"jcr:created": "Thu Mar 02 2017 22:40:38 GMT+0530",
 							"cq:lastReplicated": "Thu Mar 02 2017 08:13:00 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:35:25 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/115/105/115105.jpg",
+							"image": "/content/dam/roche/customerportal/news/115/105/115105.jpg",
 							"newsTitle": "Academic delivery | lungs and lung cancer markers clinical ",
 							"jcr:baseVersion": "495ba825-c544-4017-9f43-8e885d386170",
 							"jcr:isCheckedOut": true,
@@ -1918,7 +1918,7 @@
 							"jcr:created": "Thu Mar 02 2017 22:40:38 GMT+0530",
 							"cq:lastReplicated": "Thu Mar 02 2017 08:13:00 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:35:25 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/114/104/114104.jpg",
+							"image": "/content/dam/roche/customerportal/news/114/104/114104.jpg",
 							"newsTitle": "Crack the AIDS \"stealth\"",
 							"jcr:baseVersion": "c0c8b8ed-0908-433d-9adb-12ab7b5a066f",
 							"jcr:isCheckedOut": true,
@@ -2164,7 +2164,7 @@
 					"jcr:primaryType": "nt:unstructured",
 					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/roche/us\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/roche/us\"}"],
 					"altText": "alt text",
-					"fileReference": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+					"fileReference": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
 					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/roche/us\",\"mobileView\":\"true\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"/content/roche/us\",\"mobileView\":\"true\"}"],
 					"footerSocialLinks": "{\"socialMediaOption\":\"facebook\",\"socialLink\":\"/content/roche/us\"}",
 					"jcr:lastModifiedBy": "admin",
@@ -2257,7 +2257,7 @@
 					
 						"heroMedia": {
 							"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"quoteText": "this is quote",
 										"jcr:lastModifiedBy": "admin",
 										"headline": "headlne",
@@ -2368,15 +2368,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -2404,15 +2404,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -2440,15 +2440,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"altText": "image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/cancer",
-											"pim:roche/diagnostic/cancer/ColorectalCancer"
+											"pim:roche/customerportal/cancer",
+											"pim:roche/customerportal/cancer/ColorectalCancer"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -2476,15 +2476,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"altText": "image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/cancer",
-											"pim:roche/diagnostic/cancer/ColorectalCancer"
+											"pim:roche/customerportal/cancer",
+											"pim:roche/customerportal/cancer/ColorectalCancer"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -2512,15 +2512,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -2548,15 +2548,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -2665,17 +2665,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:50:18 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
 									"cq:tags": [
-										"pim:roche/diagnostic/cancer",
-										"pim:roche/diagnostic/cancer/ColorectalCancer"
+										"pim:roche/customerportal/cancer",
+										"pim:roche/customerportal/cancer/ColorectalCancer"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:50:18 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/256/645/ROCHE1256645",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -2754,17 +2754,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:50:18 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
 									"cq:tags": [
-										"pim:roche/diagnostic/cancer",
-										"pim:roche/diagnostic/cancer/ColorectalCancer"
+										"pim:roche/customerportal/cancer",
+										"pim:roche/customerportal/cancer/ColorectalCancer"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:50:18 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/256/640/ROCHE1256640",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -2861,7 +2861,7 @@
 									"heromedia": {
 										"jcr:primaryType": "nt:unstructured",
 										"jcr:createdBy": "admin",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"jcr:lastModifiedBy": "admin",
 										"altText": "Hero Image",
 										"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
@@ -2880,7 +2880,7 @@
 										"jcr:lastModifiedBy": "admin",
 										"jcr:created": "Thu Mar 02 2017 08:18:27 GMT-0500",
 										"tags": [
-											"pim:roche/diagnostic/cancer"
+											"pim:roche/customerportal/cancer"
 										],
 										"jcr:lastModified": "Thu Mar 02 2017 08:36:00 GMT-0500",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList",
@@ -2930,17 +2930,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:50:18 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/14/82/64/148264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/14/82/64/148264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:50:18 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/285/152/ROCHE1285152",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -3019,17 +3019,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:50:18 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/12/82/64/128264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/12/82/64/128264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:50:18 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/285/153/ROCHE1285153",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -3165,17 +3165,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:50:19 GMT+0530",
 									"showGlobal": false,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/13/82/64/138264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/13/82/64/138264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:50:19 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/240/108/ROCHE1240108",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/126/121/0/1261210_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/126/121/0/1261210_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/126/121/0/1261210_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -3256,17 +3256,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:50:19 GMT+0530",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/14/82/64/148264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/14/82/64/148264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:50:19 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/240/101/ROCHE1240101",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -3390,7 +3390,7 @@
 									"heromedia": {
 										"jcr:primaryType": "nt:unstructured",
 										"jcr:createdBy": "admin",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"jcr:lastModifiedBy": "admin",
 										"altText": "Hero Image",
 										"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
@@ -3409,7 +3409,7 @@
 										"jcr:lastModifiedBy": "admin",
 										"jcr:created": "Thu Mar 02 2017 03:21:47 GMT-0500",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement"
+											"pim:roche/customerportal/bloodmanagement"
 										],
 										"jcr:lastModified": "Thu Mar 02 2017 03:25:13 GMT-0500",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList",
@@ -3468,7 +3468,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:21 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:22:14 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:14:51 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/117/107/117107.jpg",
+							"image": "/content/dam/roche/customerportal/news/117/107/117107.jpg",
 							"newsTitle": "Mayor, Roche chairman lead Indianapolis site dedication",
 							"jcr:baseVersion": "8ab0440c-7301-48bf-8580-e52bfc0f50d5",
 							"jcr:isCheckedOut": true,
@@ -3504,7 +3504,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:21 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:22:14 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 14:18:01 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/118/108/118108.jpg",
+							"image": "/content/dam/roche/customerportal/news/118/108/118108.jpg",
 							"newsTitle": "R & D technology to help Elecsys detection of anti-jamming design",
 							"jcr:baseVersion": "6ee3aa1c-fab7-4eb7-9f85-0643459c589e",
 							"jcr:isCheckedOut": true,
@@ -3540,7 +3540,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:21 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:22:14 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:35:25 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/113/103/113103.jpg",
+							"image": "/content/dam/roche/customerportal/news/113/103/113103.jpg",
 							"newsTitle": "Professor Pan Shiyang \"clinical molecular diagnosis\" was selected to promote the global distribution",
 							"jcr:baseVersion": "c2fab6b2-de50-4192-8111-91be462766ba",
 							"jcr:isCheckedOut": true,
@@ -3576,7 +3576,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:21 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:22:15 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:35:25 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/115/105/115105.jpg",
+							"image": "/content/dam/roche/customerportal/news/115/105/115105.jpg",
 							"newsTitle": "Academic delivery | lungs and lung cancer markers clinical ",
 							"jcr:baseVersion": "9f73e63d-cfec-430a-8b71-d5374826f4ea",
 							"jcr:isCheckedOut": true,
@@ -3612,7 +3612,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:21 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:22:15 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:35:25 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/114/104/114104.jpg",
+							"image": "/content/dam/roche/customerportal/news/114/104/114104.jpg",
 							"newsTitle": "Crack the AIDS \"stealth\"",
 							"jcr:baseVersion": "39d419bc-1c52-4609-a87a-0fa48357b7c3",
 							"jcr:isCheckedOut": true,
@@ -3932,7 +3932,7 @@
 					
 						"heroMedia": {
 							"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/13/82/63/138263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/13/82/63/138263.jpg",
 										"quoteText": "this is quote",
 										"jcr:lastModifiedBy": "admin",
 										"headline": "headlne",
@@ -4050,15 +4050,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -4086,15 +4086,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -4122,15 +4122,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"altText": "image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/cancer",
-											"pim:roche/diagnostic/cancer/ColorectalCancer"
+											"pim:roche/customerportal/cancer",
+											"pim:roche/customerportal/cancer/ColorectalCancer"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -4158,15 +4158,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -4194,15 +4194,15 @@
 									"jcr:primaryType": "nt:unstructured",
 									"heroMedia": {
 										"jcr:primaryType": "nt:unstructured",
-										"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg",
 										"altText": "hero image alt text",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/heroMedia"
 									},
 									"relatedProducts": {
 										"jcr:primaryType": "nt:unstructured",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement",
-											"pim:roche/diagnostic/bloodmanagement/coagucheck"
+											"pim:roche/customerportal/bloodmanagement",
+											"pim:roche/customerportal/bloodmanagement/coagucheck"
 										],
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList"
 									},
@@ -4368,17 +4368,17 @@
 									"cq:lastModified": "Mon Mar 06 2017 07:51:18 GMT-0500",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
 									"cq:tags": [
-										"pim:roche/diagnostic/cancer",
-										"pim:roche/diagnostic/cancer/ColorectalCancer"
+										"pim:roche/customerportal/cancer",
+										"pim:roche/customerportal/cancer/ColorectalCancer"
 									],
 									"jcr:lastModified": "Mon Mar 06 2017 07:51:18 GMT-0500",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/256/640/ROCHE1256640",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/core/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -4475,7 +4475,7 @@
 									"heromedia": {
 										"jcr:primaryType": "nt:unstructured",
 										"jcr:createdBy": "admin",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"jcr:lastModifiedBy": "admin",
 										"altText": "Hero Image",
 										"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
@@ -4494,7 +4494,7 @@
 										"jcr:lastModifiedBy": "admin",
 										"jcr:created": "Thu Mar 02 2017 08:18:27 GMT-0500",
 										"tags": [
-											"pim:roche/diagnostic/cancer"
+											"pim:roche/customerportal/cancer"
 										],
 										"jcr:lastModified": "Thu Mar 02 2017 08:36:00 GMT-0500",
 										"sling:resourceType": "roche/core/components/content/productList",
@@ -4544,17 +4544,17 @@
 									"cq:lastModified": "Mon Mar 06 2017 07:51:19 GMT-0500",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/14/82/64/148264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/14/82/64/148264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Mon Mar 06 2017 07:51:19 GMT-0500",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/285/152/ROCHE1285152",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/core/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -4633,17 +4633,17 @@
 									"cq:lastModified": "Mon Mar 06 2017 07:51:19 GMT-0500",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/12/82/64/128264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/12/82/64/128264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Mon Mar 06 2017 07:51:19 GMT-0500",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/285/153/ROCHE1285153",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/core/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -4779,17 +4779,17 @@
 									"cq:lastModified": "Mon Mar 06 2017 07:51:19 GMT-0500",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/13/82/64/138264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/13/82/64/138264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Mon Mar 06 2017 07:51:19 GMT-0500",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/240/108/ROCHE1240108",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/126/121/0/1261210_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/126/121/0/1261210_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/126/121/0/1261210_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/core/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -4870,17 +4870,17 @@
 									"cq:lastModified": "Mon Mar 06 2017 07:51:19 GMT-0500",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/14/82/64/148264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/14/82/64/148264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Mon Mar 06 2017 07:51:19 GMT-0500",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/240/101/ROCHE1240101",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/core/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -5004,7 +5004,7 @@
 									"heromedia": {
 										"jcr:primaryType": "nt:unstructured",
 										"jcr:createdBy": "admin",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"jcr:lastModifiedBy": "admin",
 										"altText": "Hero Image",
 										"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
@@ -5023,7 +5023,7 @@
 										"jcr:lastModifiedBy": "admin",
 										"jcr:created": "Thu Mar 02 2017 03:21:47 GMT-0500",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement"
+											"pim:roche/customerportal/bloodmanagement"
 										],
 										"jcr:lastModified": "Thu Mar 02 2017 03:25:13 GMT-0500",
 										"sling:resourceType": "roche/core/components/content/productList",
@@ -5159,17 +5159,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:42:17 GMT+0530",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
 									"cq:tags": [
-										"pim:roche/diagnostic/cancer",
-										"pim:roche/diagnostic/cancer/ColorectalCancer"
+										"pim:roche/customerportal/cancer",
+										"pim:roche/customerportal/cancer/ColorectalCancer"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:42:17 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/256/640/ROCHE1256640",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/125/664/0/1256640_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/125/664/0/1256640_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -5266,7 +5266,7 @@
 									"heromedia": {
 										"jcr:primaryType": "nt:unstructured",
 										"jcr:createdBy": "admin",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"jcr:lastModifiedBy": "admin",
 										"altText": "Hero Image",
 										"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
@@ -5285,7 +5285,7 @@
 										"jcr:lastModifiedBy": "admin",
 										"jcr:created": "Thu Mar 02 2017 08:18:27 GMT-0500",
 										"tags": [
-											"pim:roche/diagnostic/cancer"
+											"pim:roche/customerportal/cancer"
 										],
 										"jcr:lastModified": "Thu Mar 02 2017 08:36:00 GMT-0500",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList",
@@ -5335,17 +5335,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:42:17 GMT+0530",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/14/82/64/148264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/14/82/64/148264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:42:17 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/285/152/ROCHE1285152",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/127/122/0/1271220_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/127/122/0/1271220_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -5424,17 +5424,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:42:18 GMT+0530",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/12/82/64/128264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/12/82/64/128264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:42:18 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/285/153/ROCHE1285153",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/128/123/0/1281230_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/128/123/0/1281230_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -5570,17 +5570,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:42:18 GMT+0530",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/13/82/64/138264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/13/82/64/138264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:42:18 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/240/108/ROCHE1240108",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/126/121/0/1261210_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/126/121/0/1261210_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/126/121/0/1261210_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -5661,17 +5661,17 @@
 									"cq:lastModified": "Thu Mar 16 2017 23:42:18 GMT+0530",
 									"showGlobal": true,
 									"articleID": "10003456",
-									"thumbnailImage": "/content/dam/roche/diagnostic/products/14/82/64/148264.jpg",
+									"thumbnailImage": "/content/dam/roche/customerportal/products/14/82/64/148264.jpg",
 									"cq:tags": [
-										"pim:roche/diagnostic/bloodmanagement",
-										"pim:roche/diagnostic/bloodmanagement/coagucheck"
+										"pim:roche/customerportal/bloodmanagement",
+										"pim:roche/customerportal/bloodmanagement/coagucheck"
 									],
 									"jcr:lastModified": "Thu Mar 16 2017 23:42:18 GMT+0530",
 									"cq:productMaster": "/etc/commerce/products/rcq/roche/ROC/HE1/240/101/ROCHE1240101",
 									"productDocuments": [
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_1.pdf",
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_2.pdf",
-										"/content/dam/roche/diagnostic/products/documents/124/120/1/1241201_3.pdf"
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_1.pdf",
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_2.pdf",
+										"/content/dam/roche/customerportal/products/documents/124/120/1/1241201_3.pdf"
 									],
 									"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
 									"cq:commerceType": "product",
@@ -5795,7 +5795,7 @@
 									"heromedia": {
 										"jcr:primaryType": "nt:unstructured",
 										"jcr:createdBy": "admin",
-										"fileReference": "/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+										"fileReference": "/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 										"jcr:lastModifiedBy": "admin",
 										"altText": "Hero Image",
 										"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
@@ -5814,7 +5814,7 @@
 										"jcr:lastModifiedBy": "admin",
 										"jcr:created": "Thu Mar 02 2017 03:21:47 GMT-0500",
 										"tags": [
-											"pim:roche/diagnostic/bloodmanagement"
+											"pim:roche/customerportal/bloodmanagement"
 										],
 										"jcr:lastModified": "Thu Mar 02 2017 03:25:13 GMT-0500",
 										"sling:resourceType": "/apps/roche/pharma/customerportal/components/productList",
@@ -5873,7 +5873,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:22 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:21:27 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:14:51 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/117/107/117107.jpg",
+							"image": "/content/dam/roche/customerportal/news/117/107/117107.jpg",
 							"newsTitle": "Mayor, Roche chairman lead Indianapolis site dedication",
 							"jcr:baseVersion": "2ae82953-ef19-4a23-bcee-3094fa214121",
 							"jcr:isCheckedOut": true,
@@ -5909,7 +5909,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:22 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:21:27 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 14:18:01 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/118/108/118108.jpg",
+							"image": "/content/dam/roche/customerportal/news/118/108/118108.jpg",
 							"newsTitle": "R & D technology to help Elecsys detection of anti-jamming design",
 							"jcr:baseVersion": "3fe6213a-77ca-44e7-afac-69cb5e7b12ad",
 							"jcr:isCheckedOut": true,
@@ -5945,7 +5945,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:22 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:21:27 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:35:25 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/113/103/113103.jpg",
+							"image": "/content/dam/roche/customerportal/news/113/103/113103.jpg",
 							"newsTitle": "Professor Pan Shiyang \"clinical molecular diagnosis\" was selected to promote the global distribution",
 							"jcr:baseVersion": "75e7bf57-9dff-4001-822f-cc91f082a304",
 							"jcr:isCheckedOut": true,
@@ -5981,7 +5981,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:22 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:21:27 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:35:25 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/115/105/115105.jpg",
+							"image": "/content/dam/roche/customerportal/news/115/105/115105.jpg",
 							"newsTitle": "Academic delivery | lungs and lung cancer markers clinical ",
 							"jcr:baseVersion": "84b53fdb-f1dd-486f-a43f-170c8b1fb415",
 							"jcr:isCheckedOut": true,
@@ -6017,7 +6017,7 @@
 							"jcr:created": "Thu Mar 16 2017 23:19:23 GMT+0530",
 							"cq:lastReplicated": "Sun Mar 05 2017 08:21:28 GMT-0500",
 							"cq:lastModified": "Mon Feb 27 2017 12:35:25 GMT+0530",
-							"image": "/content/dam/roche/diagnostic/news/114/104/114104.jpg",
+							"image": "/content/dam/roche/customerportal/news/114/104/114104.jpg",
 							"newsTitle": "Crack the AIDS \"stealth\"",
 							"jcr:baseVersion": "f538ba3b-339f-422f-b844-61727c0d5e1a",
 							"jcr:isCheckedOut": true,

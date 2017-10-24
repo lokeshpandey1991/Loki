@@ -4,7 +4,7 @@
 	"esiXmlHash": "84448292bd7b546089e940cdb5c9134a",
 	"jcr:created": "Sat Nov 05 2016 17:31:06 GMT+0000",
 	"id": "ROCHE1240108",
-	"cq:tags": ["pim:roche/diagnostic/bloodmanagement", "pim:roche/diagnostic/bloodmanagement/coagucheck"],
+	"cq:tags": ["pim:roche/customerportal/bloodmanagement", "pim:roche/customerportal/bloodmanagement/coagucheck"],
 	"jcr:lastModified": "Sat Nov 05 2016 17:31:06 GMT+0000",
 	"sling:resourceType": "commerce/components/product",
 	"cq:commerceType": "product",
@@ -32,11 +32,11 @@
 		"jcr:primaryType": "nt:unstructured",
 		"image0": {
 			"jcr:primaryType": "nt:unstructured",
-			"fileReference": "/content/dam/roche/diagnostic/products/12/82/63/128263.jpg"
+			"fileReference": "/content/dam/roche/customerportal/products/12/82/63/128263.jpg"
 		},
 		"image1": {
 			"jcr:primaryType": "nt:unstructured",
-			"fileReference": "/content/dam/roche/diagnostic/products/13/82/64/138264.jpg"
+			"fileReference": "/content/dam/roche/customerportal/products/13/82/64/138264.jpg"
 		}
 	},
 	"SolutionCategory": {
@@ -189,38 +189,38 @@
 		"jcr:primaryType": "nt:unstructured",
 		"doc0": {
 			"jcr:primaryType": "nt:unstructured",
-			"fileReference": "/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_1.pdf",
+			"fileReference": "/content/dam/roche/customerportal/products/documents/126/121/0/1261210_1.pdf",
 			"US": {
 				"jcr:primaryType": "nt:unstructured",
-				"fileReference": "/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_1.pdf"
+				"fileReference": "/content/dam/roche/customerportal/products/documents/126/121/0/1261210_1.pdf"
 			},
 			"CN": {
 				"jcr:primaryType": "nt:unstructured",
-				"fileReference": "/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_1.pdf"
+				"fileReference": "/content/dam/roche/customerportal/products/documents/126/121/0/1261210_1.pdf"
 			}
 		},
 		"doc1": {
 			"jcr:primaryType": "nt:unstructured",
-			"fileReference": "/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_2.pdf",
+			"fileReference": "/content/dam/roche/customerportal/products/documents/126/121/0/1261210_2.pdf",
 			"US": {
 				"jcr:primaryType": "nt:unstructured",
-				"fileReference": "/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_2.pdf"
+				"fileReference": "/content/dam/roche/customerportal/products/documents/126/121/0/1261210_2.pdf"
 			},
 			"CN": {
 				"jcr:primaryType": "nt:unstructured",
-				"fileReference": "/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_2.pdf"
+				"fileReference": "/content/dam/roche/customerportal/products/documents/126/121/0/1261210_2.pdf"
 			}
 		},
 		"doc2": {
 			"jcr:primaryType": "nt:unstructured",
-			"fileReference": "/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_3.pdf",
+			"fileReference": "/content/dam/roche/customerportal/products/documents/126/121/0/1261210_3.pdf",
 			"US": {
 				"jcr:primaryType": "nt:unstructured",
-				"fileReference": "/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_3.pdf"
+				"fileReference": "/content/dam/roche/customerportal/products/documents/126/121/0/1261210_3.pdf"
 			},
 			"CN": {
 				"jcr:primaryType": "nt:unstructured",
-				"fileReference": "/content/dam/roche/diagnostic/products/documents/126/121/0/1261210_3.pdf"
+				"fileReference": "/content/dam/roche/customerportal/products/documents/126/121/0/1261210_3.pdf"
 			}
 		}
 	},

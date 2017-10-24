@@ -23,15 +23,15 @@ public class MediaAndInfoModelTest {
     final static String mediaInfoPath = "/content/roche/us/en/home-page/products-page/jcr:content/parCatalog/mediainfo";
     
     final static String[] mediaLinksData = {
-            "{\"imageText\":\"Sample Supply 1\",\"altText\":\"Product Image\",\"imageHeading\":\"Sample Supply Heading 1\",\"imagePath\":\"/content/dam/roche/diagnostic/products/carouselmachine_01.png\"}",
-            "{\"imageText\":\"Sample Supply 2\",\"altText\":\"Product Image2\",\"imageHeading\":\"Sample Supply Heading 2\",\"imagePath\":\"/content/dam/roche/diagnostic/products/carouselmachine_02.png\"}",
-            "{\"imageText\":\"Sample Supply  3\",\"altText\":\"Product Image3\",\"imageHeading\":\"Sample Supply Heading 3\",\"imagePath\":\"/content/dam/roche/diagnostic/products/carouselmachine_03.png\"}",
-            "{\"imageText\":\"Sample Supply  4\",\"altText\":\"Product Image4\",\"imageHeading\":\"Sample Supply Heading 4\",\"imagePath\":\"/content/dam/roche/diagnostic/products/carouselmachine_04.png\"}"
+            "{\"imageText\":\"Sample Supply 1\",\"altText\":\"Product Image\",\"imageHeading\":\"Sample Supply Heading 1\",\"imagePath\":\"/content/dam/roche/customerportal/products/carouselmachine_01.png\"}",
+            "{\"imageText\":\"Sample Supply 2\",\"altText\":\"Product Image2\",\"imageHeading\":\"Sample Supply Heading 2\",\"imagePath\":\"/content/dam/roche/customerportal/products/carouselmachine_02.png\"}",
+            "{\"imageText\":\"Sample Supply  3\",\"altText\":\"Product Image3\",\"imageHeading\":\"Sample Supply Heading 3\",\"imagePath\":\"/content/dam/roche/customerportal/products/carouselmachine_03.png\"}",
+            "{\"imageText\":\"Sample Supply  4\",\"altText\":\"Product Image4\",\"imageHeading\":\"Sample Supply Heading 4\",\"imagePath\":\"/content/dam/roche/customerportal/products/carouselmachine_04.png\"}"
     };
     
     final static String imageHeading0 = "Sample Supply Heading 1";
     final static String imageText0 = "Sample Supply 1";
-    final static String imagePath0 = "/content/dam/roche/diagnostic/products/carouselmachine_01.png";
+    final static String imagePath0 = "/content/dam/roche/customerportal/products/carouselmachine_01.png";
     final static String altText0 = "Product Image";
     
     final static MediaAndInfoBean bean = new MediaAndInfoBean();

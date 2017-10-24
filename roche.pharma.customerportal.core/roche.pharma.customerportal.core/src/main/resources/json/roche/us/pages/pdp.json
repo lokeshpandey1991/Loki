@@ -17,7 +17,7 @@
 		"pageTypeText": "News_Health",
 		"productType":"featureProduct",
 		"jcr:title": "ROCHE54353",
-		"productLogoSelect":"Logo1'''Logo1 Description'''/content/dam/roche/diagnostic/products/11/04/56/110456.jpg",
+		"productLogoSelect":"Logo1'''Logo1 Description'''/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
 		"cq:lastReplicationAction": "Activate",
 		"jcr:versionHistory": "755be0ba-273b-4d67-9727-d516c634d459",
 		"cq:template": "/apps/roche/pharma/customerportal/templates/productdetailTemplate",
@@ -53,7 +53,7 @@
 		"listingTag": "customerportal:pim/product/healthTopics/bloodManagement/bloodGas",
 		"product": {
 			"jcr:primaryType": "nt:unstructured",
-			"fileReference": "/content/dam/roche/diagnostic/products/product-7.png",
+			"fileReference": "/content/dam/roche/customerportal/products/product-7.png",
 			"productName": "Cobas® 6800 System",
 			"jcr:lastModifiedBy": "admin",
 			"altText": "alt text",
@@ -102,7 +102,7 @@
 		},
 		"heromedia": {
 			"jcr:primaryType": "nt:unstructured",
-			"fileReference": "/content/dam/roche/diagnostic/hero-banner.png",
+			"fileReference": "/content/dam/roche/customerportal/hero-banner.png",
 			"jcr:lastModifiedBy": "admin",
 			"headline": "High throughput and maximum walk-away time",
 			"altText": "test",
@@ -224,7 +224,7 @@
 		},
 		"video" : {
 		"jcr:primaryType":"nt:unstructured",
-		"fileReference":"/content/dam/roche/diagnostic/demo.mp4",
+		"fileReference":"/content/dam/roche/customerportal/demo.mp4",
 		"jcr:lastModifiedBy":"admin",
 		"headline":"sample headline",
 		"jcr:created":"Thu Aug 24 2017 15:59:16 GMT+0530",
@@ -235,11 +235,11 @@
 		"videoType":"internal",
 		"textIsRich":"true",
 		"transparentOverlay":"false",
-		"posterLink":"/content/dam/roche/diagnostic/hero-banner.png"
+		"posterLink":"/content/dam/roche/customerportal/hero-banner.png"
 		},
 		"video2" : {
 		"jcr:primaryType":"nt:unstructured",
-		"fileReference":"/content/dam/roche/diagnostic/demo.mp4",
+		"fileReference":"/content/dam/roche/customerportal/demo.mp4",
 		"jcr:lastModifiedBy":"admin",
 		"headline":"sample headline",
 		"jcr:created":"Thu Aug 24 2017 15:59:16 GMT+0530",
@@ -250,7 +250,7 @@
 		"videoType":"internal",
 		"textIsRich":"true",
 		"transparentOverlay":"false",
-		"posterLink":"/content/dam/roche/diagnostic/hero-banner.png"
+		"posterLink":"/content/dam/roche/customerportal/hero-banner.png"
 		},
 		"par" : {
 			"pagedetails": {

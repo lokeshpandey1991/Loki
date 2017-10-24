@@ -89,7 +89,7 @@ public class PageDescriptionModelTest {
     @Test
     public void testImagePath() {
         Assert.assertEquals("Page description Image  is not valid",
-                "/content/dam/roche/diagnostic/products/product-7.png", modelObject.getFileReference());
+                "/content/dam/roche/customerportal/products/product-7.png", modelObject.getFileReference());
     }
 
     @Test

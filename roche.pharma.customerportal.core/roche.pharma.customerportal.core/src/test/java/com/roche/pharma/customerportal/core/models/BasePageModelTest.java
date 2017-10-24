@@ -44,7 +44,7 @@ public class BasePageModelTest {
         Assert.assertEquals("contact-sales", modelObject.getFormType());
         // Assert.assertEquals("Jul 28, 2017 18:10:09 IST", modelObject.getReplicatedDate());
         Assert.assertEquals("alt text", modelObject.getAltText());
-        Assert.assertEquals("/content/dam/roche/diagnostic/products/product-7.png", modelObject.getFileReference());
+        Assert.assertEquals("/content/dam/roche/customerportal/products/product-7.png", modelObject.getFileReference());
         Assert.assertEquals("Cobas® 6800 System", modelObject.getTitle());
         Assert.assertTrue(StringUtils.isNotEmpty(modelObject.getEventDateRange()));
         Assert.assertEquals("Munich, Germany", modelObject.getLocation());
