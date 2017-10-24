@@ -1,0 +1,27 @@
+<!--
+    Header  Component .
+
+    This is the  component for Header
+
+    -->
+<sly data-sly-template.productCategoryFilter_template="${@ data, flag}">
+
+  <div class="c-product-catalog" data-sly-test="${data.categoryFilter}">
+  <nav class="c-tabs-container">
+    <ul class="c-tabs-list js-tabs-list">
+      <div data-sly-list.tabItem="${data.categoryFilter}" data-sly-unwrap>
+      <li data-url="/" title="${tabItem.filterTitle}" class="c-tab-list-item js-tab-item ${tabItemList.index==0 && 'selected' || ''}" data-tab-name="${tabItem.filterTag}" data-fn-click="true"
+            data-da-satelliteTrackEvent="generic-link-tracking"data-da-link_link-Page-Name="" 
+            data-da-link_link-Category="" 
+            data-da-link_link-Section="${component.name}" 
+            data-da-link_link-Header="${tabItem.filterTitle}" 
+            data-da-link_link-Text="${'rdoe_productCategoryFilter.browseBy' @ i18n} ${tabItem.filterTitle}" 
+data-da-link_link-Interaction-Method="click-on-desktop">
+        <a role="navigation" href="javascript:void(0)"
+        
+          ><span class="hidden-xs">${"rdoe_productCategoryFilter.browseBy" @ i18n} </span> ${tabItem.filterTitle}</a>
+      </li>
+      </div>
+    </ul>
+  </nav>
+</sly>

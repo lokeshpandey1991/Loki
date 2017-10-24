@@ -1,0 +1,41 @@
+<!--
+    Listing Tile View  Component .
+
+    This is the  Listing Tile View  for Event and News
+
+    -->
+<sly data-sly-template.listingtile_template="${@ data, flag}">
+
+  <section class="c-listingtile" data-sly-test="${data.results.data}" data-sly-list="${data.results.data}" data-module="listingtile">
+    <div class="c-listingtile__row">
+      <a class="c-listingtile__link" href="${item.url}" itemprop="url" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"data-da-link_link-Page-Name="" data-da-link_link-Category="" data-da-link_link-Section="${component.name}" data-da-link_link-Header="${item.title}" data-da-link_link-Text="${item.title}" 
+data-da-link_link-Interaction-Method=""  data-da-link_content-title="${data.headline}" 
+data-da-link_content-type="${item.pageType}" > ${data.ctaLabel} <span class="u-arrow"><i class="right">
+      <div class="c-listingtile__col">
+        <div class="c-listingtile__date" data-dateformat="${item.eventDateFormat}"></div>
+        <div data-sly-test="${item.title}" data-sly-unwrap>
+          <p class="c-listingtile__title">${item.title}</p>
+        </div>
+        <div data-sly-test="${item.subTitle}" data-sly-unwrap>
+          <p class="c-listingtile__subTitle"> ${item.subTitle}</p>
+        </div>
+        <ul class="c-listingtile__event">
+          <div data-sly-test="${item.eventDateFormat}" data-sly-unwrap>
+            <li class="c-listingtile__eventdata"> ${item.eventStartDate} - ${item.eventEndDate}</li>
+          </div>
+          <div data-sly-test="${item.venue}" data-sly-unwrap>
+            <li class="c-listingtile__eventdata"> ${item.venue}</li>
+          </div>
+        </ul>
+        <div data-sly-test="${item.description}" data-sly-unwrap>
+          <div class="c-listingtile__description">${item.description}  
+          </div>
+        </div>        
+
+      </div>
+    </a>
+   </div>
+       
+  </section>
+ </sly>

@@ -1,0 +1,57 @@
+<!--
+   This is the component for Headline and body copy
+   Heading structure needs to be documented
+
+   -->
+<sly data-sly-template.personapicker_template="${@ data, flag}">
+  <div class="c-persona-picker x-liipbox js-c-persona-picker js-liipbox-content" id="persona-picker">
+    <div class="js-liipbox-overlay">
+      <div class="x-liipbox__top-section js-liipbox-top-section ">
+        <div class="col-1 x-liipbox__left-s">
+          <button class="navbar-toggle js-cross-icon" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-Page-Name="" 
+               data-da-link_link-Category="" 
+               data-da-link_link-Section="global-top-navigation"
+               data-da-link_link-header="persona-picker"
+               data-da-link_link-Text="${data.personaList.personaSelectorType}"
+               data-da-link_link-Interaction-Method="">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="sr-only">open persona</span>
+          </button>
+        </div>
+        <div class="persona-text x-liipbox__text ellipsis">${data.personaHeaderText}</div>
+        <div class="col-2 x-liipbox__right-s">
+          <div class="x-liipbox__right-s__logo js-liipbox-logo">
+            <img src="/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/whiteRoche.svg" itemprop="logo" alt="${data.logoAltText}" />
+          </div>
+        </div>
+      </div>
+      <div class="c-persona-picker__bottom-section clearfix">
+        <div data-sly-test.doubleitem="${data.personaList.size!=3}"></div>
+        <div data-sly-test="${data.personaList}" data-sly-list.items="${data.personaList}" data-sly-unwrap>
+          <div class="col-xs-12 ${doubleitem ? 'col-sm-6': 'col-sm-4'} c-persona-picker__persona-link js-persona-link">
+            <div class="link-row">
+              <a href="javascript:void(0)" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking" data-da-link_link-Page-Name="" data-da-link_link-Category="" data-da-link_link-Section="global-top-navigation" data-da-link_link-Header="persona-picker" data-da-link_link-Text="${items.personaSelectorName}" 
+data-da-link_link-Interaction-Method="" data-da-link_event="${items.personaSelectorName}">
+                <div class="persona-link__type hidden js-persona-type">
+                  ${items.personaSelectorType}
+                </div>
+                <div class="persona-link__name js-persona-name">
+                  ${items.personaSelectorName}
+                </div>
+                <div class="persona-link__description">
+                  ${items.personaSelectorDescription}
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="hidden" id="redirectURL" value=${data.homepagePath}>
+    </div>
+  </div>
+</sly>

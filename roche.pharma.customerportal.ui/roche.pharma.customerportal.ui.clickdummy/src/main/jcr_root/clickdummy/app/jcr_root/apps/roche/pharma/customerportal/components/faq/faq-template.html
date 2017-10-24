@@ -1,0 +1,42 @@
+<!--
+    Header  Component .
+
+    This is the  component for Header
+
+    -->
+<sly data-sly-template.faq_template="${@ data, flag}">
+  <section class="c-faq x-outer-margins x-component-spacing" data-module="faq">
+    <h1 class='c-faq__heading'>${data.headline}</h1>
+    <div class="c-faq__row js-faq-row">
+        <div data-sly-test="${data.faqQuestionAnswerArray}" data-sly-list.item="${data.faqQuestionAnswerArray}"
+            data-sly-unwrap>
+
+            <div class="c-faq__row__col">          
+              <input id="tab-${itemList.index}" type="checkbox" name="tabs2" data-fn-click="true"
+            data-da-satelliteTrackEvent="generic-link-tracking"data-da-link_link-Page-Name="" 
+            data-da-link_link-Category="" 
+            data-da-link_link-Section="${component.name}" 
+            data-da-link_link-Header="${data.headline}" 
+            data-da-link_link-Text="${item.question @ context='html'}" 
+data-da-link_link-Interaction-Method="">
+              <label for="tab-${itemList.index}" class="c-faq__question" data-fn-click="true"
+            data-da-satelliteTrackEvent="generic-link-tracking"data-da-link_link-Page-Name="" 
+            data-da-link_link-Category="" 
+            data-da-link_link-Section="${component.name}" 
+            data-da-link_link-Header="${data.headline}" 
+            data-da-link_link-Text="${item.question @ context='html'}" 
+data-da-link_link-Interaction-Method="">
+                <div class="ellipses c-faq__title">${item.question @ context="html"}
+                </div>
+                </label>
+              <div class="tab-content"> 
+                <div class="ellipses c-faq__description">
+                  ${item.answer @ context="html"}
+                </div>
+              </div> 
+            </div>  
+        </div>
+      </div>
+        
+  </section>
+ </sly>

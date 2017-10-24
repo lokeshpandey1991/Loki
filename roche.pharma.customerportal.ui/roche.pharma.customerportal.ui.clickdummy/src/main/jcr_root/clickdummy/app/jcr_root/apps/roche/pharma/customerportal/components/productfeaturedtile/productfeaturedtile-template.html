@@ -1,0 +1,18 @@
+<!-- this is the template for navigation menu -->
+<sly data-sly-template.productfeaturedtile_template="${@ data,flag}">
+  <ul data-sly-test="${data.results.products}" data-sly-list="${data.results.products}" class="c-featuredTile js-featured-tile">
+    <li class="c-featuredTile__list row">
+      <a href="${item.url}" class="c-featuredTile__link x-sub-hover">
+        <div class="c-featuredTile__productWrapper col-xs-12">
+          <div class="c-featuredTile__productAsset">
+            <img src="${item.image}" alt="${item.altText}">
+          </div>
+          <div class="c-featuredTile__productContent">
+            <span class="c-featuredTile__productTitle">${item.title}</span>
+            <span class="c-featuredTile__productCategory">${item.category}</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</sly>

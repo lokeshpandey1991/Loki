@@ -1,0 +1,45 @@
+<!--
+    Header  Component .
+
+    This is the  component for Header
+
+    -->
+<sly data-sly-template.marketingTile_template="${@ data, flag}">
+  <section class="c-marketingtile x-component-spacing ${data.imagePosition} ${data.variationType}" data-module="marketingTile">
+    <div class="c-marketingtile__row row">
+      <div data-sly-test="${data.fileReference}" class="c-marketingtile__col-right col-xs-12 col-sm-6" data-sly-unwrap>
+        <div class="c-marketingtile__col-right col-xs-12 col-sm-6">
+          <figure>
+            <sly  data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html" data-sly-call="${lib.dynamicimage_template @imagePath=data.fileReference, altText=data.altText}" />
+          </figure>
+        </div>
+      </div>
+      <div class="c-marketingtile__col-left col-xs-12 col-sm-6">
+        <div data-sly-test="${data.headline}" data-sly-unwrap>
+          <p class="c-marketingtile__title">${data.headline}</p>
+        </div>
+        <div data-sly-test="${data.articleTitle}" data-sly-unwrap>
+          <p class="c-marketingtile__subtitle"> ${data.articleTitle}</p>
+        </div>
+        <div data-sly-test="${data.articleSummary}" data-sly-unwrap>
+          <div class="c-marketingtile__description ellipses">${data.articleSummary @context="html"}
+          </div>
+          <div class="js-seemore">
+            <a class="more-link" href="${data.articleId}" itemprop="url" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"data-da-link_link-Page-Name="" data-da-link_link-Category="" data-da-link_link-Section="${data.variationType}" data-da-link_link-Header="${data.headline}" data-da-link_link-Text="${'rdoe_featuredproduct.seemore' @ i18n}" 
+data-da-link_link-Interaction-Method="" data-da-link_product-name="" data-da-link_product-category="" data-da-link_product-id=""  data-da-link_event="product-click"> ${"rdoe_featuredproduct.seemore" @ i18n}<span class="u-arrow" ><i class="right">arrow right</i></span></a>
+          </div>
+        </div>
+        <div data-sly-test="${data.ctaLabel}" data-sly-unwrap>
+          <p>
+            <a class="c-marketingtile__cta" href="${data.ctaLink}" itemprop="url" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"data-da-link_link-Page-Name="" data-da-link_link-Category="" data-da-link_link-Section="${component.name}" data-da-link_link-Header="${data.headline}" data-da-link_link-Text="${data.ctaLabel}" 
+data-da-link_link-Interaction-Method=""  data-da-link_product-name="${data.headline}" 
+data-da-link_product-category="${data.articleTitle}" 
+data-da-link_product-id="${data.articleId}" data-da-link_event="product-click"> ${data.ctaLabel} <span class="u-arrow"><i class="right">arrow right</i></span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</sly>

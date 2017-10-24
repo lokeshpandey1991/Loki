@@ -1,0 +1,89 @@
+<!--
+    Header  Component .
+
+    This is the  component for Header
+
+    -->
+<sly data-sly-template.pdpnavtabs_template="${@ data, flag}">
+  <nav data-module="pdpNavTabs" class="c-tabs-container js-tabs-container c-pdp-nav-tabs js-pdp-nav-tabs">
+    <ul class="c-tabs-list js-tabs-list" data-default-tab="${data.defaultTab}">
+      <li data-sly-test="${data.showTab1}" data-url="/" title="${data.titleTab1 @ i18n}" class="c-tab-list-item js-tab-item" data-tab-name="productInfo"  data-fn-click="true"
+            data-da-satelliteTrackEvent="product-detail-tracking"data-da-link_link-Page-Name=" " 
+            data-da-link_link-Category=" " 
+            data-da-link_link-Section="product-navigation" 
+            data-da-link_link-Header="${data.productName}" 
+            data-da-link_link-Text="${data.titleTab1 @ i18n}" 
+data-da-link_link-Interaction-Method="click-on-desktop"  data-da-link_product-name="${data.productName}" 
+data-da-link_product-category="${data.productName}" 
+data-da-link_product-id="${data.productId}">
+        <a href="#" class="x-sub-hover" data-fn-click="true"
+            data-da-satelliteTrackEvent="product-detail-tracking"data-da-link_link-Page-Name=" " 
+            data-da-link_link-Category=" " 
+            data-da-link_link-Section="product-navigation" 
+            data-da-link_link-Header="${data.productName}" 
+            data-da-link_link-Text="${data.titleTab1 @ i18n}" 
+data-da-link_link-Interaction-Method="click-on-desktop"
+data-da-link_product-name="${data.productName}" 
+data-da-link_product-category="${data.productName}" 
+data-da-link_product-id="${data.productId}">${data.titleTab1 @ i18n}</a>
+      </li>
+      <li data-sly-test="${data.showTab2}" data-url="/" title="${data.titleTab2 @ i18n}" class="c-tab-list-item js-tab-item" data-tab-name="productSpecs"  data-fn-click="true"
+            data-da-satelliteTrackEvent="product-detail-tracking"data-da-link_link-Page-Name=" " 
+            data-da-link_link-Category=" " 
+            data-da-link_link-Section="product-navigation" 
+            data-da-link_link-Header="${data.productName}" 
+            data-da-link_link-Text="${data.titleTab2 @ i18n}" 
+data-da-link_link-Interaction-Method="click-on-desktop"  data-da-link_product-name="${data.productName}" 
+data-da-link_product-category="${data.productName}" 
+data-da-link_product-id="${data.productId}">
+        <a href="#" class="x-sub-hover"  data-fn-click="true"
+            data-da-satelliteTrackEvent="product-detail-tracking"data-da-link_link-Page-Name="${data.productName}" 
+            data-da-link_link-Category="${data.productName}" 
+            data-da-link_link-Section="product-navigation" 
+            data-da-link_link-Header="${data.productName}" 
+            data-da-link_link-Text="${data.titleTab2 @ i18n}" 
+data-da-link_link-Interaction-Method="click-on-desktop" data-da-link_product-name="${data.productName}" 
+data-da-link_product-category="${data.productName}" 
+data-da-link_product-id="${data.productId}">${data.titleTab2 @ i18n}</a>
+      </li>
+      <li data-sly-test="${data.showTab3}" data-url="/" title="${data.titleTab3 @ i18n}" class="c-tab-list-item js-tab-item" data-tab-name="documents"  data-fn-click="true"
+            data-da-satelliteTrackEvent="product-detail-tracking"data-da-link_link-Page-Name=" " 
+            data-da-link_link-Category=" " 
+            data-da-link_link-Section="product-navigation" 
+            data-da-link_link-Header="${data.productName}" 
+            data-da-link_link-Text="${data.titleTab3 @ i18n}" 
+data-da-link_link-Interaction-Method="click-on-desktop"  data-da-link_product-name="${data.productName}" 
+data-da-link_product-category="${data.productName}" 
+data-da-link_product-id="${data.productId}">
+        <a href="#" class="x-sub-hover"  data-fn-click="true"
+            data-da-satelliteTrackEvent="product-detail-tracking"data-da-link_link-Page-Name=" " 
+            data-da-link_link-Category=" " 
+            data-da-link_link-Section="product-navigation" 
+            data-da-link_link-Header="${data.productName}" 
+            data-da-link_link-Text="${data.titleTab3 @ i18n}" 
+data-da-link_link-Interaction-Method="click-on-desktop"  data-da-link_product-name="${data.productName}" 
+data-da-link_product-category="${data.productName}" 
+data-da-link_product-id="${data.productId}">${data.titleTab3 @ i18n} </a>
+      </li>
+      <li data-sly-test="${data.showTab4}" data-url="/" title="${data.titleTab4 @ i18n}" class="c-tab-list-item js-tab-item" data-tab-name="relatedProducts"  data-fn-click="true"
+            data-da-satelliteTrackEvent="product-detail-tracking"data-da-link_link-Page-Name=" " 
+            data-da-link_link-Category=" " 
+            data-da-link_link-Section="product-navigation" 
+            data-da-link_link-Header="${data.productName}" 
+            data-da-link_link-Text="${data.titleTab4 @ i18n}" 
+data-da-link_link-Interaction-Method="click-on-desktop"  data-da-link_product-name="${data.productName}" 
+data-da-link_product-category="${data.productName}" 
+data-da-link_product-id="${data.productId}">
+        <a href="#" class="x-sub-hover"  data-fn-click="true"
+            data-da-satelliteTrackEvent="product-detail-tracking" data-da-link_link-Page-Name=" " 
+            data-da-link_link-Category=" " 
+            data-da-link_link-Section="product-navigation" 
+            data-da-link_link-Header="${data.productName}" 
+            data-da-link_link-Text="${data.titleTab4 @ i18n}" 
+data-da-link_link-Interaction-Method="click-on-desktop"  data-da-link_product-name="${data.productName}" 
+data-da-link_product-category="${data.productName}" 
+data-da-link_product-id="${data.productId}">${data.titleTab4 @ i18n}</a>
+      </li>
+    </ul> 
+  </nav>
+</sly>

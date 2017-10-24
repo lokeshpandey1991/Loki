@@ -1,0 +1,12 @@
+<!--
+    Header  Component .
+
+    This is the  component for Header
+
+    -->
+<sly data-sly-template.productDescription_template="${@ data, flag}">
+  <section data-sly-test='${data.productDescriptionHeading &&  data.productDescription}' class="x-outer-margins c-pdp-summary-desc ${data.isColumnView ? 'c-pdp-summary__col-layout' : ''} clearfix">
+     <h2 class="x-h6">${data.productDescriptionHeading}</h2> 
+     <div class="x-text">${data.productDescription @ context= 'html'}</div>
+  </section>
+</sly>

@@ -1,0 +1,28 @@
+<!--
+    Header  Component .
+
+    This is the  component for page level notifications
+
+    -->
+<sly data-sly-template.errorPage_template="${@ data, flag}">
+  <div class="c-page-notification-404 clearfix" data-module="errorPage">
+      <div class="c-page-notification-404__summary col-xs-12 col-sm-6">
+        <div class="c-page-notification-404__title" >
+          ${data.notificationTitle}
+        </div>
+        <div class="c-page-notification-404__description">
+          ${data.notificationDescription @ context= 'html'}
+        </div>
+      </div>
+      <div class="col-sm-2 hidden-xs border--line" data-sly-test="${data.links}">
+      </div>
+      <div class="c-page-notification-404__links-section col-xs-12 col-sm-4">
+        <div data-sly-test="${data.links}" data-sly-list.items="${data.links}" data-sly-unwrap>
+          <div class="link-row">
+            <a href="${items.linkURL}" class="link">${items.linkText} </a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</sly>

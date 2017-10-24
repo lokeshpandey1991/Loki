@@ -1,0 +1,41 @@
+<!--
+    Header  Component .
+
+    This is the  component for Header
+
+    -->
+<sly data-sly-template.featuretable_template="${@ data, flag}">
+  <section class="c-feature-table x-component-spacing" data-module="featureTable">
+    <div class="c-feature-table__btn">
+      <p class="c-feature-table__btn__titletext">${data.tableHeading}</p>
+     <a href="javascript:void(0)" data-action="${resource.name}" class="view-btn" title="${data.tableDescription}">${"rdoe_featuretable.viewTableButton" @ i18n}</a>
+   </div>
+    <div class="row">     
+      <div class="c-feature-table__wrapper js-table ${resource.name}">
+          <div class="c-feature-table__wrapper__header">
+            <div class="left-col">
+              <a href="javascript:void(0)" class="close js-close"  role="button">close
+              </a>
+            </div>
+            <div class="right-col"> 
+              <div class="right-col__row">
+                <p class="table-title">${data.tableHeading}</p>
+                <p class="table-description">${data.tableDescription}</p>                 
+              </div>
+            </div>
+          </div>
+          <div class="c-feature-table__wrapper__body">
+            <div class="c-feature-table__wrapper__body__inner js-table-height">
+              ${data.table @ context="html"}
+            </div>
+              
+          </div>
+          <div data-sly-test="${data.tableDisclaimer}" data-sly-unwrap>
+            <span class="disclaimer">${data.tableDisclaimer}</span>
+          </div>
+      </div>
+       
+    </div>
+     
+  </section>
+ </sly>

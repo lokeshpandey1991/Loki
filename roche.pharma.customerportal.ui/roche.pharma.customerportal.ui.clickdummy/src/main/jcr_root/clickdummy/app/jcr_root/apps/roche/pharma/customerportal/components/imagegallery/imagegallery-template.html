@@ -1,0 +1,46 @@
+<sly data-sly-template.imagegallery_template="${@ data, flag}">
+  <div class="c-gallery x-outer-margins x-component-spacing" data-module="imagegalleryCmp">
+    <div class="c-gallery__wrapper">
+
+      <div class="c-gallery__column-wrapper col-xs-12 col-sm-3 x-no-padding">
+        <div class="c-gallery__wrapper--one col-xs-6 col-sm-12 almost_visible x-no-padding" data-row="one">
+          <sly data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html"
+               data-sly-call="${lib.dynamicimage_template @imagePath=data.fileReference1, imageView='image1',
+                              altText=data.altText1, className='c-gallery__image'}" />
+        </div>
+        <div class="c-gallery__wrapper--two js-row-two col-xs-6 col-sm-12 almost_visible x-no-padding" data-row="two">
+          <sly data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html"
+               data-sly-call="${lib.dynamicimage_template @imagePath=data.fileReference2, imageView='image2',
+                              altText=data.altText2, className='c-gallery__image'}" />
+        </div>
+      </div>
+      <div class="c-gallery__top-wrapper col-sm-9 x-no-padding js-visible-onscroll" data-select-row="one">
+        <div class="c-gallery__wrapper--three js-row-one col-sm-7 almost_visible x-no-padding" data-row="one">
+          <sly data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html"
+               data-sly-call="${lib.dynamicimage_template @imagePath=data.fileReference3, imageView='image3',
+                              altText=data.altText3, className='c-gallery__image'}" />
+          <div class="c-gallery__img-overlay">
+            <span class="c-gallery__img-title">${data.imageHeadline}</span>
+          </div>
+        </div>
+        <div class="c-gallery__wrapper--five js-row-one col-xs-6 col-sm-5 almost_visible x-no-padding" data-row="one">
+          <sly data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html"
+               data-sly-call="${lib.dynamicimage_template @imagePath=data.fileReference5, imageView='image5',
+                              altText=data.altText5, className='c-gallery__image'}"/>
+        </div>
+      </div>
+      <div class="c-gallery__bottom-wrapper col-sm-9 x-no-padding js-visible-onscroll" data-select-row="two">
+        <div class="c-gallery__wrapper--four js-row-two col-xs-6 col-sm-4 almost_visible x-no-padding" data-row="two">
+          <sly data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html"
+               data-sly-call="${lib.dynamicimage_template @imagePath=data.fileReference4, imageView='image4',
+                              altText=data.altText4, className='c-gallery__image'}"/>
+        </div>
+        <div class="c-gallery__wrapper--six js-row-two col-xs-6 col-sm-8 almost_visible x-no-padding" data-row="two">
+          <sly data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html"
+               data-sly-call="${lib.dynamicimage_template @ imagePath=data.fileReference6, imageView='image6',
+                              altText=data.altText6, className='c-gallery__image'}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

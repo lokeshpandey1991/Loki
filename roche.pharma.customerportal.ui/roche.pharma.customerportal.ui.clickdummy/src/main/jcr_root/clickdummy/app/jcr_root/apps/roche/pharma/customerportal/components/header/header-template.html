@@ -1,0 +1,78 @@
+<sly data-sly-template.header_template="${@ data, flag}">
+  <input type="hidden" name="currentPagepath" value="${data.currentResolvedPath}">
+  <input type="hidden" name="currentChannel" value="${data.currentChannel}">
+  <header class="c-header x-component-spacing" data-module="headerNavigationComp">
+    <div class="c-header__wrapper c-header__wrapper--sticky js-header-wrapper">
+      <div class="c-header__primary">
+        <button type="button" class="c-header__menu x-hamburger-icon js-menu" itemprop="image" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-header="hamburger-menu-overlay"
+               data-da-link_link-text="${'rdoe_global.hamburger' @ i18n}"
+data-da-link_link-interaction-method="" >
+          <span class="sr-only">${'rdoe_global.hamburger' @ i18n} </span>
+        </button>
+        <div data-sly-test="${data.headerLinksList}" data-sly-list="${data.headerLinksList}" data-sly-unwrap>
+          <a data-sly-test="${item.pageName && item.pagePath}" href="${item.pagePath}${item.pageSuffix}" itemprop="url"
+             class="c-header__link c-header__nav-link hidden-xs ${currentPage.path==item.pagePath ? 'active' : ''}"
+             data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-text="${item.pageName}" data-da-link_link-interaction-method="" >
+            <span class="content">${item.pageName}</span>
+          </a>
+        </div>
+         <a data-searchUrl="${data.searchUrl}" data-searchResult="${data.searchResultPath}" data-searchLimit="${data.searchLimit}" href="#" class="c-header__link c-header__nav-link c-header__link--search js-link-search" 
+         data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-text="search-overlay" data-da-link_link-interaction-method="" >
+          <span class="x-search-icon" itemprop="image">${'rdoe_global.search' @ i18n} </span>
+        </a>
+      </div>
+      <div class="c-header__secondry">
+        <a class="c-header__link c-header__nav-link c-header__link--margin" itemprop="url" href="${data.homePagePath}.html" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-Name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-text="${'rdoe_global.siteName' @ i18n}" data-da-link_link-interaction-method="">
+          ${'rdoe_global.siteName' @ i18n}
+        </a>
+        <a href="javascript:void(0);" data-url="${data.countrySelectorPath}/_jcr_content/par/countryselector.html" class="c-header__link c-header__nav-link c-header__link--margin current-country js-link-country" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-header="country-selector"
+               data-da-link_link-text="${data.countryCode}" data-da-link_link-interaction-method="">
+          ${data.countryCode}
+        </a>
+        <a href="javascript:void(0);"  data-url="${data.personaSelectorPath}/_jcr_content/par/personapicker.html" data-sly-test="${!data.isPersonaDisabled}" class="c-header__link c-header__nav-link c-header__link--margin persona-link js-header-persona-link hidden-xs" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-text="${data.persona}"
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-header="persona-picker"
+                data-da-link_link-interaction-method="">
+          ${data.persona}
+        </a>
+        <a class="c-header__link c-header__link--logo x-sub-hover" itemprop="url" href="${data.homePagePath}.html" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-text="${data.logoAltText}" data-da-link_link-interaction-method="">
+          <img src="${data.logoPath}" itemprop="logo" alt="${data.logoAltText}" />
+        </a>
+      </div>
+    </div>
+  </header>
+

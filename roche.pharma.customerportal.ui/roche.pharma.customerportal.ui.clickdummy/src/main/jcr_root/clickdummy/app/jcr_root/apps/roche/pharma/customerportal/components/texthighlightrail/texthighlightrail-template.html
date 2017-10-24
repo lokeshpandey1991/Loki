@@ -1,0 +1,9 @@
+<sly data-sly-template.texthighlightrail_template="${@ data, flag}">
+  <div class="c-text-highlight-rail js-text-highlight-rail">
+    <h5 class="c-text-highlight-rail__headline">${data.headline}</h5>
+    <div class="c-text-highlight-rail__body-text">${data.bodyText @ context='html'}</div>
+    <sly data-sly-test="${data.ctaLink}">
+      <a role="navigation" href="${data.ctaLink}${data.isExternal?'' : '.html'}" title="${data.ctaName}" class="x-sub-hover c-text-highlight-rail__cta" data-fn-click="true" data-da-satelliteTrackEvent="generic-link-tracking" data-da-link_link-Page-Name="" data-da-link_link-Category="" data-da-link_link-Section="text-highlight-rail" data-da-link_link-Header="${data.headline}" data-da-link_link-Text="${data.ctaName}" data-da-link_link-Interaction-Method="" data-da-link_contact-Us-Method="${data.contentType}" > ${data.ctaName} <span class="x-secondary-cta text-highlight-rail__secondary-cta"></span></a>
+    </sly>
+  </div>
+</sly>

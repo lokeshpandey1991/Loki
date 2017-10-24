@@ -1,0 +1,30 @@
+<!--
+    Header  Component .
+
+    This is the  component for page level notifications
+
+    -->
+<sly data-sly-template.pageNotification_template="${@ data, flag}">
+  <div class="js-page-notification c-page-notification hidden" data-module="pageNotification">
+    <div class="js-notification-type js-notification-${data.notificationType}">
+      <div class="c-page-notification__left-col">
+        <div class="left-wrapper">
+          <div class="c-page-notification__title js-title">
+            ${data.notificationTitle} 
+          </div>
+          <div class="c-page-notification__description js-description">
+            ${data.notificationTitle} 
+          </div>
+        </div>
+        <a class="CTA-link x-sub-hover js-link" href="${data.notificationCTALink}">
+            <span class='sr-only'>text</span>
+            ${data.notificationCTAText}
+        </a>
+      </div>
+      <div class="c-page-notification__right-col right">
+        <a href="javascript:void(0)" class="close js-close notification--close x-sub-hover" role="button">close
+        </a>
+      </div>
+    </div>
+  </div>
+</sly>

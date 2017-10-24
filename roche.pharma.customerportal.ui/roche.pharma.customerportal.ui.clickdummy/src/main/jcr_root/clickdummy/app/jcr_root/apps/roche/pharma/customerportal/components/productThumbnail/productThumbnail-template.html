@@ -1,0 +1,26 @@
+'
+<!-- this is the template for navigation menu -->
+<sly data-sly-template.productThumbnail_template="${@ data,flag}">
+  <div class="c-product-thumbnail x-outer-margins">
+    <div data-sly-test="${data.productThumbnailsList }" data-sly-list.items=${data.productThumbnailsList} data-sly-unwrap>
+      <div class="c-product-thumbnail__item">
+        <div class="c-product-thumbnail__link">
+          <a href="${items.productPath}" class="x-sub-hover" data-fn-click="true" data-da-satelliteTrackEvent="generic-link-tracking" data-da-link_link-Page-Name="" data-da-link_link-Category="" data-da-link_link-Section="event-thumbnail" data-da-link_link-Header="${items.productTitle}" data-da-link_link-Text="${items.altText}" data-da-link_link-Interaction-Method="">
+            <sly  data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html" data-sly-call="${lib.dynamicimage_template @imagePath=items.fileReference, altText=items.altText, className= 'c-product-thumbnail__img'}" />
+          </a>
+        </div>
+        <div class="c-product-thumbnail__name">
+          ${items.productTitle}
+        </div>
+        <div class="c-product-thumbnail__description">
+          <div data-sly-test="${items.tagsId}" data-sly-list.item="${items.tagsId}" data-sly-unwrap>
+            <span>${item}</span>
+            <div data-sly-test=${!itemList.last} data-sly-unwrap>
+              <span>,</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

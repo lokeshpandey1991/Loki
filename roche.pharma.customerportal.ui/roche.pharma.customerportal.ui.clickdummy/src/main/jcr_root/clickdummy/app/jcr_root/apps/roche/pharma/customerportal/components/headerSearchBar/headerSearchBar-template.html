@@ -1,0 +1,39 @@
+<sly data-sly-template.headerSearchBar_template>
+    <aside class="hidden js-search-bar-navigation">
+    <div class="c-header-search-bar x-liipbox js-liipbox-content" id="header-search-bar" data-module="headerSearchComp">
+        <div class="header-search-overlay js-header-search-overlay">
+            <div class="x-liipbox__top-section js-liipbox-top-section ">
+               <div class="col-1 x-liipbox__left-s">
+                <button class="navbar-toggle js-cross-icon">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="sr-only">${'rdoe_searchResultBar.closeSearchText' @ i18n}</span>
+                </button>
+               </div>
+                <div class="persona-text x-liipbox__text ellipsis">${'rdoe_searchResultBar.searchText' @ i18n}</div>
+            </div>
+            <div class="roche-header-search-box">
+                <fieldset>
+                    <legend class="sr-only">${'rdoe_searchResultBar.searchText' @ i18n}</legend>
+                    <label for="header-search-input" class="sr-only">${'rdoe_searchResultBar.searchText' @ i18n}</label>
+                    <input class="roche-header-search-input" placeholder="${'rdoe_searchResultBar.typeHereText' @ i18n}" data-placeholder="${'rdoe_searchResultBar.typeHereText' @ i18n}" id="header-search-input" type="text" autocomplete="off" name="headerSearch" maxlength="150">
+                    <i class="header-search-button" id="header-search"></i>
+                </fieldset>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="header-search-result-container">
+                            <div class="header-search-result"></div>
+                        </div>
+                        <div class="header-search-predictive">
+                            <div class="predictive-search-results">
+                                ${'rdoe_searchResultBar.didYouMeanText' @ i18n} <p class="header-predictive-item"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </aside>
+</sly>

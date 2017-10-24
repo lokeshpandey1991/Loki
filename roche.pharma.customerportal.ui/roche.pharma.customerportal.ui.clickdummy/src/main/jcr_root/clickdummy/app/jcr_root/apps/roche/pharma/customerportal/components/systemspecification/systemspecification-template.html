@@ -1,0 +1,43 @@
+<!--
+    Header  Component .
+
+    This is the  component for Header
+
+    -->
+<sly data-sly-template.systemspecification_template="${@ data, flag}">
+  <section data-module="systemspecification" class="c-pdp-specs-container js-specifications-container js-specifications-container-author x-outer-margins" data-sly-test="${data.proSysDataList.size}">
+      <!--/* heading section */-->
+      <div class="c-pdp-specs-heading clearfix">
+        <h2>${data.secTitle}</h2>
+        <div class="c-pdp-specs-seeall js-pdp-specs-see-all" data-sly-test="${data.moreLinkCheck}">
+          <a class="x-sub-hover" href="${data.systemSpecificationDoc}" target="_blank" data-fn-click="true"
+            data-da-satelliteTrackEvent="product-detail-tracking"data-da-link_link-Page-Name=" " 
+            data-da-link_link-Category=" " 
+            data-da-link_link-Section="${data.componentName}" 
+            data-da-link_link-Header=" " 
+            data-da-link_link-Text="${'rdoe_pdpfeaturespecs.seeAllSpecifications' @ i18n}" 
+data-da-link_link-Interaction-Method="click-on-desktop"
+data-da-link_product-name="${data.productName}" 
+data-da-link_product-category="${data.productName}" 
+data-da-link_product-id="${data.productId}">
+          ${'rdoe_pdpfeaturespecs.seeAllSpecifications' @ i18n}
+          <span class="u-arrow u-arrow-blue"><i class="right"></i></span>  
+          </a>
+        </div>
+      </div>
+      <!--/* heading section */-->
+      <div class="c-pdp-spec-wrapper">
+        <ul class="c-pdp-specs-list js-system-specification" data-sly-list.item="${data.proSysDataList}">
+            <!--/* For w3c compliance, will be replcaed by dynamic content */-->
+            <li class="clearfix c-pdp-spec-item js-pdp-spec-item">
+              <p class="c-pdp-spec">
+                <span class="c-pdp-spec-label">${item.subHeading}</span>
+                <span class="c-pdp-spec-line"></span></p>
+              <p class="c-pdp-spec-desc">
+                <span>${item.subDescription}</span>
+              </p>
+            </li>
+        </ul>
+      </div>
+  </section>
+</sly>
