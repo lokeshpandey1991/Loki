@@ -3,43 +3,29 @@
       <div class="c-carousel__title" data-sly-test="${data.secTitle}">
         ${data.secTitle}
       </div>
-      <div class="c-carousel__events-content js-carousel-content" data-sly-test="${data.assetList}" data-sly-list="${data.assetList}">
-        <div class="c-carousel__event-item js-event-item" data-slide-index="${itemList.index}" data-fn-click="true"
-            data-da-satelliteTrackEvent="generic-link-tracking"
-            data-da-link_link-page-name="" data-da-link_link-category="" data-da-link_link-section="${item.assetType}" data-da-link_link-text="${item.assetHeading}"   
-data-da-link_link-interaction-method="" >
-          <div class="c-carousel__event-asset no-animation-xs animated js-asset-wrapper">
-            <div class="c-carousel__event-asset__innerWrapper">
-              <div data-sly-test="${item.assetType=='image'}" data-sly-unwrap>
-                <sly data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html" data-sly-call="${lib.dynamicimage_template @imagePath=item.assetPath,
-                altText=item.assetAltText, className='js-event-asset'}"/>
-              </div>
-              <div data-sly-test="${item.assetType=='video'}" data-sly-unwrap>
-                <sly data-sly-call="${lib4.video_template @ data=item, id=itemList.index}" />
-              </div>
-            </div>
-          </div>
-          <div class="c-carousel__event-asset--cloned hidden-xs hidden js-asset-wrapper-cloned" data-sly-test="${item.assetType=='image'}">
-            <sly data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html" data-sly-call="${lib.dynamicimage_template @imagePath=item.assetPath,
-            altText=item.assetAltText, className='js-event-asset-cloned'}"/>
-          </div>
-          <div class="c-carousel__event-content animated">
-            <div class="c-carousel__event-title x-spacing-small">
-              ${item.assetHeading}
-            </div>
-            <div class="c-carousel__event-description x-spacing-small ellipses">
-              ${item.bodyText @context='html'}
-            </div>
-            <a data-sly-test="${item.linkPath}" href="${item.linkPath}" itemprop="url" class="c-carousel__event-link x-sub-hover" target="${item.linkBehaviour}"
-            data-fn-click="true"
-            data-da-satelliteTrackEvent="generic-link-tracking"
-            data-da-link_link-page-name="" data-da-link_link-category="" data-da-link_link-section="${component.name}"  data-da-link_link-text="${data.buttonTitle}"  
-data-da-link_link-interaction-method="" >
-              ${data.buttonTitle}
-              <span class="x-secondary-cta c-carousel__secondary-cta"></span>
-            </a>
-          </div>
-        </div>
-      </div>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://www.w3schools.com/images/picture.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="https://www.w3schools.com/images/picture.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="https://www.w3schools.com/images/picture.jpg" alt="New York">
+    </div>
+  </div>
+
+</div>
     </section>
 </sly>

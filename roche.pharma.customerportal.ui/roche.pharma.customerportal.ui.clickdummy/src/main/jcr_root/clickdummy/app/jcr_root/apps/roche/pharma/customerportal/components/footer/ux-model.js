@@ -1,36 +1,36 @@
 use(function() {
  var data = {
-  "disclaimer": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
-  "tradeMark": "@2017 F. Holfman lA-Roche Ltd.",
+  "disclaimer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel eleifend nunc. Cras cursus interdum diam ac convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi euismod, dolor a volutpat iaculis, elit magna maximus nunc, vitae auctor nibh eros in odio. Nullam quis metus vel est consectetur tempus. Proin ultrices vehicula odio et porta. Nunc arcu sapien, vulputate sed urna sed, scelerisque molestie tellus. Morbi dapibus et justo id dapibus. Aenean luctus tellus et ex rhoncus, ut tincidunt neque scelerisque. Ut tempor ac enim id pulvinar. Nulla vehicula finibus nibh. Aliquam sapien ligula, tincidunt a eros vel, maximus pulvinar magna.",
+  "tradeMark":"tradeMark",
   "language": "English",
-  "countrySelectorPath": "/content/customerportal/us",
+  "countrySelectorPath": "",
   "countryCode": "US",
   "footerLinksList": [{
       "pageName": "Contact Us",
-      "pagePath": "/content/customerportal/us",
+      "pagePath": "",
       "pageSuffix": ""
     },
     {
       "pageName": "Privacy policy",
-      "pagePath": "/content/customerportal/us",
+      "pagePath": "",
       "pageSuffix": ""
     }
   ],
   "socialList": [{
       "socialMediaOption": "facebook",
-      "socialLink": "/content/customerportal/us"
+      "socialLink": ""
     },
     {
       "socialMediaOption": "twitter",
-      "socialLink": "/content/customerportal/us"
+      "socialLink": ""
     },
     {
       "socialMediaOption": "linkedin",
-      "socialLink": "/content/customerportal/us"
+      "socialLink": ""
     },
     {
       "socialMediaOption": "youtube",
-      "socialLink": "/content/customerportal/us"
+      "socialLink": ""
     }
   ]
 }

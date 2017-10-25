@@ -1,6 +1,6 @@
 use(function() {
  var data = {
-  "secTitle": "Headline",
+  "secTitle": "Sample Carousel",
   "buttonTitle":"Learn More",
   "assetList": [{
       "assetHeading": "Demonstration Recap",
@@ -8,7 +8,7 @@ use(function() {
       "assetType": "image",
       "linkBehaviour": "_self",
       "linkPath": "/content/roche/pharma/customerportal/us",
-      "assetPath": "/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/photo-1.jpg",
+      "assetPath": "https://www.w3schools.com/images/picture.jpg",
       "bodyText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, rem aperiam nemo enim ipsam. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
     },
     {
@@ -17,7 +17,7 @@ use(function() {
       "assetType": "image",
       "linkBehaviour": "_blank",
       "linkPath": "/content/roche/pharma/customerportal/us",
-      "assetPath": "/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/photo-2.jpg",
+      "assetPath": "https://www.w3schools.com/images/picture.jpg",
       "bodyText": "<p>Performed on blood, tissue or other patient</p>"
     },
     {
@@ -27,33 +27,6 @@ use(function() {
       "linkBehaviour": "_self",
       "linkPath": "",
       "assetPath": "https://www.html5rocks.com/en/tutorials/video/basics/devstories.webm",
-      "bodyText": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>"
-    },
-    {
-      "assetHeading": "Image Testing4",
-      "assetAltText": "Not Available",
-      "assetType": "image",
-      "linkBehaviour": "_self",
-      "linkPath": "",
-      "assetPath": "/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/photo-4.jpg",
-      "bodyText": "<p>Performed on blood, tissue or other patient</p>"
-    },
-    {
-      "assetHeading": "Image Testing2",
-      "assetAltText": "Not Available",
-      "assetType": "image",
-      "linkBehaviour": "_self",
-      "linkPath": "/content/roche/pharma/customerportal/us",
-      "assetPath": "/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/photo-5.jpg",
-      "bodyText": "<p>Performed on blood, tissue or other patient</p>"
-    },
-    {
-      "assetHeading": "Image Testing3",
-      "assetAltText": "Not Available",
-      "assetType": "image",
-      "linkBehaviour": "_self",
-      "linkPath": "",
-      "assetPath": "/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/photo-6.jpg",
       "bodyText": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>"
     }
   ]

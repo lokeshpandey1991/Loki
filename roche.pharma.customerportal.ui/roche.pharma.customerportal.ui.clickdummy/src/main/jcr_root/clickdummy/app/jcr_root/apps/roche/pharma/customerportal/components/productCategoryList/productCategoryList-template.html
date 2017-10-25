@@ -5,27 +5,6 @@
 
     -->
 <sly data-sly-template.productCategoryList_template="${@ data, flag}">
-    <div data-module="productCategoryList"
-         class="product-category js-product-list-container js-tab-view x-component-spacing"
-         id="${data.filterTag}"
-         data-product-count="${data.categoryListing.size}">
-        <div class="product-category__content"
-             data-sly-list.items="${data.categoryListing}">
-            <div class="product-category__content--cardWrapper col-md-6 col-xs-12">
-                <a href="${items.categoryURL}"
-                   class="product-category__content--card ellipses x-sub-hover" data-fn-click="true"
-            data-da-satelliteTrackEvent="product-click-tracking"data-da-link_link-Page-Name="" 
-            data-da-link_link-Category="" 
-            data-da-link_link-Section="${component.name}" 
-            data-da-link_link-Header="${data.filterTag}" 
-            data-da-link_link-Text="${items.categoryTitle}" 
-data-da-link_link-Interaction-Method="click-on-desktop" data-da-link_product-name="${items.categoryTitle}" 
-data-da-link_product-category="${items.categoryTitle}" 
-data-da-link_product-id="${data.productId}" data-da-link_event="content-clicked" data-da-link_content-type="${items.categoryTitle}" data-da-link_content-title="${items.categoryTitle}" >
-                    <h3 class="product-category__content--title">${items.categoryTitle}</h3>
-                    <div class="product-category__content--description">${items.categoryDescription}</div>
-                </a>
-            </div>
-        </div>
-    </div>
+
+  
 </sly>

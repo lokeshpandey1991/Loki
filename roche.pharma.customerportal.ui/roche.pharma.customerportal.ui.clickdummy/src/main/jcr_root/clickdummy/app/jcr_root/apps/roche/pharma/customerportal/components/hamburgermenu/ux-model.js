@@ -2,71 +2,71 @@ use(function() {
  var data = {
   "languageCode": "English",
   "countryCode": "US",
-  "countrySelectorPath": "/content/roche/pharma/customerportal/us",
+  "countrySelectorPath": "",
   "isPersonaDisabled": "false",
-  "personaSelectorPath": "/content/dam/roche/customerportal.html",
+  "personaSelectorPath": "",
   "logoAltText": "Roche Logo Alt Text",
   "hamburgerMenuLeftLinks": [{
-      "pageName": "Sign in",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 1",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""
     },{
-      "pageName": "Innovations",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 2",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""
     },{
-      "pageName": "Products",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 3",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""
     },
     {
-      "pageName": "Documentation",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 4",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""
     }
   ],
   "hamburgerMenuRightLinks": [{
-      "pageName": "Events",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 5",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""
     },
     {
-      "pageName": "Careers",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 6",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""
     },{
-      "pageName": "Knowledge center",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 7",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""
     },{
-      "pageName": "About roche",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 8",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""
     },{
-      "pageName": "News",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 9",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""
     },{
-      "pageName": "Contact us",
-      "pagePath": "/content/roche/pharma/customerportal/us",
+      "pageName": "Link 10",
+      "pagePath": "",
       "pageSuffix": "",
       "isVisibleOnMobile": "",
       "linkBehaviour": ""

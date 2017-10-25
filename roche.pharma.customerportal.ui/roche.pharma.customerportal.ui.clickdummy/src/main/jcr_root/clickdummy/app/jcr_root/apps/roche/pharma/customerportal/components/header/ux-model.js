@@ -1,24 +1,24 @@
 use(function() {
  var data = {
-  "homePagePath": "/content/customerportal/us",
+  "homePagePath": "",
   "logoPath": "/content/dam/roche/roche-logo.svg",
   "logoAltText": "Roche Logo Alt Text",
-  "countryCode": "us",
-  "countrySelectorPath": "/content/dam/roche/customerportal",
+  "countryCode": "Country Code",
+  "countrySelectorPath": "/content/dam/roche/pharma",
   "isPersonaDisabled": "false",
-  "persona": "professionals",
-  "personaSelectorPath": "/content/dam/roche/customerportal",
+  "persona": "Persona ",
+  "personaSelectorPath": "/content/dam/roche/pharma",
   "searchUrl":"http://sp10015dbf.guided.ss-omtrdc.net",
-  "searchResultPath":"/content/customerportal/us",
+  "searchResultPath":"",
   "searchLimit":"20",
   "headerLinksList": [{
       "pageName": "Innovations",
-      "pagePath": "/content/customerportal/us",
+      "pagePath": "",
       "pageSuffix": ""
     },
     {
       "pageName": "Products",
-      "pagePath": "/content/customerportal/us",
+      "pagePath": "",
       "pageSuffix": ""
     }
   ]

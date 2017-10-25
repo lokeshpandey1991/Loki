@@ -1,36 +1,4 @@
 <sly data-sly-template.assayMenu_template="${@ data, flag}">
-  <div class="c-assay-menu__key--m js-tab-view key">
-    <div data-sly-test="${data.legends}" data-sly-list.items="${data.legends}" data-sly-unwrap>
-      <div class="c-assay-menu__key">
-        <div class="${items.legendClass}">${items.legendName}</div>
-      </div>
-    </div>
-  </div>
-  <div class="c-assay-menu__content js-tab-view ${data.productId}">
-    <h2 class="compare-heading hidden-xs">${data.title}</h2>
-    <div class="c-assay-menu__key-list key-list--m">
-      <div data-sly-test="${data.legends}" data-sly-list.items="${data.legends}" data-sly-unwrap>
-        <div class="c-assay-menu__key">
-          <div class="${items.legendClass}">${items.legendName} @i18n</div>
-        </div>
-      </div>
-    </div>
-    <div class="c-assay-menu__related-assays clearfix">
-      <div data-sly-test="${data.relatedAssaysMap}" data-sly-list.items="${data.relatedAssaysMap}" data-sly-unwrap>
-        <div class="col-xs-12 col-sm-4 assay-col content-wrap">
-          <div class="assay-name">
-            ${items.categoryName}
-          </div>
-          <div data-sly-test="${items.assays}" data-sly-list.items="${items.assays}" data-sly-unwrap>
-            <div class="assay-${itemsList.index} assay-title">
-              <a href="${items.assayUrl}" class="${items.legend}" itemprop="url" data-fn-click="true" data-da-satelliteTrackEvent="product-detail-tracking" data-da-link_link-Page-Name="" data-da-link_link-Category="" data-da-link_link-Section="assay-menu" data-da-link_link-Header="${data.title}" data-da-link_link-Text="${items.assayTitle}"  data-da-link_link-Interaction-Method="" data-da-link_product-Name="${data.productName}" data-da-link_product-Category="${items.productId}"
-              data-da-link_product-Id="${data.productId}">${items.assayTitle}
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div></div>
 </sly>
 

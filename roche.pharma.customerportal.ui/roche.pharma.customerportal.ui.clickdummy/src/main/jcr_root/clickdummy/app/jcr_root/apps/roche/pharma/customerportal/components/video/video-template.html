@@ -1,95 +1,12 @@
+<!--
+    Video  Component .
+
+    This is the  component for Video
+
+    -->
+
 <template data-sly-template.video_template="${@ data, id}">
     <div class="c-video x-component-spacing" data-module="video">
-        <sly data-sly-test="${data.assetPath}">
-            <div class="layer-cnt video-info">
-                <div class="jp-video-play" data-fn-click="true"
-             data-da-satelliteTrackEvent="video-tracking"
-               data-da-link_link-page-name=""  
-data-da-link_link-interaction-method="" data-da-video_video-name="${data.headline}" data-da-video_video-start-type="user-initiated" data-da-video_video-details="en-jp-player" data-da-link_event="video-play">
-                    <div class="jp-video-play-icon" role="button" tabindex="0" data-fn-click="true"
-             data-da-satelliteTrackEvent="video-tracking"
-               data-da-link_link-page-name=""  
-data-da-link_link-interaction-method="" data-da-video_video-name="${data.headline}" data-da-video_video-start-type="user-initiated" data-da-video_video-details="en-jp-player" data-da-link_event="video-play"></div>
-                </div>
-                <sly data-sly-test="${data.headline}">
-                    <header class="jp-heading-vid headline animated slideInUp" role="heading">
-                        <h5 class="h5">
-                            ${data.headline @ context='html'}
-                        </h5>
-                    </header>
-                </sly>
-            </div>
-            <sly data-sly-test="${data.transparentOverlay == 'true'}">
-                <div class="layer-opaque"></div>
-            </sly>
-            <!--/* Video Player's UI */-->
-            <div id="jp_container_${id}" class="jp-audio" role="application" aria-label="media player">
-                <!--/* Video Player */-->
-            <div id="jquery_jplayer_${id}" class="jp-jplayer" data-fileref="${data.assetPath}" data-posterref="${data.posterLink}"></div>
-            <div class="hide x-cross-button j-cross-button c-cross-button"></div>
-                <div class="jp-type-single c-index-class">
-                    <div class="jp-interface">
-                        <div class="jp-gui">
-                            <div class="jp-progress">
-                                <div class="jp-seek-bar">
-                                    <div class="jp-play-bar" data-fn-click="true"
-             data-da-satelliteTrackEvent="video-tracking"
-               data-da-link_link-page-name="" 
-data-da-link_link-interaction-method="" data-da-video_video-name="${data.headline}" data-da-video_video-start-type="user-initiated" data-da-video_video-details="en-jp-player" data-da-link_event="video-play"></div>
-                                </div>
-                            </div>
-                            <div class="jp-volume-controls">
-                                <div class="jp-volume-bar">
-                                    <div class="jp-volume-bar-value"></div>
-                                </div>
-                            </div>
-                            <div class="jp-controls-holder">
-                                <div class="jp-controls">
-                                    <div class="jp-video-ctrl vid-play" role="button" tabindex="0" data-fn-click="true"
-             data-da-satelliteTrackEvent="video-tracking"
-               data-da-link_link-page-name=""  
-data-da-link_link-interaction-method="" data-da-video_video-name="${data.headline}" data-da-video_video-start-type="user-initiated" data-da-video_video-details="en-jp-player" data-da-link_event="video-play"></div>
-                                    <div class="jp-video-ctrl vol-ctrl" role="button" tabindex="0" data-fn-click="true"
-             data-da-satelliteTrackEvent="video-tracking"
-               data-da-link_link-page-name="" 
-data-da-link_link-interaction-method="" data-da-video_video-Name="${data.headline}" data-da-video_video-start-type="user-initiated" data-da-video_video-details="en-jp-player" data-da-link_event="volume"></div>
-                                    <div class="jp-video-ctrl vol-ctrl-view">
-                                        <label for="videoRange" class="x-hidden-text">inputRange</label>
-                                        <input type="range" min="0" max="100" step="2" value="100" id="videoRange" />
-                                    </div>
-                                </div>
-                                <div class="jp-controls controls-right">
-                                  <div class="jp-video-ctrl jp-timer">
-                                    <span class="jp-current-time" role="timer" aria-label="time" data-fn-click="true"
-             data-da-satelliteTrackEvent="video-tracking"
-               data-da-link_link-page-name=""  
-data-da-link_link-interaction-method="" data-da-video_video-name="${data.headline}" data-da-video_video-start-type="user-initiated" data-da-video_video-details="en-jp-player" data-da-link_event="current-time">&nbsp;</span>
-                                    <span role="separator">/</span>
-                                    <span class="jp-duration" role="timer" aria-label="duration" data-fn-click="true"
-             data-da-satelliteTrackEvent="video-tracking"
-               data-da-link_link-page-name=""  
-data-da-link_link-interaction-method="" data-da-video_video-name="${data.headline}" data-da-video_video-start-type="user-initiated" data-da-video_video-details="en-jp-player" data-da-link_event="duration">&nbsp;</span>
-                                  </div>
-                                  <div class="jp-toggles c-toggles">
-                                    <div class="jp-full-screen full-scr" role="button" tabindex="0" data-fn-click="true"
-             data-da-satelliteTrackEvent="video-tracking"
-               data-da-link_link-page-name=""
-data-da-link_link-interaction-method="" data-da-video_video-name="${data.headline}" data-da-video_video-start-type="user-initiated" data-da-video_video-details="en-jp-player" data-da-link_event="full-screen"></div>
-                                </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="jp-details">
-                        <div class="jp-title" aria-label="title">&nbsp;</div>
-                    </div>
-                    <div class="jp-no-solution">
-                        <span>Update Required</span>
-                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-                    </div>
-                </div>
-            </div>
-        </sly>
+        
     </div>
 </template>

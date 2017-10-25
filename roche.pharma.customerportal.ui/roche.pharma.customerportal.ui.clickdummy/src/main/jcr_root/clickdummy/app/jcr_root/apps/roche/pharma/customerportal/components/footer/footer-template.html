@@ -7,39 +7,8 @@
 <sly data-sly-template.footer_template="${@ data, flag}">
   <footer class="c-footer js-footer x-component-spacing" data-module="footerCmp">
     <div class="c-footer__wrapper">
-      <div class="col-xs-9">
-        <ul>
-          <div data-sly-test="${data.footerLinksList}" data-sly-list="${data.footerLinksList}" data-sly-unwrap>
-            <li>
-              <a class="c-footer__link" data-sly-test="${item.pageName && item.pagePath}" href="${item.pagePath}${item.pageSuffix}" target="${item.linkBehaviour}" itemprop="url" data-fn-click="true"
-              data-da-satelliteTrackEvent="generic-link-tracking"
-               data-da-link_link-page-Name=""
-               data-da-link_link-category=""
-               data-da-link_link-header=""
-               data-da-link_link-section="footer"
-               data-da-link_link-text="${item.pageName}"
-data-da-link_link-interaction-method="" >
-              <span class="c-footer__text">${item.pageName}</span>
-            </a>
-            </li>
-          </div>
-          <li class="c-footer__link region">
-            <a href="javascript:void(0);" data-sly-test="${data.countrySelectorPath}" data-url="${data.countrySelectorPath}/_jcr_content/par/countryselector.html" itemprop="url" class="js-link-country"
-            data-fn-click="true"
-             data-da-satelliteTrackEvent="generic-link-tracking"
-               data-da-link_link-page-name=""
-               data-da-link_link-category=""
-               data-da-link_link-header=""
-               data-da-link_link-section="footer"
-               data-da-link_link-text="${data.countryCode}-${data.language}"
-data-da-link_link-interaction-method="" >
-              <span class="region-picker"></span>
-              <span class="c-footer__text country-name">${data.countryCode}</span>
-              <span>/</span>
-              <span class="c-footer__text language">${data.language}</span>
-            </a>
-          </li>
-        </ul>
+      <div class="col-xs-12">  
+        <div style="text-align: center; width: 100%;">Footer</div>
         <div class="c-footer__legal-content c-footer__text" itemprop="description" data-sly-test="${data.disclaimer}">
           ${data.disclaimer}
         </div>
@@ -48,23 +17,7 @@ data-da-link_link-interaction-method="" >
         </div>
         <div class="c-footer__timestamp c-footer__text js-timestamp"></div>
       </div>
-      <div class="col-xs-3">
-        <div class="social-icons">
-          <div data-sly-test="${data.socialList}" data-sly-list="${data.socialList}"
-            data-sly-unwrap>
-            <a class="social-link x-sub-hover" itemprop="url" href="${item.socialLink}" target="_blank" data-fn-click="true"
-             data-da-satelliteTrackEvent="generic-link-tracking"
-               data-da-link_link-page-name=""
-               data-da-link_link-category=""
-               data-da-link_link-section="footer"
-               data-da-link_link-text="${item.socialMediaOption}"
-               data-da-link_link-header="social"
-data-da-link_link-interaction-method="" data-da-link_social="${item.socialMediaOption}" data-da-link_event="social-link-clicked">
-              <div class="x-${item.socialMediaOption}-icon social-icon" itemprop="image">${item.socialMediaOption}</div>
-            </a>
-          </div>
-        </div>
-      </div>
+    
     </div>
   </footer>
 </sly>

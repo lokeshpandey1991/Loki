@@ -4,41 +4,6 @@
    -->
 <sly data-sly-template.mediainfo_template="${@ data, flag}">
   <div class="c-media-info" id="media-info">
-    <div id="myCarousel" class="carousel slide carousel-fade c-media-info__carousel" data-ride="carousel" data-interval="false">
-      <div data-sly-test="${data.mediaList.size>1}" data-sly-unwrap>
-        <!-- Left and right controls -->
-        <div class="c-media-info__indicator-wrapper">
-          <a class="left carousel-control x--carousel-control c-media-info__carousel--left x-sub-hover" href="#myCarousel" data-slide="prev">
 
-           <span class="u-left-arrow x-text-hidden">Previous</span>
-          </a>
-          <ol class="carousel-indicators x--carousel-indicators clearfix">
-            <div data-sly-test="${data.mediaList}" data-sly-list.items="${data.mediaList}" data-sly-unwrap>
-              <li data-target="#myCarousel" class="${itemsList.first? 'active':''} x--li-indicator li-indicator--${data.mediaList.size}" data-slide-to="${itemsList.index}"></li>
-            </div>
-          </ol>
-          <a class="right carousel-control x--carousel-control c-media-info__carousel--right x-sub-hover" href="#myCarousel" data-slide="next">
-
-      <span class="u-right-arrow x-text-hidden">Next</span>
-    </a>
-        </div>
-      </div>
-      <div class="carousel-inner c-media-info__carousel__carousel-inner">
-        <div data-sly-test="${data.mediaList}" data-sly-list.items="${data.mediaList}" data-sly-unwrap>
-          <div class="item product-pane ${itemsList.first? 'active':''}">
-            <h3 class='product-pane__heading'>${items.imageHeading}</h3>
-            <p class='product-pane__text'> ${items.imageText} </p>
-            <div class="product-pane__img-container">
-              <sly data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html" data-sly-call="${lib.dynamicimage_template @imagePath=items.imagePath,
-               altText=items.altText, className='product-pane__img'}" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="c-media-info__contact-us-bar">
-      <div class="c-media-info__contact-us-bar__title">${data.ctaDescription}</div>
-      <a href="#contact-form" class="c-media-info__contact-us-bar__link" data-fn-click="true" data-da-satelliteTrackEvent="product-detail-tracking" data-da-link_link-Page-Name="contact-form" data-da-link_link-category="internal" data-da-link_link-section="mic-image" data-da-link_link-header="${items.imageHeading}" data-da-link_link-text="${items.imageText}" data-da-link_link-interaction-method="click-on-" data-da-link_link-product-name="${items.productName}" data-da-link_link-product-category="${items.productCategory}" data-da-link_link-product-id="${items.productId}">${data.ctaText}</a>
-    </div>
   </div>
 </sly>

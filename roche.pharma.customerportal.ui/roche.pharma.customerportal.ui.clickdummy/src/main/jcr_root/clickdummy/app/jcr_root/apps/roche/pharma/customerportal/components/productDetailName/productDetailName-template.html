@@ -8,17 +8,5 @@
 
 <sly data-sly-template.productDetailName_template="${@ data, flag}">
 <!-- Product Description Section -->
-	<div class="c-product-desc x-component-spacing clearfix">
-		<div class="row">
-			<div class="col-left">
-				<h1 class="c-product-desc__name">${data.productName}</h1>
-				<p class="c-product-desc__subtitle">${data.valueProposition}</p>
-			</div>
-				<div class="col-right"> 
-					<figure class="u-rt-slide">
-						<sly  data-sly-use.lib="/apps/roche/pharma/customerportal/components/dynamicimage/dynamicimage.html" data-sly-call="${lib.dynamicimage_template}" />
-					</figure>
-				</div>
-		</div>
-	</div>
+	
 </sly>

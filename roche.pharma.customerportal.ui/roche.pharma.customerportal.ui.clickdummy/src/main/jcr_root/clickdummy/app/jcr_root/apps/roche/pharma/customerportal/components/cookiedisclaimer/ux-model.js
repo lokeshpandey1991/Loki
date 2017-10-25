@@ -1,6 +1,6 @@
 use(function() {
  var data = {
-"cookieDisclaimerLink":"/content/customerportal/us/en/home/policy.html",
+"cookieDisclaimerLink":"",
 "isCookieNotificationDisabled": "false"
 };
 data.requestURI = request.requestURI;

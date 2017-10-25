@@ -21,7 +21,7 @@ use(function() {
         "value": "8 hours"
       }
     ],
-    "thumbnailImage": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
+    "thumbnailImage": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
     "productName": "cobas® HPV Test Global"
   },
   "logoPath": "/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/blueRoche.svg",

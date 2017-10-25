@@ -6,43 +6,6 @@
     -->
 <sly data-sly-template.headlinebody_template="${@ data, flag}">
   <div class="container c-headline-body-copy x-component-spacing">
-    <div class="row">
-      <sly data-sly-test="${data.headlineText && data.headlineType}">
-        <div class="headline headline-desktop ${data.headlineType}">
-          ${data.headlineText @ context='html'}
-        </div>
-      </sly>
-      <sly data-sly-test="${data.authorName || data.publishDate}">
-        <div class="x-author-details">
-          <sly data-sly-test="${data.authorName}">
-            <p class="x-article-text" data-sly-element="${items.size}" itemprop="author">${data.authorName}</p>
-          </sly>
-          <sly data-sly-test="${data.publishDate}">
-            <p itemprop="date" class="x-article-text" data-sly-element="${items.size}">${data.publishDate}</p>
-          </sly>
-        </div>
-      </sly>
-      <ul class="tags-list" data-sly-test="${data.localTagTitles}" data-sly-list="${data.localTagTitles}" role="list">
-        <li role="list-item" class="x-body-tags">
-          <a data-sly-test="${data.searchUrl}" class="x-link" itemprop="url" href="${data.searchUrl}?q=${item}"
-             data-fn-click="true"
-             data-da-satelliteTrackEvent="generic-link-tracking"
-             data-da-link_link-Page-Name=""
-             data-da-link_link-Category=""
-             data-da-link_link-Section="headline-and-body"
-             data-da-link_link-Header="${data.headlineText @ context='html'}"
-             data-da-link_link-Text="${item}"
-             data-da-link_link-Interaction-Method="">
-            ${item}
-          </a>
-        </li>
-      </ul>
-      <div class="social-share" data-sly-test="${data.socialMedia}">
-        <sly data-sly-resource="${'socialshare' @ resourceType='roche/pharma/customerportal/components/socialshare'}"/>
-      </div>
-      <sly data-sly-test="${data.bodyText}">
-        <div class="x-article-text" data-sly-test="${data.bodyText}">${data.bodyText @ context='html'}</div>
-      </sly>
-    </div>
+
   </div>
 </sly>

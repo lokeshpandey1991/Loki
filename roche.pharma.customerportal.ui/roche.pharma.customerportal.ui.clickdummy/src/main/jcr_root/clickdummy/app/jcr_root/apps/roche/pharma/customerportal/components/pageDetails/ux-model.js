@@ -14,7 +14,7 @@ use(function() {
   "publishDate": "January 23, 2017 to January 23, 2017",
   "viewType":"event",
   "isTwoColLayout":true,
-    "fileReference": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
+    "fileReference": "/content/dam/roche/diagnostic/products/11/04/58/110458.png",
     "altText": "cobas® HPV Test Global"
 
 }

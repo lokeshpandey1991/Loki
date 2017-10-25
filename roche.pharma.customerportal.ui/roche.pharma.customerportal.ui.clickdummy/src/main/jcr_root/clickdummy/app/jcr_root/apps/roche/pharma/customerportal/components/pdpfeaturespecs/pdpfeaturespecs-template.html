@@ -6,31 +6,6 @@
     -->
 <sly data-sly-template.pdpfeaturespecs_template="${@ data, flag}">
   <section data-module="pdpfeaturespecs" class="c-pdp-specs-container js-specifications-container js-specifications-container-dtl x-outer-margins">
-      <!--/* heading section */-->
-      <div class="c-pdp-specs-heading clearfix">
-        <h2>${'rdoe_pdpfeaturespecs.featureSystemSpecification' @ i18n}</h2>
-        <div class="c-pdp-specs-seeall js-pdp-specs-see-all">
-          <a class="x-sub-hover" href="${data.systemSpecificationDoc}" target="_blank" data-fn-click="true"
-            data-da-satelliteTrackEvent="product-detail-tracking"data-da-link_link-Page-Name=" " 
-            data-da-link_link-Category=" " 
-            data-da-link_link-Section="${component.name}" 
-            data-da-link_link-Header=" " 
-            data-da-link_link-Text="${'rdoe_pdpfeaturespecs.seeAllSpecifications' @ i18n}" 
-data-da-link_link-Interaction-Method="click-on-desktop"
-data-da-link_product-name="${data.productName}" 
-data-da-link_product-category="${data.productName}" 
-data-da-link_product-id="${data.productId}">
-          ${'rdoe_pdpfeaturespecs.seeAllSpecifications' @ i18n}
-          <span class="u-arrow u-arrow-blue"><i class="right"></i></span>  
-          </a>
-        </div>
-      </div>
-      <!--/* heading section */-->
-      <div class="c-pdp-spec-wrapper">
-        <ul class="c-pdp-specs-list js-system-specification js-system-specification-dtl">
-            <!--/* For w3c compliance, will be replcaed by dynamic content */-->
-            <li>System specifications</li>
-        </ul>
-      </div>
+      
   </section>
 </sly>

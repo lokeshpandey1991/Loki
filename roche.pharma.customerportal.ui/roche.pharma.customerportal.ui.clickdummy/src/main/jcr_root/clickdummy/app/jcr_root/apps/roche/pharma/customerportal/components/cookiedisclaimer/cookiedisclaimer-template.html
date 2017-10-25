@@ -5,23 +5,5 @@
 
     -->
 <sly data-sly-template.cookiedisclaimer_template="${@ data, flag}">
-  <div class="c-page-notification js-cookies-tag cookies-tag" data-sly-test="${!data.isCookieNotificationDisabled && !wcmmode.edit}" data-module="cookiesDisclaimer">
-    <div class="js-notification-alert cookie-block-height">
-      <div class="c-page-notification__left-col">
-        <div class="left-wrapper">
-          <div class="c-page-notification__title js-title">
-             ${'rdoe_cookiedisclaimer_heading' @ i18n}
-          </div>
-          <div class="c-page-notification__description js-description col-lg-11 col-md-11 col-sm-10  col-xs-10">
-            ${'rdoe_cookiedisclaimer_message' @ i18n}
-            <a data-sly-test="${'rdoe_cookiedisclaimer_linkTitle' @ i18n}" href="${data.url}" target="${data.target}" data-fn-click="true" data-da-satelliteTrackEvent="generic-link-tracking" data-da-link_link-Page-Name="" data-da-link_link-Category="" data-da-link_link-Section="${component.name}" data-da-link_link-Header="${'rdoe_cookiedisclaimer_heading' @ i18n}" data-da-link_link-Text="${'rdoe_cookiedisclaimer_linkTitle' @ i18n}" data-da-link_link-Interaction-Method="" data-da-link_content-type="${'rdoe_cookiedisclaimer_heading' @ i18n}" data-da-link_content-title="${data.headline}">${'rdoe_cookiedisclaimer_linkTitle' @ i18n}</a>
-          </div>
-        </div>
-      </div>
-      <div class="c-page-notification__right-col right">
-        <a href="javascript:void(0)" class="close js-closeBtn notification--close x-sub-hover " role="button">close
-        </a>
-      </div>
-    </div>
-  </div>
+  
 </sly>
