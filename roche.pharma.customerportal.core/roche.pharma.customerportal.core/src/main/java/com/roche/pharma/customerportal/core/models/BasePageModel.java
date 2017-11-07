@@ -26,6 +26,7 @@ import com.day.cq.tagging.TagManager;
 import com.day.cq.wcm.api.Page;
 import com.roche.pharma.customerportal.core.constants.RocheConstants;
 import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 import com.roche.pharma.customerportal.core.utils.RocheDateUtil;
 
 /**
@@ -348,15 +349,15 @@ public class BasePageModel {
         
         resource = slingRequest.getResource();
         final SimpleDateFormat sdf = new SimpleDateFormat("MMM d, yyyy HH:mm:ss z", Locale.ENGLISH);
-        final Page currentPage = CommonUtils.getCurrentPage(slingRequest.getResource());
-        final Page regnlPage = CommonUtils.getRegionalLanguagePage(currentPage);
+        final Page currentPage = GlobalUtils.getCurrentPage(slingRequest.getResource());
+        final Page regnlPage = GlobalUtils.getRegionalLanguagePage(currentPage);
         final GlobalConfigurationsModel globalConfigurationsModel = CommonUtils
                 .getGlobalConfigurations(slingRequest.getResource());
         if (globalConfigurationsModel != null) {
             googleMapKey = globalConfigurationsModel.getGoogleMapKey();
         }
-        final LanguageConfigurationsModel glblConf = CommonUtils.getlanguageConfigurations(regnlPage);
-        final Locale pageLocale = CommonUtils.getPageLocale(currentPage);
+        final LanguageConfigurationsModel glblConf = GlobalUtils.getlanguageConfigurations(regnlPage);
+        final Locale pageLocale = GlobalUtils.getPageLocale(currentPage);
         publishedDate = null == publishedDate ? lastModifiedDate : publishedDate;
         if (publishedDate != null) {
             sdf.setTimeZone(publishedDate.getTimeZone());
@@ -412,7 +413,7 @@ public class BasePageModel {
      * This method will set page url and source based on externalizer configurations
      */
     private void setOgData() {
-        final Page currentPage = CommonUtils.getCurrentPage(slingRequest.getResource());
+        final Page currentPage = GlobalUtils.getCurrentPage(slingRequest.getResource());
         if (currentPage != null) {
             currentPageURL = externalizer.absoluteLink(slingRequest, slingRequest.getScheme(),
                     CommonUtils.getResolvedPathWithHtml(currentPage.getPath(), slingRequest.getResource()));

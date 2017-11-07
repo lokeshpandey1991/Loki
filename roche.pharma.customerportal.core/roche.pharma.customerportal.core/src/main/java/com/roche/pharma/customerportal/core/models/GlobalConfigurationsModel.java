@@ -11,6 +11,7 @@ import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 
 /**
  * This is model class for Global configurations. Configuration which are common across all the websites will get
@@ -78,7 +79,7 @@ public class GlobalConfigurationsModel {
     protected void postConstruct() {
         componentName = CommonUtils.getComponentName(resource);
         if (!CommonUtils.isExternalLink(websitePath)) {
-            contentType = CommonUtils.getPageTypeProperty(websitePath, resource.getResourceResolver());
+            contentType = GlobalUtils.getPageTypeProperty(websitePath, resource.getResourceResolver());
         }
         
     }

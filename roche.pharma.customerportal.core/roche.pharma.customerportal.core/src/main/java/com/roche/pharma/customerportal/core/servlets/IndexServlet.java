@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 import com.day.cq.wcm.api.Page;
 import com.roche.pharma.customerportal.core.schedulers.SearchIndexScheduler;
-import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 
 /**
  * This is a servlet class to get the urls of activated and deactivated pages wtih respected selectors as crawl for full
@@ -88,7 +88,7 @@ public class IndexServlet extends SlingAllMethodsServlet {
     private void printPublishedUrl(SlingHttpServletRequest request, SlingHttpServletResponse response, String domain,
             String selector) throws IOException {
         final Resource resource = request.getResource();
-        final Page currentPage = CommonUtils.getCurrentPage(resource);
+        final Page currentPage = GlobalUtils.getCurrentPage(resource);
         if (null != currentPage) {
             final ValueMap map = getValueMap(resource, currentPage);
             if (null != map) {

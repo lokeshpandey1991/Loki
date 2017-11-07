@@ -1,159 +1,40 @@
 package com.roche.pharma.customerportal.core.models;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
+import org.osgi.annotation.versioning.ConsumerType;
 
-import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.resource.Resource;
-import org.apache.sling.models.annotations.DefaultInjectionStrategy;
-import org.apache.sling.models.annotations.Exporter;
-import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.Self;
-
-import com.day.cq.wcm.api.Page;
 import com.roche.pharma.customerportal.core.beans.PageLinkBean;
-import com.roche.pharma.customerportal.core.constants.RocheConstants;
-import com.roche.pharma.customerportal.core.utils.CommonUtils;
 
-/**
- * This is model class for Header.
- */
-
-@Model(adaptables = {
-        Resource.class
-}, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL, resourceType = HeaderModel.RESOURCE_TYPE)
-@Exporter(name = "jackson", extensions = "json")
-public class HeaderModel {
+@ConsumerType
+public interface HeaderModel {
     
-    public static final String RESOURCE_TYPE = "roche/pharma/customerportal/components/header";
+    String getLogoPath();
     
-    @Self
-    private Resource resource;
+    String getLogoAltText();
     
-    private String logoPath;
-    private String logoAltText;
-    private String homePagePath;
-    private String countryCode;
-    private String countrySelectorPath;
-    private boolean isPersonaDisabled;
-    private String persona;
-    private String personaSelectorPath;
-    private String searchUrl;
-    private String searchLimit;
-    private String searchResultPath;
-    private String currentChannel;
-    private String currentResolvedPath;
-    private List<PageLinkBean> headerLinksList = new ArrayList<>();
+    String getHomePagePath();
     
-    public String getLogoPath() {
-        return logoPath;
-    }
+    String getCountryCode();
     
-    public String getLogoAltText() {
-        return logoAltText;
-    }
+    String getCountrySelectorPath();
     
-    public String getHomePagePath() {
-        return homePagePath;
-    }
+    boolean isPersonaDisabled();
     
-    public String getCountryCode() {
-        return countryCode;
-    }
+    String getPersona();
     
-    public String getCountrySelectorPath() {
-        return countrySelectorPath;
-    }
+    String getPersonaSelectorPath();
     
-    public boolean isPersonaDisabled() {
-        return isPersonaDisabled;
-    }
+    List<PageLinkBean> getHeaderLinksList();
     
-    public String getPersona() {
-        return persona;
-    }
+    String getSearchUrl();
     
-    public String getPersonaSelectorPath() {
-        return personaSelectorPath;
-    }
+    String getSearchLimit();
     
-    public List<PageLinkBean> getHeaderLinksList() {
-        return new ArrayList<PageLinkBean>(headerLinksList);
-    }
+    String getSearchResultPath();
     
-    public String getSearchUrl() {
-        return searchUrl;
-    }
+    String getCurrentChannel();
     
-    public String getSearchLimit() {
-        return searchLimit;
-    }
-    
-    public String getSearchResultPath() {
-        return searchResultPath;
-    }
-    
-    public String getCurrentChannel() {
-        return currentChannel;
-    }
-    
-    public String getCurrentResolvedPath() {
-        return currentResolvedPath;
-    }
-    
-    @PostConstruct
-    protected void postConstruct() {
-        final Page currentPage = CommonUtils.getCurrentPage(resource);
-        final Page regionalLanguagePage = CommonUtils.getRegionalLanguagePage(currentPage);
-        final LanguageHeaderFooterModel languageHeaderFooterModel = CommonUtils
-                .getGlobalHeaderFooterConfigurations(regionalLanguagePage);
-        setHeaderConfiguredValues(languageHeaderFooterModel);
-        final LanguageConfigurationsModel languageConfigurationsModel = CommonUtils
-                .getlanguageConfigurations(regionalLanguagePage);
-        setLanguageConfiguredValues(languageConfigurationsModel);
-        final Page regionalPage = CommonUtils.getRegionalPage(currentPage);
-        countryCode = regionalPage.getTitle().toUpperCase(CommonUtils.getPageLocale(currentPage));
-        setCurrentChannel(currentPage);
-        currentResolvedPath = CommonUtils.getResolvedPathWithHtml(currentPage.getPath(), resource);
-    }
-    
-    /**
-     * This method set header values based on global header footer configurations
-     * @param languageHeaderFooterModel
-     */
-    private void setHeaderConfiguredValues(final LanguageHeaderFooterModel languageHeaderFooterModel) {
-        if (languageHeaderFooterModel != null) {
-            logoPath = languageHeaderFooterModel.getFileReference();
-            logoAltText = languageHeaderFooterModel.getLogoAltText();
-            homePagePath = languageHeaderFooterModel.getHomePagePath();
-            headerLinksList = languageHeaderFooterModel.getHeaderList();
-        }
-    }
-    
-    /**
-     * This method set header value based on global configurations
-     * @param languageConfigurationsModel
-     */
-    private void setLanguageConfiguredValues(final LanguageConfigurationsModel languageConfigurationsModel) {
-        if (languageConfigurationsModel != null) {
-            countrySelectorPath = languageConfigurationsModel.getCountrySelectorPagePath();
-            personaSelectorPath = languageConfigurationsModel.getPersonaSelectorPagePath();
-            isPersonaDisabled = languageConfigurationsModel.isPersonaDisabled();
-            searchLimit = languageConfigurationsModel.getSearchLimit();
-            searchUrl = languageConfigurationsModel.getSearchUrl();
-            searchResultPath = languageConfigurationsModel.getSearchPagePath();
-        }
-    }
-    
-    private void setCurrentChannel(final Page currentPage) {
-        if (null == currentPage.getAbsoluteParent(RocheConstants.THREE)) {
-            currentChannel = "";
-        } else {
-            currentChannel = currentPage.getAbsoluteParent(RocheConstants.TWO).getName() + RocheConstants.SLASH
-                    + currentPage.getAbsoluteParent(RocheConstants.THREE).getName();
-        }
-    }
+    String getCurrentResolvedPath();
     
 }

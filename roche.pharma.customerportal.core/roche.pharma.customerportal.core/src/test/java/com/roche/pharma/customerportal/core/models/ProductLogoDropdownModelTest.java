@@ -14,6 +14,7 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import com.roche.pharma.customerportal.core.mock.MockRocheContent;
+import com.roche.pharma.customerportal.core.models.impl.ProductLogoDropdownModelImpl;
 import com.roche.pharma.customerportal.core.services.impl.ConfigurationServiceImpl;
 
 import io.wcm.testing.mock.aem.junit.AemContext;
@@ -58,7 +59,7 @@ public class ProductLogoDropdownModelTest {
         
         Resource res = context.resourceResolver().getResource(PRODUCT_LOGO_PATH);
         context.request().setResource(res);
-        ProductLogoDropdownModel productLogoModel = context.request().adaptTo(ProductLogoDropdownModel.class);
+        ProductLogoDropdownModel productLogoModel = context.request().adaptTo(ProductLogoDropdownModelImpl.class);
         
     }
 

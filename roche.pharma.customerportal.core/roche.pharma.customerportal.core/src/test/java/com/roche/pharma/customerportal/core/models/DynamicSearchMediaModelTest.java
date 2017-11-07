@@ -21,7 +21,7 @@ import io.wcm.testing.mock.aem.junit.AemContextBuilder;
 import io.wcm.testing.mock.aem.junit.AemContextCallback;
 
 public class DynamicSearchMediaModelTest {
-
+    
     private static final String[] DYNAMIC_MEDIA_CONFIGURATION = {
             "productTile-desktop=1200,800,0.2,0.6,0.8,0.9", "image-desktop-view1=1200,800", "image-desktop-view2=1200",
             "featuredTile-desktop-view3=1200,,0.2,0.6,0.8,0.9", "image-tabletP=500,450,0.2,0.6,0.8,0.9",
@@ -32,12 +32,12 @@ public class DynamicSearchMediaModelTest {
     final static String DYNAMIC_IMAGE_RESOURCE_PATH = "/content/roche/customerportal/us/en/home/jcr:content/par/image";
     private static final String IMAGE_SERVICE_URL = "https://roche-staging-h.assetsadobe2.com/is/image";
     Map<String, Object> _config;
-
+    
     @Rule
     public final AemContext context = new AemContextBuilder(ResourceResolverType.JCR_MOCK).afterSetUp(SETUP_CALLBACK)
             .build();
     private final ConfigurationServiceImpl ConfigurationServiceImpl = new ConfigurationServiceImpl();
-
+    
     @Before
     public void setUp() throws Exception {
         _config = new HashMap<String, Object>();
@@ -45,7 +45,7 @@ public class DynamicSearchMediaModelTest {
         _config.put("media.service.configuration", DYNAMIC_MEDIA_CONFIGURATION);
         context.registerInjectActivateService(ConfigurationServiceImpl, _config);
     }
-
+    
     @Test
     public void testGetRendition() {
         final DynamicSearchMediaModel modelObject = context.resourceResolver().getResource(DYNAMIC_IMAGE_RESOURCE_PATH)
@@ -68,5 +68,5 @@ public class DynamicSearchMediaModelTest {
                     "/content/roche/customerportal/us/en/home");
         }
     };
-
+    
 }

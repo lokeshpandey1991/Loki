@@ -36,7 +36,8 @@ public class HeaderModelTest {
         Assert.assertEquals(2, modelObject.getHeaderLinksList().size());
         Assert.assertEquals("/content/roche/us", modelObject.getHomePagePath());
         Assert.assertEquals("alt text", modelObject.getLogoAltText());
-        Assert.assertEquals("/content/dam/roche/customerportal/products/11/04/58/110458.png", modelObject.getLogoPath());
+        Assert.assertEquals("/content/dam/roche/customerportal/products/11/04/58/110458.png",
+                modelObject.getLogoPath());
         Assert.assertTrue(modelObject.isPersonaDisabled());
         Assert.assertNull(modelObject.getPersona());
     }

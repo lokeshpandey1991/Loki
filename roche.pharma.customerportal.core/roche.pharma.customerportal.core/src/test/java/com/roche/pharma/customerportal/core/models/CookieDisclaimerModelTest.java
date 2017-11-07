@@ -32,7 +32,7 @@ public class CookieDisclaimerModelTest {
         Assert.assertEquals(
                 "/content/customerportal/global-master-blueprint/en/home/product-category-page/product-listing-new/pdp.html",
                 modelObject.getUrl());
-        Assert.assertEquals(true,modelObject.isCookieNotificationDisabled());
+        Assert.assertEquals(true, modelObject.isCookieNotificationDisabled());
     }
     
     /**

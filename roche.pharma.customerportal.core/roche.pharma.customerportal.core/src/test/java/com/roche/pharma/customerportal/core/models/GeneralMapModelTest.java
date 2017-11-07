@@ -19,36 +19,36 @@ import io.wcm.testing.mock.aem.junit.AemContextBuilder;
 import io.wcm.testing.mock.aem.junit.AemContextCallback;
 
 public class GeneralMapModelTest {
-
+    
     final static String GENERALMAP_RESOURCE = "/content/roche/customerportal/us/en/home/jcr:content/par/generalmap";
     final static String[] TIMDEDETAILS_DATA = {
             "{\"timeDetails\":\"Monday-Friday:8:00 a.m.-5:00 p.m.\"}",
             "{\"timeDetails\":\"Staurday-Sunday:10:00 a.m.-6:00 p.m.\"}"
     };
     final static TimeDetailsListBean bean = new TimeDetailsListBean();
-
+    
     @Rule
     public final AemContext context = new AemContextBuilder(ResourceResolverType.JCR_MOCK).afterSetUp(SETUP_CALLBACK)
             .build();
-
+    
     @Test
     public void testjcrDataListing() throws LoginException {
         final GeneralMapModel modelObject = context.resourceResolver().getResource(GENERALMAP_RESOURCE)
                 .adaptTo(GeneralMapModel.class);
-        Assert.assertEquals("Monday-Friday:8:00 a.m.-5:00 p.m.", modelObject.getTimeDetailListing().get(0).getTimeDetails());
-        Assert.assertEquals("Have any Question",modelObject.getHeading());
+        Assert.assertEquals("Monday-Friday:8:00 a.m.-5:00 p.m.",
+                modelObject.getTimeDetailListing().get(0).getTimeDetails());
+        Assert.assertEquals("Have any Question", modelObject.getHeading());
         Assert.assertEquals("<p>Biochemistry Building</p>", modelObject.getAddress());
-        Assert.assertEquals("13213213213",modelObject.getPhoneNumber());
-        Assert.assertEquals("sfsd@as.com",modelObject.getEmail());
-        Assert.assertEquals("https://roche.com",modelObject.getCtaLink());
-        Assert.assertEquals("View Website",modelObject.getCtaLabel());
-        Assert.assertEquals("121.12112",modelObject.getLatitude());
-        Assert.assertEquals("121.21212",modelObject.getLongitude());
+        Assert.assertEquals("13213213213", modelObject.getPhoneNumber());
+        Assert.assertEquals("sfsd@as.com", modelObject.getEmail());
+        Assert.assertEquals("https://roche.com", modelObject.getCtaLink());
+        Assert.assertEquals("View Website", modelObject.getCtaLabel());
+        Assert.assertEquals("121.12112", modelObject.getLatitude());
+        Assert.assertEquals("121.21212", modelObject.getLongitude());
         Assert.assertEquals("_self", modelObject.getLinkBehaviour());
         Assert.assertEquals("external", modelObject.getLinkType());
     }
-
-   
+    
     /**
      * Custom set up rules required in all unit tests.
      */
@@ -63,5 +63,5 @@ public class GeneralMapModelTest {
                     "/content/roche/customerportal/us/en/home");
         }
     };
-
+    
 }

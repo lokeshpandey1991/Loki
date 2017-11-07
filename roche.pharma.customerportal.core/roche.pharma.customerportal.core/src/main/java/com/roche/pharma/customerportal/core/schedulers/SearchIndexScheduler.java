@@ -46,6 +46,7 @@ import com.roche.pharma.customerportal.core.constants.RocheConstants;
 import com.roche.pharma.customerportal.core.exceptions.BusinessExecutionException;
 import com.roche.pharma.customerportal.core.services.ConfigurationService;
 import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 
 /**
  * This is a sceduler class which is responsible to create single or multiple index files having list of urls which are
@@ -399,7 +400,7 @@ public class SearchIndexScheduler {
             resource = resourceResolver.getResource(PARENT);
         }
         if (null != resource) {
-            languagePage = CommonUtils.getRegionalLanguagePage(CommonUtils.getCurrentPage(resource));
+            languagePage = GlobalUtils.getRegionalLanguagePage(GlobalUtils.getCurrentPage(resource));
         }
         
         return languagePage;

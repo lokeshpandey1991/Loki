@@ -1,17 +1,21 @@
 package com.roche.pharma.customerportal.core.models;
 
-import io.wcm.testing.mock.aem.junit.AemContext;
-import io.wcm.testing.mock.aem.junit.AemContextBuilder;
-import io.wcm.testing.mock.aem.junit.AemContextCallback;
 import java.io.IOException;
+
 import javax.jcr.RepositoryException;
+
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.PersistenceException;
 import org.apache.sling.testing.mock.sling.ResourceResolverType;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
+
 import com.roche.pharma.customerportal.core.mock.MockRocheContent;
+
+import io.wcm.testing.mock.aem.junit.AemContext;
+import io.wcm.testing.mock.aem.junit.AemContextBuilder;
+import io.wcm.testing.mock.aem.junit.AemContextCallback;
 
 public class MarketingTileModelTest {
     
@@ -42,8 +46,6 @@ public class MarketingTileModelTest {
         
     }
     
-   
-    
     @Test
     public void testHeadline() throws LoginException {
         
@@ -61,7 +63,6 @@ public class MarketingTileModelTest {
                 .adaptTo(MarketingTileModel.class);
         Assert.assertEquals("title", modelObjectBlank.getArticleTitle());
     }
-    
     
     @Test
     public void testArticleSummary() throws LoginException {
@@ -127,7 +128,6 @@ public class MarketingTileModelTest {
                 .adaptTo(MarketingTileModel.class);
         Assert.assertEquals("marketingTile", modelObject.getComponentName());
     }
-    
     
     /**
      * Custom set up rules required in all unit tests.

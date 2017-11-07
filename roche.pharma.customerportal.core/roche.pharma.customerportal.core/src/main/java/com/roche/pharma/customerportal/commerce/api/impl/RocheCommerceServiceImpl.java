@@ -22,7 +22,7 @@ import com.adobe.cq.commerce.common.CommerceHelper;
 import com.adobe.cq.commerce.common.ServiceContext;
 import com.day.cq.tagging.Tag;
 import com.day.cq.wcm.api.Page;
-import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 
 /**
  * The Class RocheCommerceServiceImpl.
@@ -78,7 +78,7 @@ public class RocheCommerceServiceImpl extends AbstractJcrCommerceService impleme
             })) {
                 changed = true;
             }
-            final String language = StringUtils.substringBefore(CommonUtils.getPageLocale(productPage).toString(), "_");
+            final String language = StringUtils.substringBefore(GlobalUtils.getPageLocale(productPage).toString(), "_");
             final Resource contentResource = productPage.getContentResource();
             final ModifiableValueMap map = contentResource != null ? contentResource.adaptTo(ModifiableValueMap.class)
                     : null;

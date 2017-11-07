@@ -15,6 +15,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import com.day.cq.wcm.api.Page;
 import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 import com.roche.pharma.customerportal.core.utils.RocheDateUtil;
 
 /**
@@ -191,7 +192,7 @@ public class PageDescriptionModel {
     @PostConstruct
     protected void postConstruct() {
         
-        final Page currentPage = CommonUtils.getCurrentPage(resource);
+        final Page currentPage = GlobalUtils.getCurrentPage(resource);
         final String pageTemplate = (String) currentPage.getProperties().getOrDefault("cq:template", "");
         eventPage = evnetTemplate.equalsIgnoreCase(pageTemplate);
         location = (String) currentPage.getProperties().getOrDefault("location", StringUtils.EMPTY);

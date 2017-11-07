@@ -1,23 +1,21 @@
 package com.roche.pharma.customerportal.core.models;
 
-import io.wcm.testing.mock.aem.junit.AemContext;
-import io.wcm.testing.mock.aem.junit.AemContextBuilder;
-import io.wcm.testing.mock.aem.junit.AemContextCallback;
-
 import java.io.IOException;
 
 import javax.jcr.RepositoryException;
 
-import org.apache.sling.api.adapter.AdapterFactory;
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.PersistenceException;
 import org.apache.sling.testing.mock.sling.ResourceResolverType;
-import org.apache.sling.testing.resourceresolver.MockResourceResolverFactory;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 
 import com.roche.pharma.customerportal.core.mock.MockRocheContent;
+
+import io.wcm.testing.mock.aem.junit.AemContext;
+import io.wcm.testing.mock.aem.junit.AemContextBuilder;
+import io.wcm.testing.mock.aem.junit.AemContextCallback;
 
 public class HeroMediaModelTest {
     
@@ -37,9 +35,9 @@ public class HeroMediaModelTest {
     
     @Test
     public void testContentType() throws LoginException {
-        HeroMediaModel modelObject = context.resourceResolver().getResource(heroMediaInternal).adaptTo(HeroMediaModel.class);
-        Assert.assertEquals("home",
-                modelObject.getContentType());
+        HeroMediaModel modelObject = context.resourceResolver().getResource(heroMediaInternal)
+                .adaptTo(HeroMediaModel.class);
+        Assert.assertEquals("home", modelObject.getContentType());
     }
     
     @Test

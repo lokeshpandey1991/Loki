@@ -19,25 +19,25 @@
 
 (function (window, $, snro) {
 
-    //let _cache = {};
+  //let _cache = {};
 
-    snro = window.snro = snro || {};
+  snro = window.snro = snro || {};
 
-    snro.featuredtileCmp = {
-        moduleName: 'featuredtileCmp',
+  snro.featuredtileCmp = {
+    moduleName: 'featuredtileCmp',
 
-        // assignment of dom selectors to variables
-        updateCache: function updateCache() {},
-
-
-        // bind dom events
-        bindEvents: function bindEvents() {},
+    // assignment of dom selectors to variables
+    updateCache: function updateCache() {},
 
 
-        // Module initialization
-        init: function init() {
-            this.updateCache();
-            this.bindEvents();
-        }
-    };
+    // bind dom events
+    bindEvents: function bindEvents() {},
+
+
+    // Module initialization
+    init: function init() {
+      this.updateCache();
+      this.bindEvents();
+    }
+  };
 })(window, window.jQuery, window.snro);

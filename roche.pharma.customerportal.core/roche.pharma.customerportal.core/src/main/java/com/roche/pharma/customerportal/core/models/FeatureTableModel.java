@@ -1,67 +1,32 @@
 package com.roche.pharma.customerportal.core.models;
 
-import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.resource.Resource;
-import org.apache.sling.models.annotations.DefaultInjectionStrategy;
-import org.apache.sling.models.annotations.Exporter;
-import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+import org.osgi.annotation.versioning.ConsumerType;
 
-/**
- * This is Model class for Feature Table.
- * @author mhuss3
- * @version 1.0
- */
-@Model(adaptables = {
-        Resource.class
-}, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL, resourceType = FeatureTableModel.RESOURCE_TYPE)
-@Exporter(name = "jackson", extensions = "json")
-
-public class FeatureTableModel {
-    
-    public static final String RESOURCE_TYPE = "roche/pharma/customerportal/components/featuretable";
-    
-    @ValueMapValue
-    private String text;
-    
-    @ValueMapValue
-    private String tableHeading;
-    
-    @ValueMapValue
-    private String tableDescription;
-    
-    @ValueMapValue
-    private String tableDisclaimer;
+@ConsumerType
+public interface FeatureTableModel {
     
     /**
      * Gets the table text
      * @return text
      */
-    public String getTable() {
-        return text;
-    }
+    String getTable();
     
     /**
      * Gets the table heading
      * @return tableHeading
      */
-    public String getTableHeading() {
-        return tableHeading;
-    }
+    String getTableHeading();
     
     /**
      * Gets the table description
      * @return tableDescription
      */
-    public String getTableDescription() {
-        return tableDescription;
-    }
+    String getTableDescription();
     
     /**
      * Gets the table Disclaimer
      * @return tableDisclaimer
      */
-    public String getTableDisclaimer() {
-        return tableDisclaimer;
-    }
+    String getTableDisclaimer();
+    
 }

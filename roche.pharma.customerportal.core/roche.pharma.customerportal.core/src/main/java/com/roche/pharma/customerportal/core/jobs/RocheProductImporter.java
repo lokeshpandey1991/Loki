@@ -36,6 +36,7 @@ import com.roche.pharma.customerportal.core.constants.RocheConstants;
 import com.roche.pharma.customerportal.core.exceptions.BusinessExecutionException;
 import com.roche.pharma.customerportal.core.services.ConfigurationService;
 import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 
 @Component(immediate = true, metatype = true, label = "Roche Product Importer")
 @Service(value = JobConsumer.class)
@@ -195,7 +196,7 @@ public class RocheProductImporter implements JobConsumer {
     public void updatePDP(final ResourceResolver resolver, final String productPath, final String pdpPath) {
         final Resource productResource = resolver.getResource(productPath);
         final Resource pdpResource = resolver.getResource(pdpPath + "/jcr:content");
-        final Locale languagePage = CommonUtils.getPageLocale(CommonUtils.getCurrentPage(pdpResource));
+        final Locale languagePage = GlobalUtils.getPageLocale(GlobalUtils.getCurrentPage(pdpResource));
         final String language = languagePage.getLanguage();
         if (pdpResource != null && productResource != null) {
             final ModifiableValueMap properties = pdpResource.adaptTo(ModifiableValueMap.class);

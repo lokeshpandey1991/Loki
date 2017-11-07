@@ -1,9 +1,5 @@
 package com.roche.pharma.customerportal.core.models;
 
-import io.wcm.testing.mock.aem.junit.AemContext;
-import io.wcm.testing.mock.aem.junit.AemContextBuilder;
-import io.wcm.testing.mock.aem.junit.AemContextCallback;
-
 import java.io.IOException;
 
 import javax.jcr.RepositoryException;
@@ -18,6 +14,10 @@ import org.junit.Test;
 
 import com.day.cq.wcm.api.WCMException;
 import com.roche.pharma.customerportal.core.mock.MockRocheContent;
+
+import io.wcm.testing.mock.aem.junit.AemContext;
+import io.wcm.testing.mock.aem.junit.AemContextBuilder;
+import io.wcm.testing.mock.aem.junit.AemContextCallback;
 
 public class MetaTagModelTest {
     
@@ -57,12 +57,13 @@ public class MetaTagModelTest {
      */
     private static final AemContextCallback SETUP_CALLBACK = new AemContextCallback() {
         @Override
-        public void execute(final AemContext context) throws PersistenceException, IOException,
-                javax.jcr.LoginException, RepositoryException, WCMException {
+        public void execute(final AemContext context)
+                throws PersistenceException, IOException, javax.jcr.LoginException, RepositoryException, WCMException {
             context.addModelsForPackage("com.roche.pharma.customerportal.core.models");
             MockRocheContent.loadfile(context, "/json/roche/roche.json", "/content/customerportal");
             MockRocheContent.loadfile(context, "/json/roche/us/us.json", "/content/customerportal/us");
-            MockRocheContent.loadfile(context, "/json/roche/us/pages/pdp.json", "/content/customerportal/us/en/home/pdp");
+            MockRocheContent.loadfile(context, "/json/roche/us/pages/pdp.json",
+                    "/content/customerportal/us/en/home/pdp");
             context.load().json("/json/roche/tags.json", "/etc/tags");
             final Resource res = context.request().getResourceResolver().getResource(pdpPath);
             context.request().setResource(res);
