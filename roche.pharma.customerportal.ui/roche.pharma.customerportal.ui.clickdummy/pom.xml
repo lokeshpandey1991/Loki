@@ -40,24 +40,7 @@
             </configuration>
            </plugin>
 
-            <!-- Karma Test -->
-            <plugin>
-              <groupId>com.kelveden</groupId>
-              <artifactId>maven-karma-plugin</artifactId>
-              <version>1.6</version>
-                <executions>
-                  <execution>
-                    <phase>test</phase>
-                      <goals>
-                        <goal>start</goal>
-                      </goals>
-                  </execution>
-               </executions>
-               <configuration>
-                 <configFile>src/main/jcr_root/clickdummy/karma.conf.js</configFile>
-                 <browsers>PhantomJS</browsers>
-               </configuration>
-            </plugin>
+            
 			
             <!-- creates and deploys packages -->
             <plugin>
