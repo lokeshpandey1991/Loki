@@ -21,27 +21,27 @@
 	<build>
         <!-- Only needed for Sonar-JS-Plugin until http://jira.codehaus.org/browse/SONARPLUGINS-1802 is solved -->
         <plugins>
-		<!-- Clean -->
+          <!-- Clean -->
           <plugin>
             <artifactId>maven-clean-plugin</artifactId>
             <version>2.5</version>
             <configuration>
               <filesets>
                 <fileset>
-                  <directory>src/main/jcr_root/clickdummy/node</directory>
+                  <directory>target-grunt</directory>
                 </fileset>
                 <fileset>
                   <directory>src/main/jcr_root/clickdummy/node_modules</directory>
                 </fileset>
                 <fileset>
-                  <directory>src/main/jcr_root/clickdummy/target</directory>
+                  <directory>target</directory>
                 </fileset>
               </filesets>
             </configuration>
            </plugin>
-
+ 
             <!-- Karma Test -->
-            <plugin>
+           <plugin>
               <groupId>com.kelveden</groupId>
               <artifactId>maven-karma-plugin</artifactId>
               <version>1.6</version>
@@ -58,6 +58,58 @@
                  <browsers>PhantomJS</browsers>
                </configuration>
             </plugin>
+         
+          <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <executions>
+        <execution>
+          <id>exec-npm-install</id>
+          <phase>generate-sources</phase>
+          <configuration>
+            <executable>npm</executable>
+            <workingDirectory>src/main/jcr_root/clickdummy/</workingDirectory>
+            <arguments>
+              <argument>install</argument>
+            </arguments>
+          </configuration>
+          <goals>
+            <goal>exec</goal>
+          </goals>
+        </execution>
+        <execution>
+          <id>exec-bower-install</id>
+          <phase>generate-sources</phase>
+          <configuration>
+            <executable>bower</executable>
+            <workingDirectory>src/main/jcr_root/clickdummy/</workingDirectory>
+            <arguments>
+              <argument>install</argument>
+              <argument>--allow-root</argument>
+            </arguments>
+          </configuration>
+          <goals>
+            <goal>exec</goal>
+          </goals>
+        </execution>
+        <execution>
+          <id>exec-grunt</id>
+          <phase>process-resources</phase>
+          <configuration>
+            <executable>grunt</executable>
+            <workingDirectory>src/main/jcr_root/clickdummy/</workingDirectory>
+            <arguments>
+              <argument>aem</argument>
+              <argument>--force</argument>
+            </arguments>
+          </configuration>
+          <goals>
+            <goal>exec</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+            
 			
             <!-- creates and deploys packages -->
             <plugin>
