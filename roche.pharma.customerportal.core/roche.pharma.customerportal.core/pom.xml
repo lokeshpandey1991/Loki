@@ -32,7 +32,7 @@
 				<artifactId>maven-bundle-plugin</artifactId>
 				<configuration>
 					<instructions>
-					<Embed-Dependency>ehcache|javax.ws.rs-api|jersey-client|jersey-common|jersey-guava|hk2-api|hk2-utils|hk2-locator;scope=!test;inline=false</Embed-Dependency>
+					<Embed-Dependency>aspectjrt|ehcache|javax.ws.rs-api|jersey-client|jersey-common|jersey-guava|hk2-api|hk2-utils|hk2-locator;scope=!test;inline=false</Embed-Dependency>
 						<Import-Package>
 							com.adobe.cq.commerce.api;version="4.0.0",
 							com.adobe.cq.commerce.api.collection;version="1.1.0",
@@ -50,6 +50,25 @@
 					</instructions>
 				</configuration>
 			</plugin>
+			<plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>aspectj-maven-plugin</artifactId>
+            <version>1.10</version>
+            <!-- new configuration is here -->
+            <configuration>
+                <complianceLevel>1.8</complianceLevel>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>compile</goal>
+                        <goal>test-compile</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
 		</plugins>
 	</build>
 	<dependencies>	
@@ -131,10 +150,15 @@
 			<groupId>org.glassfish.jersey.bundles.repackaged</groupId>
 			<artifactId>jersey-guava</artifactId>
 		</dependency>
-	<dependency>
+		<dependency>
 		        <groupId>org.mockito</groupId>
 		        <artifactId>mockito-all</artifactId>
 		        <scope>test</scope>
-		    </dependency>
+		</dependency>
+		<dependency>
+		  <groupId>org.aspectj</groupId>
+		  <artifactId>aspectjrt</artifactId>
+		  <version>1.8.9</version>
+		</dependency>
 	</dependencies>
 </project>
