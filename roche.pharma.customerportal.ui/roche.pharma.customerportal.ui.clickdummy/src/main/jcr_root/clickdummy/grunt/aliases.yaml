@@ -18,7 +18,7 @@ aem:
     - 'handlebars'
     - 'concat'
     - 'aemdeploy'
-    - 'watch'
+   # - 'watch'
 
 default:
   description: "run default task which build the whole application"
