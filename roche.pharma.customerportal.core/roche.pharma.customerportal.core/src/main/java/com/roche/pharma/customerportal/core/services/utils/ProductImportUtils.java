@@ -78,11 +78,11 @@ public class ProductImportUtils {
                 createProducts(productList, resolver);
             }
         } catch (WebserviceException e) {
-            LOG.error("WebserviceException Error in ProductNodeCreate::doGet() " + e.getMessage());
+            LOG.error("WebserviceException Error in ProductNodeCreate::doGet() " + e);
         } catch (PersistenceException e) {
-            LOG.error("PersistenceException Error in ProductNodeCreate::doGet() " + e.getMessage());
+            LOG.error("PersistenceException Error in ProductNodeCreate::doGet() " + e);
         } catch (RepositoryException e) {
-            LOG.error("RepositoryException Error in ProductNodeCreate::doGet() " + e.getMessage());
+            LOG.error("RepositoryException Error in ProductNodeCreate::doGet() " + e);
         }
     }
     
@@ -120,9 +120,9 @@ public class ProductImportUtils {
      */
     private static void deleteProductNode(ResourceResolver resolver, String path) throws PersistenceException {
         final Resource rocheProduct = resolver.getResource(path);
-        if(null != rocheProduct){
-        resolver.delete(rocheProduct);
-        resolver.commit();
+        if (null != rocheProduct) {
+            resolver.delete(rocheProduct);
+            resolver.commit();
         }
     }
     
@@ -133,12 +133,12 @@ public class ProductImportUtils {
      */
     private static void createProductRootPath(ResourceResolver resolver) throws PersistenceException {
         final Resource productRoot = resolver.getResource(ETC_COMMERCE_PRODUCTS);
-        if(null != productRoot){
-        final Map<String, Object> properties = new HashMap<String, Object>();
-        properties.put("jcr:primaryType", "sling:Folder");
-        properties.put("cq:commerceProvider", customerportal);
-        resolver.create(productRoot, customerportal, properties);
-        resolver.commit();
+        if (null != productRoot) {
+            final Map<String, Object> properties = new HashMap<String, Object>();
+            properties.put("jcr:primaryType", "sling:Folder");
+            properties.put("cq:commerceProvider", customerportal);
+            resolver.create(productRoot, customerportal, properties);
+            resolver.commit();
         }
     }
     
@@ -187,16 +187,18 @@ public class ProductImportUtils {
         properties.put("productType", locale.getProductType());
         properties.put("productImportDate", Calendar.getInstance());
         Resource resource = resolver.create(productResource, productId, properties);
-        if (!locale.getTags().isEmpty()) {
-            if (resource != null) {
-                final ModifiableValueMap map = resource.adaptTo(ModifiableValueMap.class);
-                if (map != null) {
-                    map.put("cq:tags", getTagList(locale));
-                    map.put("jcr:mixinTypes", "cq:Taggable");
+        if (resource != null) {
+            if (!locale.getTags().isEmpty()) {
+                if (resource != null) {
+                    final ModifiableValueMap map = resource.adaptTo(ModifiableValueMap.class);
+                    if (map != null) {
+                        map.put("cq:tags", getTagList(locale));
+                        map.put("jcr:mixinTypes", "cq:Taggable");
+                    }
                 }
             }
+            resolver.commit();
         }
-        resolver.commit();
     }
     
     /**

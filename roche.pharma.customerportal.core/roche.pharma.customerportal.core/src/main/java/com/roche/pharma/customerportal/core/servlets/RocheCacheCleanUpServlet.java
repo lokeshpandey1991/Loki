@@ -37,9 +37,9 @@ import com.roche.pharma.customerportal.core.utils.CommonUtils;
 @SlingServlet(resourceTypes = "roche/customerportal/components/ehCacheClean", selectors = {
         "relatedAssay", "assayMenuDispCache"
 }, methods = {
-    "GET"
+        "GET"
 }, extensions = {
-    "html"
+        "html"
 })
 public class RocheCacheCleanUpServlet extends SlingAllMethodsServlet {
     
@@ -97,8 +97,10 @@ public class RocheCacheCleanUpServlet extends SlingAllMethodsServlet {
             resourceResolver = CommonUtils.getResourceResolverFromSubService(resolverFactory, paramMap);
             session = resourceResolver.adaptTo(Session.class);
             final Resource res = resourceResolver.getResource(CACHE_NODE_PATH);
-            final ModifiableValueMap props = res.adaptTo(ModifiableValueMap.class);
-            props.put(selector, java.util.Calendar.getInstance());
+            if (res != null) {
+                final ModifiableValueMap props = res.adaptTo(ModifiableValueMap.class);
+                props.put(selector, java.util.Calendar.getInstance());
+            }
             resourceResolver.commit();
             replicator.replicate(session, ReplicationActionType.ACTIVATE, CACHE_NODE_PATH);
             list.add("{{{EhCache Clean Request Started}}} for " + selector);
@@ -108,7 +110,8 @@ public class RocheCacheCleanUpServlet extends SlingAllMethodsServlet {
         } catch (final BusinessExecutionException e) {
             LOG.error("BusinessExecutionException in RocheCacheCleanUpServlet {}", e);
             list.add("{{{EhCache Clean Request Failed}}} for " + selector);
-        } finally {
+        }
+        finally {
             if (session != null && session.isLive()) {
                 session.logout();
             }
@@ -140,7 +143,8 @@ public class RocheCacheCleanUpServlet extends SlingAllMethodsServlet {
         } catch (final BusinessExecutionException e) {
             LOG.error("BusinessExecutionException in RocheCacheCleanUpServlet {}", e);
             list.add("{{{Dispatcher Cache Clean Request Failed}}} for " + selector);
-        } finally {
+        }
+        finally {
             if (session != null && session.isLive()) {
                 session.logout();
             }
