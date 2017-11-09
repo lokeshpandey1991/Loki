@@ -74,7 +74,8 @@ public class VideoModelTest {
             context.addModelsForPackage("com.roche.pharma.customerportal.core.models");
             MockRocheContent.loadfile(context, "/json/roche/roche.json", "/content");
             MockRocheContent.loadfile(context, "/json/roche/us/us.json", "/content/roche/customerportal/us");
-            MockRocheContent.loadfile(context, "/json/roche/us/pages/pdp.json", "/content/roche/customerportal/us/en/pdp");
+            MockRocheContent.loadfile(context, "/json/roche/us/pages/pdp.json",
+                    "/content/roche/customerportal/us/en/pdp");
             MockRocheContent.loadfile(context, "/json/roche/us/dam/image.json",
                     "/content/dam/roche/customerportal/demo.mp4");
         }

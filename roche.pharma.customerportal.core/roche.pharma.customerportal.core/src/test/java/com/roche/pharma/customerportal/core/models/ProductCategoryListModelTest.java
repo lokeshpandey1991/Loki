@@ -19,7 +19,7 @@ import io.wcm.testing.mock.aem.junit.AemContextBuilder;
 import io.wcm.testing.mock.aem.junit.AemContextCallback;
 
 public class ProductCategoryListModelTest {
-
+    
     final static String PRODUCT_CATEGORY_LIST = "/content/roche/customerportal/us/en/home-page/product-category/jcr:content/body-parsys/productcategorylist";
     final static String[] categoryData = {
             "{\"categoryTitle\":\"Category Name1\",\"categoryDescription\":\"Category Description1\",\"categoryURL\":\"/content/roche/customerportal/us/en/home-page\"}",
@@ -28,11 +28,11 @@ public class ProductCategoryListModelTest {
     };
     final static String PRODUCT_CATEGORY_TAG = "productSolution";
     final static ProductCategoryListBean bean = new ProductCategoryListBean();
-
+    
     @Rule
     public final AemContext context = new AemContextBuilder(ResourceResolverType.JCR_MOCK).afterSetUp(SETUP_CALLBACK)
             .build();
-
+    
     @Test
     public void testjcrDataListing() throws LoginException {
         final ProductCategoryListModel modelObject = context.resourceResolver().getResource(PRODUCT_CATEGORY_LIST)
@@ -40,7 +40,7 @@ public class ProductCategoryListModelTest {
         Assert.assertArrayEquals(categoryData, modelObject.getListing());
         Assert.assertEquals(PRODUCT_CATEGORY_TAG, modelObject.getFilterTag());
     }
-
+    
     @Test
     public void testCategoryTitle() throws LoginException {
         final ProductCategoryListModel modelObject = context.resourceResolver().getResource(PRODUCT_CATEGORY_LIST)
@@ -48,10 +48,10 @@ public class ProductCategoryListModelTest {
         bean.setCategoryDescription(modelObject.getCategoryListing().get(0).getCategoryDescription());
         bean.setCategoryTitle(modelObject.getCategoryListing().get(0).getCategoryTitle());
         bean.setCategoryURL(modelObject.getCategoryListing().get(0).getCategoryURL());
-
+        
         Assert.assertEquals("Category Name1", modelObject.getCategoryListing().get(0).getCategoryTitle());
     }
-
+    
     @Test
     public void testCategoryDescription() throws LoginException {
         final ProductCategoryListModel modelObject = context.resourceResolver().getResource(PRODUCT_CATEGORY_LIST)
@@ -68,7 +68,7 @@ public class ProductCategoryListModelTest {
         Assert.assertEquals("/content/roche/customerportal/us/en/home-page.html",
                 modelObject.getCategoryListing().get(0).getCategoryURL());
     }
-
+    
     /*
      * Custom set up rules required in all unit tests.
      */
@@ -80,5 +80,5 @@ public class ProductCategoryListModelTest {
             MockRocheContent.loadProductCategory(context);
         }
     };
-
+    
 }

@@ -28,7 +28,7 @@ import com.roche.pharma.customerportal.core.dto.Indication;
 import com.roche.pharma.customerportal.core.dto.RelatedAssay;
 import com.roche.pharma.customerportal.core.dto.RelatedAssaysMap;
 import com.roche.pharma.customerportal.core.framework.ServiceResponse;
-import com.roche.pharma.customerportal.core.models.AssayMenuModel;
+import com.roche.pharma.customerportal.core.models.impl.AssayMenuModelImpl;
 
 /**
  * The Class AssayMenuUtil.
@@ -37,7 +37,7 @@ import com.roche.pharma.customerportal.core.models.AssayMenuModel;
 public final class AssayMenuUtil {
 
     /** The Constant LOGGER. */
-    private static final Logger LOGGER = LoggerFactory.getLogger(AssayMenuModel.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(AssayMenuModelImpl.class);
 
     /** The session. */
     private static volatile Session session;
@@ -92,9 +92,9 @@ public final class AssayMenuUtil {
             QueryBuilder builder) throws RepositoryException {
         LOGGER.info("Query started====" + System.currentTimeMillis());
         session = slingRequest.getResourceResolver().adaptTo(Session.class);
-        final Page currentPage = CommonUtils.getCurrentPage(slingRequest.getResource());
+        final Page currentPage = GlobalUtils.getCurrentPage(slingRequest.getResource());
         if (null != currentPage) {
-            final Page languagePage = CommonUtils.getRegionalLanguagePage(currentPage);
+            final Page languagePage = GlobalUtils.getRegionalLanguagePage(currentPage);
             if (null != languagePage) {
                 return getProductRootPath(slingRequest, builder, languagePage);
             }
@@ -172,7 +172,7 @@ public final class AssayMenuUtil {
      * @return the current page locale
      */
     public static Locale getCurrentPageLocale(final SlingHttpServletRequest slingRequest) {
-        final Page currentPage = CommonUtils.getCurrentPage(slingRequest.getResource());
+        final Page currentPage = GlobalUtils.getCurrentPage(slingRequest.getResource());
         if (currentPage == null) {
             return slingRequest.getLocale();
         } else {

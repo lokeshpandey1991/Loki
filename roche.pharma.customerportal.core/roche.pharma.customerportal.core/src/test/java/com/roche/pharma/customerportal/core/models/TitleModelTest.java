@@ -10,8 +10,6 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 
-import com.adobe.xmp.schema.rng.model.Context;
-import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.WCMException;
 
 import io.wcm.testing.mock.aem.junit.AemContext;
@@ -23,7 +21,6 @@ public class TitleModelTest {
     final static String RESOURCE_PATH = "/content/roche/us/en/home/jcr:content/title";
     final static String RESOURCE_PATH2 = "/content/roche/us/en/pdp/jcr:content/title2";
     
-
     @Rule
     public final AemContext context = new AemContextBuilder(ResourceResolverType.JCR_MOCK).afterSetUp(SETUP_CALLBACK)
             .build();
@@ -43,6 +40,7 @@ public class TitleModelTest {
         Assert.assertEquals("News_Health", modelObject.getPageType());
         Assert.assertEquals("ROCHE54353", modelObject.getTitle());
     }
+    
     /**
      * Custom set up rules required in all unit tests.
      */

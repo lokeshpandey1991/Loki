@@ -5,8 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.jcr.RepositoryException;
-import org.apache.sling.api.resource.Resource;
+
 import org.apache.sling.api.resource.PersistenceException;
+import org.apache.sling.api.resource.Resource;
 import org.apache.sling.testing.mock.sling.ResourceResolverType;
 import org.junit.Assert;
 import org.junit.Before;

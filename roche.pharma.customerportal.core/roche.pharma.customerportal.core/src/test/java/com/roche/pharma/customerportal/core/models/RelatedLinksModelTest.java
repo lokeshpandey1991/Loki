@@ -31,7 +31,7 @@ public class RelatedLinksModelTest {
     @Rule
     public final AemContext context = new AemContextBuilder(ResourceResolverType.JCR_MOCK).afterSetUp(SETUP_CALLBACK)
             .build();
-
+    
     @Test
     public void testRelatedLinksStaticContent() {
         final RelatedLinksModel modelObject = context.resourceResolver().getResource(DEFAULT_PATH)
@@ -46,14 +46,14 @@ public class RelatedLinksModelTest {
                 .adaptTo(RelatedLinksModel.class);
         Assert.assertEquals(1, modelObject.getRelatedList().size());
     }
-
+    
     @Test
     public void testRelatedLinksDynamicContentPageProperties() {
         final RelatedLinksModel modelObject = context.resourceResolver().getResource(DYNAMIC_PATH)
                 .adaptTo(RelatedLinksModel.class);
         Assert.assertEquals(0, modelObject.getRelatedList().size());
     }
-
+    
     @Test
     public void testRelatedLinksDynamicContentLimitPageProperties() {
         final RelatedLinksModel modelObject = context.resourceResolver().getResource(DYNAMIC_PATH_LIMIT)
@@ -68,7 +68,7 @@ public class RelatedLinksModelTest {
         Assert.assertEquals(0, modelObject.getRelatedList().size());
         Assert.assertEquals("Test", modelObject.getHeadline());
     }
-
+    
     /**
      * Custom set up rules required in all unit tests.
      */
@@ -87,5 +87,5 @@ public class RelatedLinksModelTest {
             context.registerInjectActivateService(searchServiceImpl);
         }
     };
-
+    
 }

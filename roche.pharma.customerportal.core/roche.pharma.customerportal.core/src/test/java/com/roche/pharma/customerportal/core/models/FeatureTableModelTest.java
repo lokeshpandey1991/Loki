@@ -1,9 +1,5 @@
 package com.roche.pharma.customerportal.core.models;
 
-import io.wcm.testing.mock.aem.junit.AemContext;
-import io.wcm.testing.mock.aem.junit.AemContextBuilder;
-import io.wcm.testing.mock.aem.junit.AemContextCallback;
-
 import java.io.IOException;
 
 import javax.jcr.RepositoryException;
@@ -16,6 +12,10 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import com.roche.pharma.customerportal.core.mock.MockRocheContent;
+
+import io.wcm.testing.mock.aem.junit.AemContext;
+import io.wcm.testing.mock.aem.junit.AemContextBuilder;
+import io.wcm.testing.mock.aem.junit.AemContextCallback;
 
 public class FeatureTableModelTest {
     
@@ -61,7 +61,7 @@ public class FeatureTableModelTest {
     private static final AemContextCallback SETUP_CALLBACK = new AemContextCallback() {
         public void execute(AemContext context)
                 throws PersistenceException, IOException, javax.jcr.LoginException, RepositoryException {
-            context.addModelsForClasses(FeatureTableModel.class);
+            context.addModelsForPackage("com.roche.pharma.customerportal.core.models");
             MockRocheContent.loadfile(context, "/json/roche/roche.json", "/content/roche/customerportal");
             MockRocheContent.loadfile(context, "/json/roche/us/us.json", "/content/roche/customerportal/us");
             MockRocheContent.loadfile(context, "/json/roche/us/pages/pdp.json",

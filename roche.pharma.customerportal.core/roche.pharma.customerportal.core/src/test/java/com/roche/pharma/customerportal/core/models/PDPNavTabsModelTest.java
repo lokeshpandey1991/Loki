@@ -81,7 +81,7 @@ public class PDPNavTabsModelTest {
         @Override
         public void execute(AemContext context)
                 throws PersistenceException, IOException, javax.jcr.LoginException, RepositoryException {
-            context.addModelsForClasses(PDPNavTabsModel.class);
+            context.addModelsForPackage("com.roche.pharma.customerportal.core.models");
             MockRocheContent.loadfile(context, "/json/roche/roche.json", "/content/roche/customerportal");
             MockRocheContent.loadfile(context, "/json/roche/us/us.json", "/content/roche/customerportal/us");
             MockRocheContent.loadfile(context, "/json/roche/us/pages/pdp.json",

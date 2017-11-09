@@ -28,6 +28,7 @@ import com.adobe.granite.workflow.exec.WorkflowData;
 import com.adobe.granite.workflow.metadata.MetaDataMap;
 import com.roche.pharma.customerportal.core.constants.RocheConstants;
 import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 
 /**
  * Sample dynamic participant step that determines the participant based on a path given as argument.
@@ -92,7 +93,7 @@ public class AssignToDynamicParticipant implements ParticipantStepChooser {
         String localAssignee = StringUtils.EMPTY;
         if (null != resource) {
             final UserManager userManager = resourceResolver.adaptTo(UserManager.class);
-            final String countryCode = CommonUtils.getCountryCode(resource).toLowerCase();
+            final String countryCode = GlobalUtils.getCountryCode(resource).toLowerCase();
                 localAssignee = getLocalAssignee(wfAssignee, workItem, userManager, countryCode);
             
         }

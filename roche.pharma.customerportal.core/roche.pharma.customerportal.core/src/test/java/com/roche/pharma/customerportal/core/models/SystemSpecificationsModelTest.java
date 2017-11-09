@@ -1,9 +1,5 @@
 package com.roche.pharma.customerportal.core.models;
 
-import io.wcm.testing.mock.aem.junit.AemContext;
-import io.wcm.testing.mock.aem.junit.AemContextBuilder;
-import io.wcm.testing.mock.aem.junit.AemContextCallback;
-
 import java.io.IOException;
 
 import javax.jcr.RepositoryException;
@@ -16,6 +12,10 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import com.roche.pharma.customerportal.core.mock.MockRocheContent;
+
+import io.wcm.testing.mock.aem.junit.AemContext;
+import io.wcm.testing.mock.aem.junit.AemContextBuilder;
+import io.wcm.testing.mock.aem.junit.AemContextCallback;
 
 public class SystemSpecificationsModelTest {
     

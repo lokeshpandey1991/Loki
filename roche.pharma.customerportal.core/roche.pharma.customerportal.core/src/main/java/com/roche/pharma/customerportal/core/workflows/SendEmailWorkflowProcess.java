@@ -34,6 +34,7 @@ import com.roche.pharma.customerportal.core.constants.RocheConstants;
 import com.roche.pharma.customerportal.core.constants.WorkflowConstants;
 import com.roche.pharma.customerportal.core.services.RocheEmailService;
 import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 
 /**
  * This is custom workflow process to send the email to list of user in the group based on the arguments sent from the
@@ -162,7 +163,7 @@ public class SendEmailWorkflowProcess implements WorkflowProcess {
         final Resource resource = resourceResolver.getResource(path);
         String countryCode;
         String localAssignee;
-        countryCode = CommonUtils.getCountryCode(resource).toLowerCase();
+        countryCode = GlobalUtils.getCountryCode(resource).toLowerCase();
         localAssignee = countryCode == StringUtils.EMPTY ? wfAssignee
                 : wfAssignee + RocheConstants.UNDERSCORE + countryCode;
         

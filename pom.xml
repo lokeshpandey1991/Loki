@@ -82,7 +82,7 @@
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-bundle-plugin</artifactId>
-                    <version>2.5.3</version>
+                    <version>3.2.0</version>
                     <extensions>true</extensions>
                     <inherited>true</inherited>
                     <configuration>
@@ -619,7 +619,7 @@
     <!-- ====================================================================== -->
     <dependencyManagement>
         <dependencies>
-            <!-- OSGi Dependencies -->
+            <!-- Felix Dependencies -->
 			<dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.framework</artifactId>
@@ -641,7 +641,7 @@
 			<dependency>
 			    <groupId>com.adobe.aem</groupId>
 			    <artifactId>uber-jar</artifactId>
-			    <version>6.3.0</version>
+			    <version>6.3.1</version>
 			    <classifier>apis</classifier>
 			    <scope>provided</scope>
 	        </dependency> 
@@ -738,7 +738,7 @@
 			<dependency>
 				<groupId>com.adobe.acs</groupId>
 				<artifactId>acs-aem-commons-bundle</artifactId>
-				<version>3.6.2</version>
+				<version>3.11.0</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
@@ -790,6 +790,42 @@
 		    </dependency>		    
         </dependencies>
     </dependencyManagement>
-    
+    <repositories>
+                <repository>
+                        <id>day-external-central</id>
+                        <name>Day Central Repository</name>
+                        <url>http://repo.adobe.com/archiva/repository/day-central</url>
+                </repository>
+
+                <repository>
+                        <id>adobe-public-releases</id>
+                        <name>Adobe Public Repository</name>
+                        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+                        <layout>default</layout>
+                </repository>
+
+        </repositories>
+
+    <pluginRepositories>
+                <pluginRepository>
+                        <id>day-external-central</id>
+                        <name>Day Central Repository</name>
+                        <url>http://repo.adobe.com/archiva/repository/day-central</url>
+                </pluginRepository>
+                <pluginRepository>
+                        <id>adobe-public-releases</id>
+                        <name>Adobe Public Repository</name>
+                        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+                        <layout>default</layout>
+                </pluginRepository>
+        </pluginRepositories>
+  
+    <distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>artifactory.roche.com-snapshots</name>
+        <url>http://artifactory.roche.com:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+    </distributionManagement>
 	
 </project>

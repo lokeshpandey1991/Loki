@@ -16,6 +16,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import com.roche.pharma.customerportal.core.beans.PageLinkBean;
 import com.roche.pharma.customerportal.core.utils.CommonUtils;
+import com.roche.pharma.customerportal.core.utils.GlobalUtils;
 
 /**
  * This is model class for LanguageHeaderFooter.
@@ -163,7 +164,7 @@ public class LanguageHeaderFooterModel {
         if (CommonUtils.isInternalLink(pageLinkBean.getPagePath())
                 && !CommonUtils.isAssetPath(pageLinkBean.getPagePath())) {
             pageLinkBean.setContentType(
-                    CommonUtils.getPageTypeProperty(pageLinkBean.getPagePath(), resource.getResourceResolver()));
+                    GlobalUtils.getPageTypeProperty(pageLinkBean.getPagePath(), resource.getResourceResolver()));
         }
     }
     

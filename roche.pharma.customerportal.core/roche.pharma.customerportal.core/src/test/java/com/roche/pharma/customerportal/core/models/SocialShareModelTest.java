@@ -23,14 +23,14 @@ public class SocialShareModelTest {
     @Rule
     public final AemContext context = new AemContextBuilder(ResourceResolverType.JCR_MOCK).afterSetUp(SETUP_CALLBACK)
             .build();
-
+    
     @Test
     public void testSocialShareModel() {
         final SocialShareModel modelObject = context.resourceResolver().getResource(socialSharePath)
                 .adaptTo(SocialShareModel.class);
         Assert.assertEquals("123", modelObject.getShareId());
         Assert.assertEquals(2, modelObject.getSocialShareLinks().size());
-
+        
     }
     
     /**
@@ -45,5 +45,5 @@ public class SocialShareModelTest {
             MockRocheContent.loadfile(context, "/json/roche/us/us.json", "/content/roche/customerportal/us");
         }
     };
-
+    
 }

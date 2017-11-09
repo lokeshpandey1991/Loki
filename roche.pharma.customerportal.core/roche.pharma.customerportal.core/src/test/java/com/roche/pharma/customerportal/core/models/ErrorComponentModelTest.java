@@ -35,14 +35,15 @@ public class ErrorComponentModelTest {
     }
     
     @Test
-    public void TestErrorPageDescription(){
+    public void TestErrorPageDescription() {
         ErrorComponentModel model = context.resourceResolver().getResource(ERROR_COMPONENT_PATH)
                 .adaptTo(ErrorComponentModel.class);
-        Assert.assertEquals("<p>We are sorry we could not find the page you were looking for.</p>\r\n", model.getNotificationDescription());
+        Assert.assertEquals("<p>We are sorry we could not find the page you were looking for.</p>\r\n",
+                model.getNotificationDescription());
     }
     
     @Test
-    public void TestErrorPageLinkText(){
+    public void TestErrorPageLinkText() {
         ErrorComponentModel model = context.resourceResolver().getResource(ERROR_COMPONENT_PATH)
                 .adaptTo(ErrorComponentModel.class);
         bean.setLinkText("Home");
@@ -50,7 +51,7 @@ public class ErrorComponentModelTest {
     }
     
     @Test
-    public void TestErrorPageLink(){
+    public void TestErrorPageLink() {
         ErrorComponentModel model = context.resourceResolver().getResource(ERROR_COMPONENT_PATH)
                 .adaptTo(ErrorComponentModel.class);
         bean.setLinkURL("/content/roche/customerportal/us/en/home");
@@ -58,14 +59,14 @@ public class ErrorComponentModelTest {
     }
     
     @Test
-    public void TestErrorComponentName(){
+    public void TestErrorComponentName() {
         ErrorComponentModel model = context.resourceResolver().getResource(ERROR_COMPONENT_PATH)
                 .adaptTo(ErrorComponentModel.class);
         Assert.assertEquals("errorPage", model.getComponentName());
     }
     
     @Test
-    public void TestErrorLinkPageType(){
+    public void TestErrorLinkPageType() {
         ErrorComponentModel model = context.resourceResolver().getResource(ERROR_COMPONENT_PATH)
                 .adaptTo(ErrorComponentModel.class);
         bean.setLinkURL("News");
@@ -80,8 +81,10 @@ public class ErrorComponentModelTest {
                 throws PersistenceException, IOException, javax.jcr.LoginException, RepositoryException {
             context.addModelsForPackage("com.roche.pharma.customerportal.core.models");
             MockRocheContent.load(context);
-            MockRocheContent.loadfile(context, "/json/roche/us/pages/home.json", "/content/roche/customerportal/us/en/home");
-            MockRocheContent.loadfile(context, "/json/roche/us/pages/errors.json", "/content/roche/customerportal/us/errors");
+            MockRocheContent.loadfile(context, "/json/roche/us/pages/home.json",
+                    "/content/roche/customerportal/us/en/home");
+            MockRocheContent.loadfile(context, "/json/roche/us/pages/errors.json",
+                    "/content/roche/customerportal/us/errors");
         }
     };
     
