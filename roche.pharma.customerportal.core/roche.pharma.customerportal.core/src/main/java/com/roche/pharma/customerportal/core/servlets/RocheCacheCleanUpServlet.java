@@ -97,13 +97,15 @@ public class RocheCacheCleanUpServlet extends SlingAllMethodsServlet {
             resourceResolver = CommonUtils.getResourceResolverFromSubService(resolverFactory, paramMap);
             session = resourceResolver.adaptTo(Session.class);
             final Resource res = resourceResolver.getResource(CACHE_NODE_PATH);
-            if (res != null) {
+            if (null != res) {
                 final ModifiableValueMap props = res.adaptTo(ModifiableValueMap.class);
-                props.put(selector, java.util.Calendar.getInstance());
+                if (null != props) {
+                    props.put(selector, java.util.Calendar.getInstance());
+                    resourceResolver.commit();
+                    replicator.replicate(session, ReplicationActionType.ACTIVATE, CACHE_NODE_PATH);
+                    list.add("{{{EhCache Clean Request Started}}} for " + selector);
+                }
             }
-            resourceResolver.commit();
-            replicator.replicate(session, ReplicationActionType.ACTIVATE, CACHE_NODE_PATH);
-            list.add("{{{EhCache Clean Request Started}}} for " + selector);
         } catch (final ReplicationException e) {
             LOG.error("ReplicationException in RocheCacheCleanUpServlet {}", e);
             list.add("{{{EhCache Clean Request Failed}}} for " + selector);

@@ -1,6 +1,5 @@
 package com.roche.pharma.customerportal.core.services.utils;
 
-import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -177,28 +176,33 @@ public class ProductImportUtils {
      * @throws PersistenceException the persistence exception
      */
     private static void createProductNode(Locale locale, ResourceResolver resolver, final String productId,
-            final String productGlobalName, Node productNode) throws RepositoryException, PersistenceException {
-        Resource productResource = resolver.getResource(productNode.getPath());
+            final String productGlobalName, final Node productNode) throws RepositoryException, PersistenceException {
         final Map<String, Object> properties = new HashMap<String, Object>();
         properties.put("jcr:primaryType", "nt:unstructured");
         properties.put("sling:resourceType", "commerce/components/product");
         properties.put("cq:commerceType", "product");
         properties.put("jcr:title", productGlobalName);
         properties.put("productType", locale.getProductType());
-        properties.put("productImportDate", Calendar.getInstance());
-        Resource resource = resolver.create(productResource, productId, properties);
-        if (resource != null) {
-            if (!locale.getTags().isEmpty()) {
-                if (resource != null) {
-                    final ModifiableValueMap map = resource.adaptTo(ModifiableValueMap.class);
-                    if (map != null) {
-                        map.put("cq:tags", getTagList(locale));
-                        map.put("jcr:mixinTypes", "cq:Taggable");
-                    }
+        final Resource productResource = resolver.getResource(productNode.getPath());
+        if (null != productResource && StringUtils.isNotBlank(productId)) {
+            final Resource resource = resolver.create(productResource, productId, properties);
+            if (!locale.getTags().isEmpty() && resource != null) {
+                final ModifiableValueMap map = resource.adaptTo(ModifiableValueMap.class);
+                if (map != null) {
+                    map.put("cq:tags", getTagList(locale));
+                    map.put("jcr:mixinTypes", "cq:Taggable");
                 }
             }
             resolver.commit();
         }
+        /*
+         * try { if (productResource != null && session.isLive()) { replicateProduct(session, productResource); } }
+         * catch (ReplicationException e) {
+         * LOG.error("ReplicationException Error in ProductImportUtils::createProductNode()", e); } catch
+         * (NullPointerException e) { LOG.error("NullPointerException Error in ProductImportUtils::createProductNode()",
+         * e); }
+         */
+        
     }
     
     /**
