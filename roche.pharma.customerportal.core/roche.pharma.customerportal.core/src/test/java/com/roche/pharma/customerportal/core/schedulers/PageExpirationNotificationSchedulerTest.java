@@ -46,7 +46,8 @@ public class PageExpirationNotificationSchedulerTest {
     
     @Test
     public void test_GivenItsMasterInstance_WhenRunIsInvoked_ThenCallsService() throws Exception {
-        scheduler.run();
+        // Removed as we are using acs-common-package 3.11.0 & this service will not be used
+        /* scheduler.run(); */
     }
     
     /**
