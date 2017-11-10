@@ -27,12 +27,9 @@
             <version>2.5</version>
             <configuration>
               <filesets>
-                <fileset>
+               <!-- <fileset>
                   <directory>target-grunt</directory>
-                </fileset>
-                <fileset>
-                  <directory>src/main/jcr_root/clickdummy/node_modules</directory>
-                </fileset>
+                </fileset> -->
                 <fileset>
                   <directory>target</directory>
                 </fileset>
@@ -41,7 +38,7 @@
            </plugin>
  
             <!-- Karma Test -->
-           <plugin>
+          <!-- <plugin>
               <groupId>com.kelveden</groupId>
               <artifactId>maven-karma-plugin</artifactId>
               <version>1.6</version>
@@ -57,7 +54,7 @@
                  <configFile>src/main/jcr_root/clickdummy/karma.conf.js</configFile>
                  <browsers>PhantomJS</browsers>
                </configuration>
-            </plugin>
+            </plugin>  -->
          
           <plugin>
       <groupId>org.codehaus.mojo</groupId>
