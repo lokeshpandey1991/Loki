@@ -1,6 +1,6 @@
 #!groovy
 
-@Library('Roche_pipeline_library@development') _
+@Library('Roche_pipeline_library@pharma_customer_portal') _
 
 node {
 
