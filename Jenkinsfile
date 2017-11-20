@@ -14,7 +14,7 @@ node {
     sonar_Test{}
   } */
   stage('Post Tests') {
-    post_Tests{ SITE = "http://192.168.99.1:4502/content/roche-ux/header.ux-preview.html" }
+    post_Tests{ SITE = "http://34.199.77.170:4503/content/we-retail/us/en.html" }
   }
   stage('Speed Tests') {
     speed_Tests{ SITE = "http://192.168.99.1:4502/content/roche-ux/header.ux-preview.html" }
