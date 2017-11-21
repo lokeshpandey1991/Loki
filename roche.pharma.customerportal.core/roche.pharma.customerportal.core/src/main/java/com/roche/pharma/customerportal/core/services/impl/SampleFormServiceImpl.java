@@ -7,6 +7,12 @@ import org.slf4j.LoggerFactory;
 
 import com.roche.pharma.customerportal.core.services.SampleFormService;
 
+/**
+ * The Class SampleServiceImpl provides the value of first name entered by user
+ * @version 1.0
+ * @author sagr25
+ */
+
 @Service(value = SampleFormService.class)
 
 @Component(immediate = true, metatype = true, label = "Sample Form Service")
@@ -14,12 +20,17 @@ import com.roche.pharma.customerportal.core.services.SampleFormService;
 public class SampleFormServiceImpl implements SampleFormService {
     
     /** Default log. */
-    protected final Logger log = LoggerFactory.getLogger(this.getClass());
+    protected final Logger log = LoggerFactory.getLogger(SampleFormServiceImpl.class);
     
+    /**
+     * Gets the value entered by user in the form fields
+     */
     @Override
     public String injestFormData(final String first, final String last, final String city) {
-        // Simply write out the values that are posted from the AEM form to the
-        // AEM log file
+        
+        /**
+         * Simply write out the values that are posted from the AEM form to the AEM log file
+         */
         log.info("Data posted from an AEM  form - Firstname: " + first + " Lastname: " + last + " City: " + city);
         return first;
         
