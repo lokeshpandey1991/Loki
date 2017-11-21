@@ -4,9 +4,9 @@
 
 node {
 
-  stage('PreBuild') {
+ /* stage('PreBuild') {
     pre_Build{}
-  }
+  }*/
    stage('Build') {
     code_Build{}
   }
