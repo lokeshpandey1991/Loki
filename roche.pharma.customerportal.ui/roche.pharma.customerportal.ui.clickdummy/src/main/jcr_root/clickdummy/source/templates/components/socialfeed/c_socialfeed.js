@@ -38,9 +38,9 @@
 
       // Loading the widgets.js file asynchronously
       window.twttr = function (d, s, id) {
-        var js = void 0,
-            fjs = d.getElementsByTagName(s)[0],
-            t = window.twttr || {};
+        var js = 0,
+          fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
         if (d.getElementById(id)) {
           return;
         }

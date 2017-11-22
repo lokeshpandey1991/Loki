@@ -29,8 +29,8 @@
    */
   function closeLiipbox() {
     var liipbox = $('.js-liipbox'),
-        className = 'x-no-scroll',
-        reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
+      className = 'x-no-scroll',
+      reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
 
     if (liipbox.length > 0) {
       liipbox.remove();
@@ -45,16 +45,13 @@
   function liipboxAnimation(event) {
 
     var toggleLiipbox = (event === 'close') > 0 ? true : false,
-
-
-    // jquery selectors
-    linkSelector = toggleLiipbox ? $('.js-liipbox').find('.link-row').get().reverse() : $('.js-liipbox').find('.link-row'),
-        logoSelector = $('.js-liipbox').find('.js-liipbox-logo'),
-        crossIcon = $('.js-liipbox').find('.js-cross-icon'),
-        liipboxOverlay = $('.js-liipbox').find('.js-liipbox-content'),
-        animateHeaderClass = toggleLiipbox ? 'animated fadeOut' : 'animated fadeIn',
-        animateContentClass = toggleLiipbox ? 'animated fadeOutDown' : 'animated fadeInUp',
-        animationEndCallback = toggleLiipbox ? closeLiipbox : '';
+      linkSelector = toggleLiipbox ? $('.js-liipbox').find('.link-row').get().reverse() : $('.js-liipbox').find('.link-row'),
+      logoSelector = $('.js-liipbox').find('.js-liipbox-logo'),
+      crossIcon = $('.js-liipbox').find('.js-cross-icon'),
+      liipboxOverlay = $('.js-liipbox').find('.js-liipbox-content'),
+      animateHeaderClass = toggleLiipbox ? 'animated fadeOut' : 'animated fadeIn',
+      animateContentClass = toggleLiipbox ? 'animated fadeOutDown' : 'animated fadeInUp',
+      animationEndCallback = toggleLiipbox ? closeLiipbox : '';
 
     // animate content
     if (linkSelector.length > 0) {
@@ -128,8 +125,8 @@
      */
     _liipboxOpen: function _liipboxOpen(data) {
       var e = document.createElement('div'),
-          html = data,
-          liipbox = document.getElementsByClassName('js-liipbox');
+        html = data,
+        liipbox = document.getElementsByClassName('js-liipbox');
 
       e.className = 'js-liipbox';
       e.innerHTML = html;
@@ -169,7 +166,7 @@
 
       // Find the liipbox and its overlay
       var liipbox = document.querySelector('.js-liipbox'),
-          liipboxOverlay = document.querySelector('.js-liipbox-overlay');
+        liipboxOverlay = document.querySelector('.js-liipbox-overlay');
 
       // Listen for and trap the keyboard
       liipbox.addEventListener('keydown', trapTabKey);
@@ -186,7 +183,7 @@
 
         // Find all focusable children
         var focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]',
-            focusableElements = liipbox.querySelectorAll(focusableElementsString);
+          focusableElements = liipbox.querySelectorAll(focusableElementsString);
 
         if (focusableElements.length > 0) {
           // Convert NodeList to Array

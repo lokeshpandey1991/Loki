@@ -18,7 +18,7 @@
  * @property {null} property - description of property
  */
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol' ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === 'function' && obj.constructor === Symbol && obj !== Symbol.prototype ? 'symbol' : typeof obj; };
 
 (function (window, $, snro) {
   snro = window.snro = snro || {};
@@ -28,13 +28,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     moduleName: 'headerSearchComp',
     // bind dom events
     bindEvents: function bindEvents() {
-      var liElement = void 0,
-          liSelected = void 0,
-          nextElement = void 0,
-          metaTagAttribute = $('meta[name="collection"]').attr('content'),
-          metaTagPersona = snro.commonUtils.getCookie('persona-type'),
-          defaultFontSizHeaderBar = $('#header-search-input').css('font-size'),
-          defaultFontSizeSearchResult = $('#search-page-input').css('font-size');
+      var liElement = 0,
+        liSelected = 0,
+        nextElement = 0,
+        metaTagAttribute = $('meta[name="collection"]').attr('content'),
+        metaTagPersona = snro.commonUtils.getCookie('persona-type'),
+        defaultFontSizHeaderBar = $('#header-search-input').css('font-size'),
+        defaultFontSizeSearchResult = $('#search-page-input').css('font-size');
       //click on body elements
       $('body').on('click', function (e) {
         if (e.target.className !== 'header-search-result-container') {
@@ -54,7 +54,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       //function to shrink input box size
       var measureText = function measureText(txt, font) {
         var id = 'text-width-tester',
-            $tag = $('#' + id);
+          $tag = $('#' + id);
         if (!$tag.length) {
           $tag = $('<span id="' + id + '" style="display:none;font:' + font + ';">' + txt + '</span>');
           $('body').append($tag);
@@ -68,10 +68,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       };
       var shrinkToFill = function shrinkToFill(input, fontSize, fontWeight, fontFamily) {
         var $input = $(input),
-            txt = $input.val().replace(/\s/g, 'x'),
-            maxWidth = $input.width(),
-            // add some padding
-        font = fontWeight + ' ' + fontSize + 'px ' + fontFamily;
+          txt = $input.val().replace(/\s/g, 'x'),
+          maxWidth = $input.width(),
+          // add some padding
+          font = fontWeight + ' ' + fontSize + 'px ' + fontFamily;
         // see how big the text is at the default size
         var textWidth = measureText(txt, font).width;
         if (textWidth > maxWidth) {
@@ -91,11 +91,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         var specialKeyCodes = [37, 38, 39, 40, 65, 17];
         if (specialKeyCodes.indexOf(e.which) === -1) {
           var targetInput = e.currentTarget,
-              start = targetInput.selectionStart,
-              end = 0,
-              newVal = $(targetInput).val(),
-              charLength = newVal.length,
-              charLengthNew = 0;
+            start = targetInput.selectionStart,
+            end = 0,
+            newVal = $(targetInput).val(),
+            charLength = newVal.length,
+            charLengthNew = 0;
 
           newVal = newVal.replace(/[*?]/g, '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
           charLengthNew = newVal.length;
@@ -105,12 +105,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
 
         var inputStringValue = $(e.currentTarget).val(),
-            parametersToSend = {},
-            $headerSearchResult = $(e.currentTarget).parents('.js-header-search-overlay').find('.header-search-result'),
-            $headerContainer = $(e.currentTarget).parents('.js-header-search-overlay').find('.header-search-result-container'),
-            $predictiveContainer = $(e.currentTarget).parents('.js-header-search-overlay').find('.header-search-predictive'),
-            $predictiveItem = $(e.currentTarget).parents('.js-header-search-overlay').find('.header-predictive-item'),
-            requestedUrl = $('.js-link-search').data('searchurl') + '/?ac=' + inputStringValue + '&type=autocomplete&locale=' + metaTagAttribute + '&limit=5' + '&ps=' + metaTagPersona;
+          parametersToSend = {},
+          $headerSearchResult = $(e.currentTarget).parents('.js-header-search-overlay').find('.header-search-result'),
+          $headerContainer = $(e.currentTarget).parents('.js-header-search-overlay').find('.header-search-result-container'),
+          $predictiveContainer = $(e.currentTarget).parents('.js-header-search-overlay').find('.header-search-predictive'),
+          $predictiveItem = $(e.currentTarget).parents('.js-header-search-overlay').find('.header-predictive-item'),
+          requestedUrl = $('.js-link-search').data('searchurl') + '/?ac=' + inputStringValue + '&type=autocomplete&locale=' + metaTagAttribute + '&limit=5' + '&ps=' + metaTagPersona;
         if (snro.commonUtils.isDesktopMode()) {
           if (!$(e.currentTarget).parents('.c-search-results-bar').length) {
             shrinkToFill($(e.currentTarget), parseInt(defaultFontSizHeaderBar), '', $(e.currentTarget).css('font-family'));
@@ -148,7 +148,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             } else {
               // Show the result List box
               var $ul = $('<ul>'),
-                  jsonData = '';
+                jsonData = '';
               try {
                 jsonData = JSON.parse(data);
               } catch (e) {
@@ -159,11 +159,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                   _autoSuggest = true;
                   $(jsonData.results).each(function (i, match) {
                     var trimmedText = '',
-                        originalText = '',
-                        startWith = new RegExp('^' + inputStringValue),
-                        emptyString = ' ',
-                        endsWithEmpty = new RegExp(emptyString + '$'),
-                        endsCharacters = '';
+                      originalText = '',
+                      startWith = new RegExp('^' + inputStringValue),
+                      emptyString = ' ',
+                      endsWithEmpty = new RegExp(emptyString + '$'),
+                      endsCharacters = '';
                     if (match.title.toLocaleLowerCase().indexOf(inputStringValue.toLocaleLowerCase()) !== -1) {
                       trimmedText = match.title.substring(inputStringValue.length, match.title.length);
                       originalText = match.title.substring(0, inputStringValue.length);

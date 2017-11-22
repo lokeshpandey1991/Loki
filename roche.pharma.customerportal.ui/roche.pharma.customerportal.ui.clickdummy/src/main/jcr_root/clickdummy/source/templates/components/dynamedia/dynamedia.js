@@ -27,10 +27,10 @@
     processImageAttributes: function processImageAttributes() {
       $('.js-dynamic-media').each(function () {
         var desktopSrc = $(this).attr('data-src_desktop'),
-            tabletLandSrc = $(this).attr('data-src_tabletl'),
-            tabletPortSrc = $(this).attr('data-src_tabletp'),
-            mobileLandSrc = $(this).attr('data-src_mobilel'),
-            mobilePortSrc = $(this).attr('data-src_mobilep');
+          tabletLandSrc = $(this).attr('data-src_tabletl'),
+          tabletPortSrc = $(this).attr('data-src_tabletp'),
+          mobileLandSrc = $(this).attr('data-src_mobilel'),
+          mobilePortSrc = $(this).attr('data-src_mobilep');
 
         if (typeof desktopSrc !== 'undefined') {
           if (typeof tabletLandSrc === 'undefined') {
@@ -169,8 +169,8 @@
 
           // dynamic attribute as read from configuration
           var dataSrcAttribute = attrArray[i].attribute,
-              dataSrcValue = baseURL + imgSrc + '?',
-              mediaParams = '';
+            dataSrcValue = baseURL + imgSrc + '?',
+            mediaParams = '';
 
           for (var _attr in attrArray[i].variation) {
 

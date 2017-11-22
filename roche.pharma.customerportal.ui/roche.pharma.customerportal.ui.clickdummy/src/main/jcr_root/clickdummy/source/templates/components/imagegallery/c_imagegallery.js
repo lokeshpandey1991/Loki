@@ -26,9 +26,9 @@
 
   $.fn.isInViewport = function () {
     var elementTop = $(this).offset().top,
-        elementBottom = elementTop + $(this).outerHeight(),
-        viewportTop = $(window).scrollTop(),
-        viewportBottom = viewportTop + $(window).height();
+      elementBottom = elementTop + $(this).outerHeight(),
+      viewportTop = $(window).scrollTop(),
+      viewportBottom = viewportTop + $(window).height();
 
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
@@ -62,8 +62,8 @@
     animateRowImages: function animateRowImages(ref) {
       if ($(ref).isInViewport()) {
         var target = ref,
-            row = $(target).data('select-row'),
-            animateContentClass = 'start_animation bottom-to-top';
+          row = $(target).data('select-row'),
+          animateContentClass = 'start_animation bottom-to-top';
 
         $('[data-row=' + row + ']').each(function (index, element) {
           var transitionDelay = index * 0.4 + 's';

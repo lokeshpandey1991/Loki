@@ -6,6 +6,7 @@ module.exports = {
         },
         src: [
             '<%= config.source %>/scripts/components/**/*.js',
+            '<%= config.source %>/templates/components/**/*.js',
             '<%= config.source %>/templates/components/**/*.es',
             '<%= config.source %>/scripts/base/*.es',
             '<%= config.source %>/scripts/common/*.es',

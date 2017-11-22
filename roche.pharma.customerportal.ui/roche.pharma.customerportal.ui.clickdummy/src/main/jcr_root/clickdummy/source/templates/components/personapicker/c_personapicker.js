@@ -45,7 +45,9 @@
           if (typeof window.Granite === 'undefined') {
             window.Granite = {
               I18n: {
-                get: function get() {}
+                get: function get() {
+                  //method body
+                }
               }
             };
           }
@@ -133,8 +135,8 @@
     // binding click events
     _bindEvents: function _bindEvents(deepLinkInitiated) {
       var context = this,
-          $modalPopUp = $('#myModalPopUp'),
-          metaTagPersonaLevel = context.metaTagAttribute;
+        $modalPopUp = $('#myModalPopUp'),
+        metaTagPersonaLevel = context.metaTagAttribute;
       $('body').on('click', '.js-persona-link', function () {
         var cookie_value = $(this).find('.js-persona-type').text().trim();
         context.cookieValue = cookie_value;

@@ -21,7 +21,7 @@
   // Define variables and functions for later use
   // DOM cache
   var _cache = {},
-      videoTracking = void 0;
+    videoTracking = 0;
   /**
    *
    * @param  $jPlayerCnt Player's container DIV to initialize against

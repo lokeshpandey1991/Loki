@@ -19,7 +19,7 @@ var snro = window.snro || {};
 snro.heroMedia = function (window, $) {
 
   var $heroBannerCnt = $('.heroBannerContainer'),
-      videoTracking = void 0;
+    videoTracking = 0;
 
   /**
    * @method init
@@ -32,10 +32,10 @@ snro.heroMedia = function (window, $) {
     var assetType = '';
     var videoPlayerFunction = function videoPlayerFunction(context, playerId, containerId, asseType) {
       var videoLink = $('#' + playerId).data('fileref'),
-          $videoPlayBtn = $(context).find('.jp-video-play'),
-          $playBtn = $(context).find('.vid-play'),
-          $fullScrBtn = $(context).find('.full-scr'),
-          $volCtrlBtn = $(context).find('.vol-ctrl');
+        $videoPlayBtn = $(context).find('.jp-video-play'),
+        $playBtn = $(context).find('.vid-play'),
+        $fullScrBtn = $(context).find('.full-scr'),
+        $volCtrlBtn = $(context).find('.vol-ctrl');
 
       if (asseType === 'video') {
         $('#' + playerId).jPlayer({
@@ -159,8 +159,8 @@ snro.heroMedia = function (window, $) {
             'video-100%': ''
           };
           var $jPlayer = $(e.currentTarget).parents('.heroBannerContainer').find('.jp-jplayer').attr('id'),
-              $playButton = $(e.currentTarget).parents('.heroBannerContainer').find('.vid-play'),
-              $jContainer = $(e.currentTarget).parents('.heroBannerContainer').find('.jp-audio').attr('id');
+            $playButton = $(e.currentTarget).parents('.heroBannerContainer').find('.vid-play'),
+            $jContainer = $(e.currentTarget).parents('.heroBannerContainer').find('.jp-audio').attr('id');
 
           if ($('#' + $jContainer).hasClass('jp-state-playing')) {
             $('#' + $jPlayer).jPlayer('pause');
@@ -173,7 +173,7 @@ snro.heroMedia = function (window, $) {
         // Full-screen
         $fullScrBtn.on('click', function (e) {
           var currentPlayerId = $(e.currentTarget).parents('.heroBannerContainer').find('.jp-jplayer').attr('id'),
-              $currjPlayer = $('#' + currentPlayerId).get(0);
+            $currjPlayer = $('#' + currentPlayerId).get(0);
           if ($currjPlayer.requestFullscreen) {
             $currjPlayer.requestFullscreen();
           } else if ($currjPlayer.msRequestFullscreen) {
@@ -187,7 +187,7 @@ snro.heroMedia = function (window, $) {
         // Volume control
         $volCtrlBtn.on('click', function (e) {
           var $volCtrlBtn = $(e.currentTarget).parents('.heroBannerContainer').find('.vol-ctrl'),
-              $jPlayer = $(e.currentTarget).parents('.heroBannerContainer').find('.jp-jplayer').attr('id');
+            $jPlayer = $(e.currentTarget).parents('.heroBannerContainer').find('.jp-jplayer').attr('id');
           if ($volCtrlBtn.hasClass('mute')) {
             $volCtrlBtn.removeClass('mute');
             $('#' + $jPlayer).jPlayer('volume', 1);
