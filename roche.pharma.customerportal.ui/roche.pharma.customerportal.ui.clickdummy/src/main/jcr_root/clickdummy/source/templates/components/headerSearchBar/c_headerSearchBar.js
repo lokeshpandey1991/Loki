@@ -113,9 +113,9 @@ var _typeof = typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol
           requestedUrl = $('.js-link-search').data('searchurl') + '/?ac=' + inputStringValue + '&type=autocomplete&locale=' + metaTagAttribute + '&limit=5' + '&ps=' + metaTagPersona;
         if (snro.commonUtils.isDesktopMode()) {
           if (!$(e.currentTarget).parents('.c-search-results-bar').length) {
-            shrinkToFill($(e.currentTarget), parseInt(defaultFontSizHeaderBar), '', $(e.currentTarget).css('font-family'));
+            shrinkToFill($(e.currentTarget), parseInt(defaultFontSizHeaderBar, 10), '', $(e.currentTarget).css('font-family'));
           } else {
-            shrinkToFill($(e.currentTarget), parseInt(defaultFontSizeSearchResult), '', $(e.currentTarget).css('font-family'));
+            shrinkToFill($(e.currentTarget), parseInt(defaultFontSizeSearchResult, 10), '', $(e.currentTarget).css('font-family'));
           }
         }
         if (e.which === 40 || e.which === 38) {
@@ -298,7 +298,7 @@ var _typeof = typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol
       var searchParam = snro.commonUtils.queryParams('q').trim();
       if (searchParam !== '') {
         $('#search-page-input').val(decodeURI(searchParam));
-        snro.headerSearchComp.bindEvents.shrinkSearchResult($('#search-page-input'), parseInt($('#search-page-input').css('font-size')), '', $('#search-page-input').css('font-family'));
+        snro.headerSearchComp.bindEvents.shrinkSearchResult($('#search-page-input'), parseInt($('#search-page-input').css('font-size'),10), '', $('#search-page-input').css('font-family'));
         if (searchParam.length > 2) {
           $('#search-page-input').parents('.header-search-overlay').find('.header-search-button').addClass('header-search-button--active');
         }

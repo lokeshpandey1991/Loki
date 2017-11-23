@@ -77,7 +77,7 @@ snro.heroMedia = function (window, $) {
         });
 
         $('#' + playerId).bind($.jPlayer.event.seeked, function (event) {
-          var seekedPercent = parseInt(event.jPlayer.status.currentPercentAbsolute);
+          var seekedPercent = parseInt(event.jPlayer.status.currentPercentAbsolute, 10);
           if (seekedPercent === 100) {
             $.extend(window.digitalData['link'], { event: 'video-completes' });
             window._satellite.track('video-tracking');

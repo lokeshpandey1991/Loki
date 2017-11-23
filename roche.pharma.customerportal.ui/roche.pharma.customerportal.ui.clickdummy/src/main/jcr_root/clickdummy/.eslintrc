@@ -182,7 +182,7 @@
         //disallow variable or function declarations in nested blocks
         "no-inner-declarations": "error",
 
-        //Disallow Unnecessary Labels 
+        //Disallow Unnecessary Labels
         "no-extra-label":"error",
 
         //Disallow Multiline Strings
@@ -205,6 +205,24 @@
 
         //disallow unreachable code after return, throw, continue, and break statements
         "no-unreachable":"error",
+
+        //enforce “for” loop update clause moving the counter in the right direction.
+        "for-direction":"off",
+
+        //disallow comparisons where both sides are exactly the same
+        "no-self-compare": "error",
+
+        //require calls to isNaN() when checking for NaN
+        "use-isnan": "error",
+
+        //The base should be provided to "parseInt"
+        "radix": "error",
+
+        //disallow variable redeclaration
+        "no-redeclare": "error",
+
+        //disallow assignments where both sides are exactly the same
+        "no-self-assign": "error",
 
         // jQuery
         "jquery/no-ajax": [
