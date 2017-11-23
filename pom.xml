@@ -14,7 +14,7 @@
         <module>roche.pharma.customerportal.complete</module>		
     </modules>
 	 
-	<!-- Properties --><!-- Properties -->
+	<!-- Properties -->
     <properties>  
 		<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
