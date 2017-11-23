@@ -168,7 +168,7 @@
     }
 }
 
-@media ($tablet) {
+@media #{$tablet} {
     .start_animation {
         animation-duration: .7s !important;
         animation-timing-function: ease !important;
