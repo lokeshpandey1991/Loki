@@ -261,7 +261,7 @@
                 </plugin>
 
             <!-- Require Java 7 or higher for building -->
-                <plugin>
+                   <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
 					<version>1.4.1</version>	
@@ -270,6 +270,10 @@
                             <id>default-cli</id>
                             <goals>
                                 <goal>enforce</goal>
+                            </goals>
+                            <configuration>
+                                <rules>
+                                    <requireMavenVersion>
                                         <message>Project must be built with Maven 3.0.3 or higher</message>
                                         <version>3.0.3</version>
                                     </requireMavenVersion>
@@ -278,10 +282,6 @@
 			                              <version>[1.8.0,)</version>
                                     </requireJavaVersion>
                                 </rules>
-                            </goals>
-                            <configuration>
-                                <rules>
-                                    <requireMavenVersion>
                             </configuration>
                         </execution>
                     </executions>
