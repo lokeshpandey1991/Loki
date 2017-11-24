@@ -7,7 +7,7 @@
         // Expose jQuery as global
         "jquery": true,
         // Enable es6 linting
-        "es6": true
+        "es6": false
     },
     "plugins": [
         "jquery"
