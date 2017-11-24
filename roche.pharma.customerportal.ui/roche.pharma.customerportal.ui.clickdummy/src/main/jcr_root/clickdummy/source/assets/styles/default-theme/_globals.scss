@@ -34,7 +34,7 @@ a {
     }
 }
 
-// Common CSS for elements (Class suffix x-*)
+// Common CSS for elements (Class prefix x-*)
 .x-btn {
     font-family: $font-imagopro-bold;
     @include font-size(18px);
@@ -48,12 +48,11 @@ a {
 }
 
 .x-btn-disabled {
-    @extend .x-btn;
     background-color: $color-bg-disabled;
     color: $color-tertiary;
 }
 
-// Common CSS for widget (a widget is a small container with functionality and content. Class suffix w-*)
+// Common CSS for widget (a widget is a small container with functionality and content. Class prefix w-*)
 // <----- TODO: Widget CSS goes here
-// Common CSS for component (A component is a set of multiple different widgets. Class suffix c-*)
+// Common CSS for component (A component is a set of multiple different widgets. Class prefix c-*)
 // <----- TODO: Component CSS goes here

@@ -37,7 +37,7 @@ a {
   a, a:hover, a:visited, a:focus {
     text-decoration: none; }
 
-.x-btn, .x-btn-disabled {
+.x-btn {
   font-family: "imago-bold", Arial, sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
