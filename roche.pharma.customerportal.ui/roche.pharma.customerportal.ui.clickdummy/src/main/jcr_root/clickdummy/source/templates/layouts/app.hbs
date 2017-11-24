@@ -16,6 +16,8 @@
         <link rel="icon" href="/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/favicon.ico" type="image/x-icon"
         />
         <title>{{fsdId}} Component | UpFront</title>
+        <sly data-sly-call="${clientLib.css @ categories='roche.vendor.publish'}" />
+        <sly data-sly-call="${clientLib.css @ categories='roche.theme.publish'}" />
         <sly data-sly-call="${clientLib.css @ categories='roche.global.publish'}" />
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWxty08aW6_xCCrYkOuckYvlKMMm8R8_U&language=en"
