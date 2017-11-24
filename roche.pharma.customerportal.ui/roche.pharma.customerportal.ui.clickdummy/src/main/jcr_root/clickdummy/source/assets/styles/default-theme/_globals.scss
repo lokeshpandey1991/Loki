@@ -16,8 +16,43 @@ body {
     color: $color-text-default;
 }
 
+// Common resets
+button,
+input {
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    &,
+    &:hover,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
 // Common CSS for elements (Class suffix x-*)
-// <----- TODO: Element CSS goes here
+.x-btn {
+    font-family: $font-imagopro-bold;
+    @include font-size(18px);
+    @include line-height(27px);
+    @include padding(10px);
+    text-align: center;
+    border: 1px solid $color-primary;
+    @include border-radius(4px);
+    background-color: $color-theme;
+    color: $color-primary;
+}
+
+.x-btn-disabled {
+    @extend .x-btn;
+    background-color: $color-bg-disabled;
+    color: $color-tertiary;
+}
+
 // Common CSS for widget (a widget is a small container with functionality and content. Class suffix w-*)
 // <----- TODO: Widget CSS goes here
 // Common CSS for component (A component is a set of multiple different widgets. Class suffix c-*)
