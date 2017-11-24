@@ -1,0 +1,14 @@
+// Breakpoints
+$desktop-x-large: '(min-width: 1440px)'; // Usage => @media #{$desktop-x-large} { ... }
+$desktop-large: '(min-width: 1200px)'; // Usage => @media #{$desktop-large} { ... }
+$desktop-large-only: '(min-width: 1200px) and (max-width: 1439px)'; // Usage => @media #{$desktop-large-only} { ... }
+$desktop: '(min-width: 1024px)'; // Usage => @media #{$desktop} { ... }
+$desktop-only: '(min-width: 1024px) and (max-width: 1199px)'; // @media #{$desktop-only} { ... }
+$tablet-large: '(min-width: 992px)'; // Usage => @media #{$tablet-large} { ... }
+$tablet: '(min-width: 768px)'; // Usage => @media #{$tablet} { ... }
+$tablet-only: '(min-width: 768px) and (max-width: 991px)'; // @media #{$tablet-only} { ... };
+$mobile-large: '(min-width: 600px) and (max-width: 767px)'; // @media #{$mobile-large} { ... }
+$mobile: '(min-width: 320px) and (max-width: 767px)'; // Usage => @media #{$mobile} { ... }
+// Breakpoints landscape
+$tablet-landscape: '#{$tablet} and (orientation: landscape)'; // Usage => @media #{$tablet-landscape} { ... }
+$mobile-landscape: '#{$mobile} and (orientation: landscape)'; // Usage => @media #{$mobile-landscape} { ... }

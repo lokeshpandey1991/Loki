@@ -138,6 +138,7 @@ bower_components
 .bower-tmp
 
 ### app ###
+app
 
 ### sass cache files ###
 .sass-cache/**

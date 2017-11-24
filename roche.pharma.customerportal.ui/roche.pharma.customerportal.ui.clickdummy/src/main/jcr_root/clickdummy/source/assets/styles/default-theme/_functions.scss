@@ -1,0 +1,14 @@
+// Function to change px to rem unit
+@function convert-to-rem($args) {
+    $argsLength: length($args);
+    $result: "";
+    $remValue: "";
+    @for $index from 1 through $argsLength {
+        $remValue: nth($args, $index)/$font-html;
+        $result: #{$result + $remValue}rem;
+        @if ($index < $argsLength) {
+            $result: #{$result + " "};
+        }
+    }
+    @return $result;
+}
