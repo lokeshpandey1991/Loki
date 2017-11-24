@@ -27,7 +27,7 @@
    * @param {selector, HTMLElement, or jQuery object} table
    */
   var cookiesTag = $('.js-cookies-tag'),
-      closeBtn = $('.js-closeBtn');
+    closeBtn = $('.js-closeBtn');
   //Hide the Cookie popup
   var cookiesPopupHide = function cookiesPopupHide() {
     cookiesTag.slideUp(500);

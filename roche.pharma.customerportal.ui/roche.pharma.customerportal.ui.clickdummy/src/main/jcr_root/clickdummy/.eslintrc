@@ -7,7 +7,7 @@
         // Expose jQuery as global
         "jquery": true,
         // Enable es6 linting
-        "es6": true
+        "es6": false
     },
     "plugins": [
         "jquery"
@@ -98,6 +98,9 @@
         // disallow the use of eval()-like methods
         "no-implied-eval": "error",
 
+        //disallow the use of eval function
+        "no-eval": "error",
+
         // disallow deleting variables
         "no-delete-var": "error",
 
@@ -111,7 +114,7 @@
         "guard-for-in": "error",
 
         // require default cases in switch statements
-        "default-case": "warn",
+        "default-case": "error",
 
         // disallow void operators
         "no-void": "error",
@@ -143,6 +146,9 @@
         // disallow the use of debugger
         "no-debugger": "error",
 
+        // disallow Warning Comments
+        "no-warning-comments": [2, { "terms": ["@cc_on", "@if", "@else", "@end"], "location": "anywhere" }],
+
         // ES6
         // require braces around arrow function bodies
         "arrow-body-style": "warn",
@@ -151,10 +157,72 @@
         // enforce consistent spacing before and after the arrow in arrow functions
         "arrow-spacing": "warn",
         // require destructuring from arrays and/or objects
-        "prefer-destructuring": "warn",
+        "prefer-destructuring": "off",
         // require generator functions to contain yield
         "require-yield": "error",
 
+        //disallow duplicate arguments in function definitions
+        "no-dupe-args": "error",
+
+        //disallow duplicate keys in object literals
+        "no-dupe-keys": "error",
+
+        //disallow empty functions
+        "no-empty-function": "error",
+
+        //enforce a maximum number of parameters in function definitions
+        "max-params": ["error", 7],
+
+        //Limit Cyclomatic Complexity
+        "complexity": ["error", 37],
+
+        //disallow function declarations and expressions inside loop statements
+        "no-loop-func": "error",
+
+        //disallow variable or function declarations in nested blocks
+        "no-inner-declarations": "error",
+
+        //Disallow Unnecessary Labels
+        "no-extra-label":"error",
+
+        //Disallow Multiline Strings
+        "no-multi-str": "error",
+
+        //enforce a maximum depth that blocks can be nested
+        "max-depth": ["error", 7],
+
+        //disallow octal literals
+        "no-octal": "error",
+
+        //Disallow Case Statement Fallthrough
+        "no-fallthrough": "error",
+
+        //disallow unnecessary semicolons
+        "no-extra-semi": "error",
+
+        //Disallow Primitive Wrapper Instances
+        "no-new-wrappers": "error",
+
+        //disallow unreachable code after return, throw, continue, and break statements
+        "no-unreachable":"error",
+
+        //enforce “for” loop update clause moving the counter in the right direction.
+        "for-direction":"off",
+
+        //disallow comparisons where both sides are exactly the same
+        "no-self-compare": "error",
+
+        //require calls to isNaN() when checking for NaN
+        "use-isnan": "error",
+
+        //The base should be provided to "parseInt"
+        "radix": "error",
+
+        //disallow variable redeclaration
+        "no-redeclare": "error",
+
+        //disallow assignments where both sides are exactly the same
+        "no-self-assign": "error",
 
         // jQuery
         "jquery/no-ajax": [

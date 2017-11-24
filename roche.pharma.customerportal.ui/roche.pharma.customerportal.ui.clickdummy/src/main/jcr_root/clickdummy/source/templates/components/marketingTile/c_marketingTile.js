@@ -30,8 +30,8 @@
   var seeMorelink = function seeMorelink() {
 
     var viewLink = $('.c-marketingtile__description'),
-        seeMore = '.js-seemore',
-        ctaEle = '.c-marketingtile__cta';
+      seeMore = '.js-seemore',
+      ctaEle = '.c-marketingtile__cta';
 
     viewLink.each(function () {
       var self = $(this);

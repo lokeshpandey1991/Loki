@@ -71,3 +71,20 @@ dist:
     - 'handlebars'
     - 'concat'
     - 'removelogging'
+
+aemwatch:
+  description: "build app with ux-lib, deploy and watch for changes followed by auto deploy"
+  tasks:
+    - 'eslint'
+    - 'babel'
+    - 'karma'
+    - 'clean'
+    - 'copy'
+    - 'assemble'
+    - 'aemcomponentcopy:uxlib'
+    - 'sass'
+    - 'autoprefixer'
+    - 'handlebars'
+    - 'concat'
+    - 'aemdeploy'
+    - 'watch'

@@ -112,7 +112,7 @@
         $('.slick-slide .c-carousel__event-asset').removeClass('slideInRight slideOutLeft');
 
         var $activeSlides = $('.slick-slide.slick-active'),
-            activeSlidesImagesArray = [];
+          activeSlidesImagesArray = [];
         //nextActiveSlidesIndexsArray = [];
 
         //Get total number of slides
@@ -129,7 +129,7 @@
         //Get all indexes of active slides after change as array
         for (var i = 0; i <= activeSlides; i++) {
           var newIndex = nextSlide + i < slideCount ? nextSlide + i : nextSlide + i - slideCount,
-              $slideFragment = $(slick.$slides.get(newIndex));
+            $slideFragment = $(slick.$slides.get(newIndex));
 
           if (i === 0) {
             //$slideFragment.find('.js-asset-wrapper').addClass('slideInRight');

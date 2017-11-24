@@ -38,9 +38,9 @@
 
       // Loading the widgets.js file asynchronously
       window.twttr = function (d, s, id) {
-        var js = void 0,
-            fjs = d.getElementsByTagName(s)[0],
-            t = window.twttr || {};
+        var js = 0,
+          fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
         if (d.getElementById(id)) {
           return;
         }
@@ -75,7 +75,7 @@
     },
     createTimeline: function createTimeline(twttr) {
       var userName = _cache.feedsContent.data('userName');
-      var limit = parseInt(_cache.feedsContent.data('limit'));
+      var limit = parseInt(_cache.feedsContent.data('limit'),10);
       twttr.widgets.createTimeline({
         sourceType: 'profile',
         screenName: userName

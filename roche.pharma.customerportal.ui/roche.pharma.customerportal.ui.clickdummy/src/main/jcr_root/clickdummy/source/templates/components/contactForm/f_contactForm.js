@@ -82,7 +82,7 @@
     // submitting form fields by AJAX
     submitForm: function submitForm() {
       var dataXML = '',
-          captchaResponse = '';
+        captchaResponse = '';
       if (typeof window.grecaptcha !== 'undefined') {
         captchaResponse = $('#g-recaptcha-response').val();
       }
@@ -92,8 +92,8 @@
         }
       });
       var date = new Date(),
-          timeout = 30000,
-          dataString = 'dataXML=' + dataXML + '&date=' + date + '&currentPagepath=' + _cache.currentURL + '&recaptcha=' + captchaResponse + '&referrer=' + this.pageReferrer;
+        timeout = 30000,
+        dataString = 'dataXML=' + dataXML + '&date=' + date + '&currentPagepath=' + _cache.currentURL + '&recaptcha=' + captchaResponse + '&referrer=' + this.pageReferrer;
       snro.pageNotification.getPageNotification(_cache.actionPath, dataString, timeout);
     },
 
@@ -142,7 +142,7 @@
       });
       _cache.submitButton.on('click', function () {
         var captchaResp = '',
-            captchaErrorHTML = '<div class="guideFieldError captcha-error">' + window.Granite.I18n.get('rdoe_ContactUs.CaptchaError') + '</div>';
+          captchaErrorHTML = '<div class="guideFieldError captcha-error">' + window.Granite.I18n.get('rdoe_ContactUs.CaptchaError') + '</div>';
         if (typeof window.grecaptcha !== 'undefined') {
           captchaResp = window.grecaptcha.getResponse();
           if (captchaResp === '' && !$('.captcha-error').length) {
