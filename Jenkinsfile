@@ -4,12 +4,12 @@
 
 node {
 
-  stage('PreBuild') {
+ /* stage('PreBuild') {
     pre_Build{}
   }
    stage('Build') {
     code_Build{}
-  }
+  }*/
   stage('Sonar') {
     sonar_Test{}
   } 
