@@ -2,10 +2,16 @@
 html {
     font-size: $font-html;
     @media #{$tablet} {
-        font-size: $font-html-sm;
+        font-size: calculate-base-font($tablet-bp);
+    }
+    @media #{$tablet-large} {
+        font-size: calculate-base-font($tablet-large-bp);
     }
     @media #{$desktop} {
-        font-size: $font-html-md;
+        font-size: calculate-base-font($desktop-bp);
+    }
+    @media #{$desktop-large} {
+        font-size: calculate-base-font($desktop-large-bp);
     }
 }
 

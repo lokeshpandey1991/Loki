@@ -12,3 +12,7 @@
     }
     @return $result;
 }
+
+@function calculate-base-font($target-breakpoint) {
+    @return round(($target-breakpoint/$desktop-large-bp)*$font-html);
+}
