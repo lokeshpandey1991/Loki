@@ -5,22 +5,25 @@ import org.apache.felix.scr.annotations.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.roche.pharma.customerportal.core.services.SampleFormService;
+import com.roche.pharma.customerportal.core.services.FormFrameworkService;
 
 /**
- * The Class SampleServiceImpl provides the value of first name entered by user
- * @version 1.0
+ * Implementation of the sample service to describe form functioning To be deleted after form implementation
  * @author sagr25
+ * @version 1.0
  */
 
-@Service(value = SampleFormService.class)
+@Service(value = FormFrameworkService.class)
 
 @Component(immediate = true, metatype = true, label = "Sample Form Service")
+/**
+ * The Class SampleServiceImpl provides the value of first name entered by user
+ */
 
-public class SampleFormServiceImpl implements SampleFormService {
+public class FormFrameworkServiceImpl implements FormFrameworkService {
     
     /** Default log. */
-    protected final Logger log = LoggerFactory.getLogger(SampleFormServiceImpl.class);
+    protected final Logger log = LoggerFactory.getLogger(FormFrameworkServiceImpl.class);
     
     /**
      * Gets the value entered by user in the form fields
