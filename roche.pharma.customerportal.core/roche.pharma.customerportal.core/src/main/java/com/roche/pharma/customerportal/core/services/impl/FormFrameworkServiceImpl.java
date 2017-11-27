@@ -8,16 +8,16 @@ import org.slf4j.LoggerFactory;
 import com.roche.pharma.customerportal.core.services.FormFrameworkService;
 
 /**
- * Implementation of the sample service to describe form functioning To be deleted after form implementation
+ * Implementation of the service to describe form functioning To be deleted after form implementation
  * @author sagr25
  * @version 1.0
  */
 
 @Service(value = FormFrameworkService.class)
 
-@Component(immediate = true, metatype = true, label = "Sample Form Service")
+@Component(immediate = true, metatype = true, label = "Form Service")
 /**
- * The Class SampleServiceImpl provides the value of first name entered by user
+ * The Class FormFrameworkServiceImpl provides the value of first name entered by user
  */
 
 public class FormFrameworkServiceImpl implements FormFrameworkService {
