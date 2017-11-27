@@ -32,15 +32,15 @@
       height:32px;
     }
     opacity: 1;
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       height: 20px;
       width: 1px;
       background-color: $heading-color;
       border-bottom: none;
       bottom: inherit;
     }
-    &:hover:after{
+    &:hover::after{
       transform: rotate(-45deg);
     }
   }
@@ -62,8 +62,8 @@
     background-color: $clr-error-red;
     color: $clr-white;
     .notification--close {
-      &:after,
-      &:before {
+      &::after,
+      &::before {
         background-color: $clr-white;
       }
     }
@@ -117,8 +117,8 @@
       top: 50%;
       transform: translateY(-50%);
       left: 48px;
-      &:after,
-      &:before {
+      &::after,
+      &::before {
         height: 36px;
       }
     }

@@ -37,9 +37,10 @@ module.exports = function (grunt) {
                 grunticon: 'grunt-grunticon',
                 aemcomponentcopy: 'grunt-tasks/aem-component-copy.js',
                 aemdeploy: 'grunt-tasks/aemsync-grunt.js',
-                handlebars : 'grunt-handlebars.js'
+                handlebars : 'grunt-handlebars.js',
+                sasslint : 'grunt-sass-lint',
+                csslint : 'grunt-contrib-csslint'
             }
-        }
+        },
     });
-
 };

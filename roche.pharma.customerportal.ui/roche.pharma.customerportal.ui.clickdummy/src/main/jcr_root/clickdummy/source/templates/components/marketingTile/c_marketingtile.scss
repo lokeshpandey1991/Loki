@@ -128,7 +128,6 @@
     color: $heading-color;
     display: none;
     font-family: inherit;
-    display: inline-block;
     font-size: convert-in-rem(18);
     line-height: convert-in-rem(30);
     padding-top: convert-in-rem(5);
@@ -246,7 +245,6 @@
     }
 
     .c-marketingtile__col-right {
-      padding: convert-in-rem(65) 0;
       max-height: 100%;
       overflow: hidden;
       text-align: center;

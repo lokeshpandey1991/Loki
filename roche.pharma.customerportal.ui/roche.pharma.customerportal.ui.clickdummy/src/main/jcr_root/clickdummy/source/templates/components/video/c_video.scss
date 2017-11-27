@@ -75,7 +75,6 @@
     left: 50%;
     cursor: pointer;
     background-color: #fff;
-    left: 50%;
     border-radius: 50%;
     background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/bigPlayButton.svg);
     -moz-box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
@@ -193,7 +192,7 @@
         @media ($tablet) {
         width: 24px;
         height: 24px;
-        margin-right: 0px;
+        margin-right: 0;
         }
       }
     }
