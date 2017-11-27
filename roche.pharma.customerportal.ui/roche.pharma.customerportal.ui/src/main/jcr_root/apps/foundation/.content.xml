@@ -4,7 +4,7 @@
     <components jcr:primaryType="nt:unstructured">
         <form jcr:primaryType="nt:unstructured">
             <actions jcr:primaryType="nt:unstructured">
-                <sampleaction/>
+                <formaction/>
             </actions>
         </form>
     </components>
