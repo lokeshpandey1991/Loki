@@ -22,5 +22,5 @@
     </items>
     <granite:data
         jcr:primaryType="nt:unstructured"
-        showhidetargetvalue="foundation/components/form/actions/sampleaction"/>
+        showhidetargetvalue="foundation/components/form/actions/formaction"/>
 </jcr:root>

@@ -3,4 +3,4 @@
     jcr:primaryType="sling:Folder"
     jcr:title="Form Action"
     sling:resourceType="foundation/components/form/action"
-    hint="Sample action type created by sagr25"/>
+    hint="Customized form action type created by sagr25"/>

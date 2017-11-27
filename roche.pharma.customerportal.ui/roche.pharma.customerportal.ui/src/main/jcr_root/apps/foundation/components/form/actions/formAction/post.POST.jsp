@@ -4,7 +4,7 @@
     String last = request.getParameter("last");
     String city = request.getParameter("city");
 
- com.roche.pharma.customerportal.core.services.SampleFormService sample = sling.getService(com.roche.pharma.customerportal.core.services.SampleFormService.class);
+ com.roche.pharma.customerportal.core.services.FormFrameworkService hf = sling.getService(com.roche.pharma.customerportal.core.services.FormFrameworkService.class);
 
 %>
-<%=sample.injestFormData(first,last,city)%>
+<%=hf.injestFormData(first,last,city)%>
