@@ -57,11 +57,11 @@ public class SearchServiceImpl implements SearchService {
      */
     public Query createQuery(final ResourceResolver resourceResolver, final Map<String, String> predicateParamMap) {
         final Session session = resourceResolver.adaptTo(Session.class);
-        Query finalQuery = queryBuilder.createQuery(PredicateGroup.create(predicateParamMap), session);
+        final Query finalQuery = queryBuilder.createQuery(PredicateGroup.create(predicateParamMap), session);
         if (session != null && session.isLive()) {
-            session.logout();        
+            session.logout();
         }
-		return finalQuery;
+        return finalQuery;
     }
     
     /**
