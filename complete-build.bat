@@ -11,5 +11,5 @@ cd ../../../../../../
 
 cmd /C  mvn enforcer:enforce
 cd roche.pharma.customerportal.complete
-cmd /C mvn clean install -Dmaven.test.skip=true -PautoInstallPackage
+cmd /C mvn clean install -PautoInstallPackage
 cd ../
