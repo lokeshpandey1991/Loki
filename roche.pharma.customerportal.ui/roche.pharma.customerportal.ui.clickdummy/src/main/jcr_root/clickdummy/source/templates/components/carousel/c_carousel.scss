@@ -29,7 +29,7 @@
         margin: 0;
         padding: 0 40px;
         button {
-          &:before {
+          &::before {
             font-size: 14px;
             background-color: $clr-white;
             border: 1px solid black;
@@ -45,7 +45,7 @@
         }
         &.slick-active {
           button {
-            &:before {
+            &::before {
               width: 14px;
               height: 14px;
               color: $clr-acnt-blue;
@@ -54,7 +54,7 @@
             }
           }
         }
-        &:before {
+        &::before {
           content: "";
           position: absolute;
           left: 6px;
@@ -66,13 +66,13 @@
         }
         &:last-child {
           padding: 0;
-          &:before {
+          &::before {
             border-bottom: none;
           }
         }
         &:hover {
           button {
-            &:before {
+            &::before {
               width: 14px;
               height: 14px;
               top: -3px;
@@ -189,7 +189,7 @@
       min-height: auto;
       .slick-list {
         position: relative;
-        top: 0px;
+        top: 0;
       }
       .slick-dots {
         bottom: auto;
@@ -408,7 +408,7 @@
       max-width: 77%;
       .slick-list {
         position: relative;
-        top: 0px;
+        top: 0;
       }
       .slick-dots {
         bottom: auto;
@@ -435,7 +435,7 @@
         width: 204px;
         height: 403px;
         margin-top: 104px;
-        .c-carousel__event-asset {}
+        // .c-carousel__event-asset {}
         .c-carousel__event-asset,
         .c-carousel__event-asset--cloned {
           width: 203px;
@@ -459,8 +459,8 @@
       }
       &.slick-active {
         visibility: visible;
-        .c-carousel__event-asset--cloned {}
-        &:hover .c-carousel__event-asset {}
+        // .c-carousel__event-asset--cloned {}
+        // &:hover .c-carousel__event-asset {}
       }
       &.slick-active+.slick-active {
         border-left: none;

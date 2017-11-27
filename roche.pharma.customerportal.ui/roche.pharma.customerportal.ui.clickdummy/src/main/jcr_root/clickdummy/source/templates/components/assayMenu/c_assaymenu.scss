@@ -65,7 +65,6 @@
           color: $clr-white;
           vertical-align: middle;
           height: 45px;
-          display: table-cell;
         }
         .assay-title {
           color: $clr-white;
@@ -91,8 +90,8 @@
     .close {
       left: 10px;
       top: 12px;
-      &:after,
-      &:before {
+      &::after,
+      &::before {
         height: 22px;
         width: 1px;
       }
@@ -125,7 +124,7 @@
   }
   .new {
     color: $heading-color;
-    &:before {
+    &::before {
       content: "";
       float: left;
       width: convert-in-rem(12);
@@ -138,7 +137,7 @@
   }
   .feature {
     color: $heading-color;
-    &:before {
+    &::before {
       @extend .new;
       background: $clr-acnt-pink;
     }

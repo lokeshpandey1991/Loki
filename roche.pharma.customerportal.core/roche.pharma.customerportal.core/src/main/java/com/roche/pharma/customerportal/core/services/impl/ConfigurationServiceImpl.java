@@ -20,7 +20,7 @@ import com.roche.pharma.customerportal.core.services.ConfigurationService;
  * The Class ConfigurationServiceImpl.
  */
 /**
- * @author sku154
+ * @author vku116
  */
 
 @Service(value = ConfigurationService.class)
