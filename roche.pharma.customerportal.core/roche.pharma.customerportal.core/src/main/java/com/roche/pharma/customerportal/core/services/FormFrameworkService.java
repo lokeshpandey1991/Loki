@@ -1,7 +1,7 @@
 package com.roche.pharma.customerportal.core.services;
 
 /**
- * Sample from service to refer working of forms To be deleted after form implementation
+ * Service to refer working of forms To be deleted after form implementation
  * @author sagr25
  * @version 1.0
  */
