@@ -149,12 +149,12 @@ $bound-offset-lr: 11.5%; // left right offset for content
     }
     .quote{
       position: relative;
-      &:before{
+      &::before{
         content: url('/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/quotes-left.svg');
         width: 24px;
         height: 24px;
       }
-      &:after{
+      &::after{
         content: url('/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/quotes-right.svg');
         width: 24px;
         height: 24px;

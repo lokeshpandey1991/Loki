@@ -147,8 +147,5 @@
 .almost_visible {
   @media ($tablet) {
     opacity: 0;
-    &.bottom-to-top {
-      //opacity: 1;
-    }
   }
 }
