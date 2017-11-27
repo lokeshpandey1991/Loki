@@ -31,12 +31,12 @@
     // define variable for table
 
     var viewLink = $('.view-btn'),
-        viewTarget = $('.js-table'),
-        viewTargetChild = $('.js-table tr'),
-        linkLocation = void 0,
-        closeBtn = 'js-close',
-        setTableHeight = $('.js-table-height'),
-        clientHeight = $(window).height();
+      viewTarget = $('.js-table'),
+      viewTargetChild = $('.js-table tr'),
+      linkLocation = 0,
+      closeBtn = 'js-close',
+      setTableHeight = $('.js-table-height'),
+      clientHeight = $(window).height();
 
     //this function is using for show the table when click on view full link btn
     viewLink.on('click', function (event) {

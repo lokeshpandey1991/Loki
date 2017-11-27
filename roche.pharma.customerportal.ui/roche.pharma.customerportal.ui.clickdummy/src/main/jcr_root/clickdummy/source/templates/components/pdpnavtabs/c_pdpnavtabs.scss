@@ -21,12 +21,12 @@
     display:inline-block;
     box-sizing: border-box;
     @media ($tablet) {
-      padding-left:0px;
-      margin-bottom:0px;
+      padding-left:0;
+      margin-bottom:0;
       position: relative;
       top:convert-in-rem(-28);
       width:83%;
-      font-size: 0px;
+      font-size: 0;
     }
     @media ($mobile) {
       white-space: nowrap;
@@ -60,7 +60,7 @@
         font-size:convert-in-rem(14);
         @include rel-padding(18, 20, 18, 20);
         border: 1px solid $clr-outline;
-        border-left:0px;
+        border-left:0;
         white-space:nowrap;
         overflow:hidden;
         text-overflow:ellipsis;

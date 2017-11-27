@@ -27,11 +27,15 @@
     moduleName: 'productListingTileCmp',
 
     // assignment of dom selectors to variables
-    updateCache: function updateCache() {},
+    updateCache: function updateCache() {
+      //method body
+    },
 
 
     // bind dom events
-    bindEvents: function bindEvents() {},
+    bindEvents: function bindEvents() {
+      //method body
+    },
 
 
     // Module initialization

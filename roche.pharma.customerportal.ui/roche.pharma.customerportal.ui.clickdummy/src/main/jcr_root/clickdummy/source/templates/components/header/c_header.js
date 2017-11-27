@@ -37,10 +37,10 @@
     // handle stickyness of header section
     _stickyHeader: function _stickyHeader() {
       var headerObj = document.getElementsByClassName('js-header-wrapper'),
-          lastscroll = 0,
-          scrollPosition = void 0,
-          className = 'js-scroll',
-          reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
+        lastscroll = 0,
+        scrollPosition = 0,
+        className = 'js-scroll',
+        reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
 
       window.onscroll = function () {
         scrollPosition = window.pageYOffset;

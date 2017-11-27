@@ -1,0 +1,64 @@
+// Global css code for document, components, widgets, buttons and links
+html {
+    font-size: $font-html;
+    @media #{$tablet} {
+        font-size: calculate-base-font($tablet-bp);
+    }
+    @media #{$tablet-large} {
+        font-size: calculate-base-font($tablet-large-bp);
+    }
+    @media #{$desktop} {
+        font-size: calculate-base-font($desktop-bp);
+    }
+    @media #{$desktop-large} {
+        font-size: calculate-base-font($desktop-large-bp);
+    }
+}
+
+body {
+    font-family: $font-imagopro-book;
+    margin: 0 auto;
+    max-width: 1920px; // <-- TODO: to be reviewed
+    color: $color-text-default;
+}
+
+// Common resets
+button,
+input {
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    &,
+    &:hover,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+// Common CSS for elements (Class prefix x-*)
+.x-btn {
+    font-family: $font-imagopro-bold;
+    @include font-size(18px);
+    @include line-height(27px);
+    @include padding(10px);
+    text-align: center;
+    border: 1px solid $color-primary;
+    @include border-radius(4px);
+    background-color: $color-theme;
+    color: $color-primary;
+}
+
+.x-btn-disabled {
+    background-color: $color-bg-disabled;
+    color: $color-tertiary;
+}
+
+// Common CSS for widget (a widget is a small container with functionality and content. Class prefix w-*)
+// <----- TODO: Widget CSS goes here
+// Common CSS for component (A component is a set of multiple different widgets. Class prefix c-*)
+// <----- TODO: Component CSS goes here

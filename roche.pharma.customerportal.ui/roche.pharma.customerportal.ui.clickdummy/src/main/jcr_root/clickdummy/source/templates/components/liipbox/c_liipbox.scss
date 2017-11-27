@@ -55,9 +55,9 @@
     float: left;
     padding: convert-in-rem(18) convert-in-rem(12);
     margin: 0;
-    -ms-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
     transition: all 300ms linear;
     border: 0;
     .icon-bar {
@@ -121,8 +121,8 @@
         -ms-transition: all 0.3s linear;
         -webkit-transition: all 0.3s linear;
         transition: all 0.3s linear;
-        -webkit-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
         &.translated {
           background: none;
           height: 41px;

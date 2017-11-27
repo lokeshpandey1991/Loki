@@ -37,7 +37,7 @@
     &__continent-list {
       list-style: none;
       @media ($mobile) {
-        padding-left:0px;
+        padding-left:0;
       }
       & a{
         font-family: $font-imagopro-book;
@@ -99,7 +99,7 @@
     }
 
     .right-sm {
-      &:before{
+      &::before{
         @media ($mobile) {
           content: '';
           width: 100%;
@@ -116,7 +116,7 @@
       & ul {
         text-align: left;
         @media ($mobile) {
-          padding-left:0px;
+          padding-left:0;
         }
       }
       & .global-site-box {
@@ -189,7 +189,7 @@
 
   & .cssmap-container {
     @media ($desktop) {
-      margin-left:0px;
+      margin-left:0;
     }
   }
 

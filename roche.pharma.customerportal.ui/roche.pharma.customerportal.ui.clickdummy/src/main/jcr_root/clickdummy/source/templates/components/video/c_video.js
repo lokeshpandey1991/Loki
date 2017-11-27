@@ -21,7 +21,7 @@
   // Define variables and functions for later use
   // DOM cache
   var _cache = {},
-      videoTracking = void 0;
+    videoTracking = 0;
   /**
    *
    * @param  $jPlayerCnt Player's container DIV to initialize against
@@ -82,7 +82,7 @@
     });
 
     $jPlayerCnt.bind($.jPlayer.event.seeked, function (event) {
-      var seekedPercent = parseInt(event.jPlayer.status.currentPercentAbsolute);
+      var seekedPercent = parseInt(event.jPlayer.status.currentPercentAbsolute,10);
       if (seekedPercent === 100) {
         $.extend(window.digitalData['link'], { event: 'video-completes' });
         window._satellite.track('video-tracking');
