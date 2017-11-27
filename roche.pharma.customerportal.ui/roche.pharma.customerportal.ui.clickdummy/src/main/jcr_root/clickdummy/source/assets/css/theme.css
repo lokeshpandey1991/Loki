@@ -15,10 +15,16 @@ html {
   font-size: 16px; }
   @media (min-width: 768px) {
     html {
+      font-size: 10px; } }
+  @media (min-width: 992px) {
+    html {
       font-size: 12px; } }
   @media (min-width: 1024px) {
     html {
-      font-size: 14px; } }
+      font-size: 13px; } }
+  @media (min-width: 1280px) {
+    html {
+      font-size: 16px; } }
 
 body {
   font-family: "imago-book", Arial, sans-serif;
