@@ -19,102 +19,102 @@ import com.roche.pharma.customerportal.core.models.DynamicImageModel;
 import com.roche.pharma.customerportal.core.services.ConfigurationService;
 
 /**
- * The Class DynamicImageModel.
+ * The DynamicImageModel implementation.
  */
 
 @Model(adaptables = {
-        SlingHttpServletRequest.class
+    SlingHttpServletRequest.class
 }, adapters = {
-        DynamicImageModel.class
+    DynamicImageModel.class
 }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL, resourceType = DynamicImageModelImpl.RESOURCE_TYPE)
 @Exporter(name = "jackson", extensions = "json")
 public class DynamicImageModelImpl implements DynamicImageModel {
-    
-    public static final String RESOURCE_TYPE = "roche/pharma/customerportal/components/dynamicimage/v1/dynamicimage";
-    
+
+    public static final String RESOURCE_TYPE = "roche/pharma/customerportal/components/dynamicimage";
+
     /** The Constant HEIGHT. */
     private static final String HEIGHT = "hei";
-    
+
     /** The Constant AMPERSAND. */
     private static final String AMPERSAND = "&";
-    
+
     /** The Constant EQUALS. */
     private static final String EQUALS = "=";
-    
+
     /** The Constant WIDTH. */
     private static final String WIDTH = "wid";
-    
+
     /** The Constant QUERY_PARAMETER. */
     private static final String QUERY_PARAMETER = "?";
-    
+
     /** The Constant HYPHEN. */
     private static final String HYPHEN = "-";
-    
+
     /** The Constant CROPN. */
     private static final String CROPN = "cropn";
-    
+
     /** The Constant DESKTOP. */
     private static final String DESKTOP = "desktop";
-    
+
     /** The Constant TABLETLANDSCAPE. */
     private static final String TABLETLANDSCAPE = "tabletL";
-    
+
     /** The Constant TABLETPORTRAIT. */
     private static final String TABLETPORTRAIT = "tabletP";
-    
+
     /** The Constant MOBILELANDSCAPE. */
     private static final String MOBILELANDSCAPE = "mobileL";
-    
+
     /** The Constant MOBILEPORTRAIT. */
     private static final String MOBILEPORTRAIT = "mobileP";
-    
+
     @Inject
     private String imagePath;
-    
+
     @Inject
     private String assetAltText;
-    
+
     @Inject
     private String imageView;
-    
+
     @Self
     private SlingHttpServletRequest slingRequest;
-    
+
     /** The configuration service. */
     @OSGiService
     private ConfigurationService configurationService;
-    
+
     /** The file reference. */
     @ValueMapValue
     private String fileReference;
-    
+
     /** The view. */
     @ValueMapValue
     private String view;
-    
+
     /** The view. */
     @ValueMapValue
     private String variationType;
-    
+
     /** The alt text. */
     @ValueMapValue
     private String altText;
-    
+
     /** The desktop url. */
     private String desktopUrl;
-    
+
     /** The mobile url. */
     private String mobilePortraitUrl;
-    
+
     /** The mobile landscape url. */
     private String mobileLandscapeUrl;
-    
+
     /** The tablet url. */
     private String tabletPortraitUrl;
-    
+
     /** The tablet landscape url. */
     private String tabletLandscapeUrl;
-    
+
     /**
      * Post construct.
      */
@@ -125,10 +125,9 @@ public class DynamicImageModelImpl implements DynamicImageModel {
         if (fileReference == null) {
             dynamicMediaUrl = StringUtils.EMPTY;
         }
-        fileReference = StringUtils.isNotBlank(dynamicMediaUrl)
-                ? StringUtils.removeEndIgnoreCase(dynamicMediaUrl, "/") + fileReference
-                : fileReference;
-        
+        fileReference = StringUtils.isNotBlank(dynamicMediaUrl) ? StringUtils.removeEndIgnoreCase(dynamicMediaUrl, "/")
+                + fileReference : fileReference;
+
         if (StringUtils.isNotBlank(dynamicMediaUrl)) {
             setDesktopUrl(createDynamicMediaUrl(DESKTOP));
             setMobilePortraitUrl(createDynamicMediaUrl(MOBILEPORTRAIT));
@@ -137,14 +136,14 @@ public class DynamicImageModelImpl implements DynamicImageModel {
             setTabletLandscapeUrl(createDynamicMediaUrl(TABLETLANDSCAPE));
         }
     }
-    
+
     /**
      * Creates the URL for the devices(Desktop,IPad,Mobile).
      * @param deviceType the device type
      * @return the string
      */
     private String createDynamicMediaUrl(final String deviceType) {
-        
+
         final Map<String, String> dynamicMediaConfiguration = getDynamicMediaConfiguration();
         String url = "";
         final String componentName = getComponentName(slingRequest.getResource());
@@ -163,7 +162,7 @@ public class DynamicImageModelImpl implements DynamicImageModel {
         }
         return url;
     }
-    
+
     /**
      * Gets the component name.
      * @param resource the resource
@@ -172,7 +171,7 @@ public class DynamicImageModelImpl implements DynamicImageModel {
     private String getComponentName(final Resource resource) {
         return StringUtils.substringAfterLast(resource.getResourceType(), "/");
     }
-    
+
     /**
      * Creates the url.
      * @param paramUrl the url
@@ -188,7 +187,7 @@ public class DynamicImageModelImpl implements DynamicImageModel {
         String url = paramUrl;
         if (widthIndex > -1) {
             width = imageConfiguration.substring(0, widthIndex);
-            
+
             if (heightIndex > -1) {
                 height = imageConfiguration.substring(widthIndex + 1, heightIndex);
                 crop = imageConfiguration.substring(heightIndex + 1);
@@ -203,7 +202,7 @@ public class DynamicImageModelImpl implements DynamicImageModel {
         }
         return url;
     }
-    
+
     /**
      * Gets the url.
      * @param url the url
@@ -220,49 +219,53 @@ public class DynamicImageModelImpl implements DynamicImageModel {
             queryFlag = true;
         }
         if (StringUtils.isNotEmpty(height)) {
-            url = queryFlag ? url.append(AMPERSAND).append(HEIGHT).append(EQUALS).append(height)
-                    : url.append(QUERY_PARAMETER).append(HEIGHT).append(EQUALS).append(height);
+            url = queryFlag ? url.append(AMPERSAND).append(HEIGHT).append(EQUALS).append(height) : url
+                    .append(QUERY_PARAMETER).append(HEIGHT).append(EQUALS).append(height);
             queryFlag = true;
         }
         if (StringUtils.isNotEmpty(crop)) {
-            url = queryFlag ? url.append(AMPERSAND).append(CROPN).append(EQUALS).append(crop)
-                    : url.append(QUERY_PARAMETER).append(CROPN).append(EQUALS).append(crop);
+            url = queryFlag ? url.append(AMPERSAND).append(CROPN).append(EQUALS).append(crop) : url
+                    .append(QUERY_PARAMETER).append(CROPN).append(EQUALS).append(crop);
         }
         return url.toString();
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getImageServiceURL()
      */
     @Override
     public String getImageServiceURL() {
         return configurationService.getImageServiceUrl();
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getDynamicMediaConfiguration()
      */
     @Override
     public Map<String, String> getDynamicMediaConfiguration() {
         return configurationService.getDynamicMediaConfMap();
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getFileReference()
      */
     @Override
     public String getFileReference() {
         return fileReference;
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getDesktopUrl()
      */
     @Override
     public String getDesktopUrl() {
         return desktopUrl;
     }
-    
+
     /**
      * Sets the desktop url.
      * @param desktopUrl the new desktop url
@@ -270,15 +273,16 @@ public class DynamicImageModelImpl implements DynamicImageModel {
     public void setDesktopUrl(final String desktopUrl) {
         this.desktopUrl = desktopUrl;
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getMobilePortraitUrl()
      */
     @Override
     public String getMobilePortraitUrl() {
         return mobilePortraitUrl;
     }
-    
+
     /**
      * Sets the mobile portrait url.
      * @param mobilePortraitUrl the new mobile portrait url
@@ -286,15 +290,16 @@ public class DynamicImageModelImpl implements DynamicImageModel {
     public void setMobilePortraitUrl(final String mobilePortraitUrl) {
         this.mobilePortraitUrl = mobilePortraitUrl;
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getMobileLandscapeUrl()
      */
     @Override
     public String getMobileLandscapeUrl() {
         return mobileLandscapeUrl;
     }
-    
+
     /**
      * Sets the mobile landscape url.
      * @param mobileLandscapeUrl the new mobile landscape url
@@ -302,15 +307,16 @@ public class DynamicImageModelImpl implements DynamicImageModel {
     public void setMobileLandscapeUrl(final String mobileLandscapeUrl) {
         this.mobileLandscapeUrl = mobileLandscapeUrl;
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getTabletPortraitUrl()
      */
     @Override
     public String getTabletPortraitUrl() {
         return tabletPortraitUrl;
     }
-    
+
     /**
      * Sets the tablet portrait url.
      * @param tabletPortraitUrl the new tablet portrait url
@@ -318,15 +324,16 @@ public class DynamicImageModelImpl implements DynamicImageModel {
     public void setTabletPortraitUrl(final String tabletPortraitUrl) {
         this.tabletPortraitUrl = tabletPortraitUrl;
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getTabletLandscapeUrl()
      */
     @Override
     public String getTabletLandscapeUrl() {
         return tabletLandscapeUrl;
     }
-    
+
     /**
      * Sets the tablet landscape url.
      * @param tabletLandscapeUrl the new tablet landscape url
@@ -334,29 +341,32 @@ public class DynamicImageModelImpl implements DynamicImageModel {
     public void setTabletLandscapeUrl(final String tabletLandscapeUrl) {
         this.tabletLandscapeUrl = tabletLandscapeUrl;
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getAltText()
      */
     @Override
     public String getAltText() {
         return StringUtils.isNotEmpty(altText) ? altText : assetAltText;
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getView()
      */
     @Override
     public String getView() {
         return view;
     }
-    
-    /* (non-Javadoc)
+
+    /*
+     * (non-Javadoc)
      * @see com.roche.pharma.customerportal.core.models.impl.DynamicImageModel#getVariationType()
      */
     @Override
     public String getVariationType() {
         return variationType;
     }
-    
+
 }
