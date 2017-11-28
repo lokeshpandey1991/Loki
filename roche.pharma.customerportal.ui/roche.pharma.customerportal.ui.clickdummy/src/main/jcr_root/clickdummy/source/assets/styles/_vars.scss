@@ -1,7 +1,5 @@
-// Breakpoints from default theme
-@import './default-theme/breakpointVars';
-// Inherit default theme colors
-@import './default-theme/colors';
+// Variables from default theme
+@import './default-theme/vars';
 // Variables for z-index
 $zindex-default: 0;
 // Maximum 3 levels allowed in z-index
