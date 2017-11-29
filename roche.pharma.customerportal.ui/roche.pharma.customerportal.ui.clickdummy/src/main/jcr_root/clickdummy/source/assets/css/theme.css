@@ -1,0 +1,63 @@
+@font-face {
+  font-family: imago-book;
+  src: url("../fonts/ImagoProBoo.otf") format("opentype"), url("../fonts/ImagoProBoo.woff") format("woff"), url("../fonts/ImagoProBoo.ttf") format("truetype"); }
+
+@font-face {
+  font-family: imago-medium;
+  src: url("../fonts/ImagoProMed.otf") format("opentype"), url("../fonts/ImagoProMed.woff") format("woff"), url("../fonts/ImagoProMed.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Minion-Italic;
+  src: url("../fonts/Minion-Italic.eot");
+  src: url("../fonts/Minion-Italic.eot?#iehack") format("eot"), url("../fonts/Minion-Italic.woff") format("woff"), url("../fonts/Minion-Italic.ttf") format("truetype"); }
+
+html {
+  font-size: 16px; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 10px; } }
+  @media (min-width: 992px) {
+    html {
+      font-size: 12px; } }
+  @media (min-width: 1024px) {
+    html {
+      font-size: 13px; } }
+  @media (min-width: 1280px) {
+    html {
+      font-size: 16px; } }
+
+body {
+  font-family: "imago-book", Arial, sans-serif;
+  margin: 0 auto;
+  color: #333; }
+
+button,
+input {
+  background-color: transparent;
+  border: none; }
+
+a {
+  display: inline-block;
+  color: inherit; }
+  a, a:hover, a:visited, a:focus {
+    text-decoration: none; }
+
+.x-btn {
+  font-family: "imago-bold", Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 27px;
+  line-height: 1.6875rem;
+  padding: 10px;
+  padding: 0.625rem;
+  text-align: center;
+  border: 1px solid #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #0066CC;
+  color: #fff; }
+
+.x-btn-disabled {
+  background-color: #e5e5e5;
+  color: #999; }
